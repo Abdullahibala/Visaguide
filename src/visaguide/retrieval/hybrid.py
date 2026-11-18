@@ -31,4 +31,9 @@ def reciprocal_rank_fusion(rankings: list[list[int]], k: int = 60) -> list[tuple
         appears in at least one ranking is included. Break ties by item_id
         (ascending), so the output is deterministic.
     """
-    raise NotImplementedError("Implement RRF here - see the module docstring.")
+    scores: dict[int, float] = {}
+    for ranking in rankings:
+        for rank, item_id in enumerate(ranking, start=1):
+            scores[item_id] = scores.get(item_id, 0.0) + 1 / (k + rank)
+
+    return sorted(scores.items(), key=lambda item: (-item[1], item[0]))
