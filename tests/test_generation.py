@@ -65,7 +65,7 @@ def test_prompt_has_numbered_sources_dates_and_question_last():
 
 
 def test_answer_maps_citations_and_verifies_quotes(pipeline):
-    llm = FakeLLM({"answer": "You need €11,904 [S1].", "refused": False, "citations": [
+    llm = FakeLLM({"answer": "You need €11,904 [S1].", "coverage": "full", "citations": [
         {"source": "S1", "quote": "You need 11,904 euros in a blocked account."},
         {"source": "S2", "quote": "Insurance is optional."},   # invented quote
         {"source": "S9", "quote": "anything"},                  # source that doesn't exist
@@ -84,9 +84,17 @@ def test_model_refusal_fails_closed(pipeline):
 
 
 def test_unpriced_model_gives_unknown_cost_not_zero(pipeline):
-    res = pipeline(FakeLLM({"answer": "x", "refused": True, "citations": []},
+    res = pipeline(FakeLLM({"answer": "x", "coverage": "none", "citations": []},
                            model="other-model")).answer("q")
     assert res.cost_usd is None
+
+
+@pytest.mark.parametrize("coverage,refused", [("full", False), ("partial", False),
+                                              ("none", True), ("bogus", True)])
+def test_coverage_maps_to_refused(pipeline, coverage, refused):
+    res = pipeline(FakeLLM({"answer": "x", "coverage": coverage, "citations": []})).answer("q")
+    assert res.refused is refused
+    assert res.coverage == (coverage if coverage != "bogus" else "none")
 
 
 def test_verify_citations_tolerates_brackets_and_markdown():

@@ -31,7 +31,7 @@ class Citation:
 class AnswerResult:
     question: str
     answer: str
-    refused: bool
+    refused: bool             # coverage == "none": no answer given
     citations: list[Citation]
     retrieved: list[dict]     # chunk_id, doc_id, start, end, title, url, score
     model: str
@@ -41,6 +41,7 @@ class AnswerResult:
     timings_ms: dict = field(default_factory=dict)
     error: str = ""
     request_id: str = ""
+    coverage: str = "none"    # full | partial | none
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -90,11 +91,14 @@ class RAGPipeline:
         if resp.data is None:
             # Model-level refusal or broken output: fail closed, never show a guess.
             answer = "Sorry, I couldn't produce a reliable answer to this question."
-            refused, citations = True, []
+            coverage, citations = "none", []
         else:
             answer = str(data.get("answer", "")).strip()
-            refused = bool(data.get("refused", False))
+            coverage = data.get("coverage", "none")
+            if coverage not in ("full", "partial", "none"):
+                coverage = "none"
             citations = verify_citations(data.get("citations") or [], chunks)
+        refused = coverage == "none"
 
         return AnswerResult(
             question=question, answer=answer, refused=refused, citations=citations,
@@ -108,5 +112,5 @@ class RAGPipeline:
                         "total": round((time.perf_counter() - t0) * 1000, 1),
                         **{f"retrieval_{k}": v for k, v in
                            self.retriever.last_timings_ms.items()}},
-            error=resp.error, request_id=resp.request_id,
+            error=resp.error, request_id=resp.request_id, coverage=coverage,
         )

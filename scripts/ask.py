@@ -21,7 +21,7 @@ def main() -> None:
     cfg = load_config()
     res = RAGPipeline.from_config(cfg, chunking=args.chunking, mode=args.mode).answer(args.question)
 
-    print(f"\n{'[REFUSED] ' if res.refused else ''}{res.answer}\n")
+    print(f"\n[coverage: {res.coverage}] {res.answer}\n")
     for c in res.citations:
         mark = "verified" if c.quote_verified else "NOT FOUND IN SOURCE"
         print(f"  [{c.source}] {c.title}\n       {c.url}\n       \"{c.quote}\" ({mark})")

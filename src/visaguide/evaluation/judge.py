@@ -29,9 +29,11 @@ by the provided sources. Use ONLY the sources; your own knowledge of the topic i
 irrelevant, even if a claim is true in reality.
 
 Steps:
-1. Split the answer into atomic factual claims (one fact each). Ignore citation markers, \
-greetings, and generic advice such as "confirm with the authority" or "this is not legal \
-advice". If the answer only says the information is not available, return no claims.
+1. Split the answer into atomic factual claims (one fact each) about the topic. Do NOT \
+count as claims: citation markers, greetings, generic advice such as "confirm with the \
+authority" or "this is not legal advice" or "rules can change", and statements about \
+what the sources do or do not contain (e.g. "the sources don't say X"). If the answer \
+only says the information is not available, return no claims.
 2. For each claim, list the source ids the answer cites for it (from markers like [S2]).
 3. supported_by_cited: true only if the cited source(s) state the claim (paraphrase is \
 fine; an added number, condition, or deadline that is not stated is NOT supported).

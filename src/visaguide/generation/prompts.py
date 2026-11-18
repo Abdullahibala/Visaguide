@@ -11,8 +11,10 @@ Design notes:
 - Each source carries its retrieval date. Visa rules change, and the corpus has
   outdated pages (old blocked-account amounts), so rule 4 makes the model surface
   conflicts instead of silently picking one.
-- Refusal is a boolean field, not a phrase the model might word differently. The
-  evaluation counts refusals exactly, and the UI can render a refusal on its own.
+- Coverage is a field (full / partial / none), not a phrase the model might word
+  differently. The first version used a yes/no "refused" flag. The dev run showed
+  that this counted the ideal near-miss answer ("no figure for Izmir; the general range
+  is 30-90 days") as a failure to refuse, so v2 distinguishes partial from none.
 - Each citation includes a verbatim quote. The code checks that the quote really
   appears in the cited source (a quote_verified flag), so a model that invents a
   quote is caught automatically.
@@ -31,10 +33,10 @@ even if you believe they are true.
 2. Cite every factual sentence with the source id(s) in square brackets, e.g. [S2] or \
 [S1][S3]. For each source you cite, give a short verbatim quote (one sentence or less) \
 copied exactly from that source that supports your answer.
-3. If the sources do not contain the information needed to answer, set "refused" to \
-true and say briefly what is missing. Do not guess, and do not answer a different \
-question. If they answer only part of the question, answer that part, cite it, and \
-say clearly which part is not covered.
+3. Set "coverage": "full" if the sources answer the whole question; "partial" if they \
+answer only part of it (answer that part with citations and say clearly which part is \
+not covered); "none" if they do not contain the information needed (then say briefly \
+what is missing, with no citations). Do not guess, and do not answer a different question.
 4. If sources disagree (for example different amounts or rules), say so, give each \
 version with its citation, and point out which source is more recent or more \
 official when the sources make that clear (retrieval dates are shown).
@@ -66,9 +68,9 @@ ANSWER_SCHEMA = {
                 "additionalProperties": False,
             },
         },
-        "refused": {"type": "boolean"},
+        "coverage": {"type": "string", "enum": ["full", "partial", "none"]},
     },
-    "required": ["answer", "citations", "refused"],
+    "required": ["answer", "citations", "coverage"],
     "additionalProperties": False,
 }
 

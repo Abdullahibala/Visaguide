@@ -9,8 +9,9 @@ rate limit never loses paid work: --resume skips everything already done. Judgin
 reads saved answers, so you can re-judge without paying to regenerate.
 
 Metrics
-  refusal      - unanswerable questions: refusal recall (did it decline?)
-                 answerable questions: false-refusal rate
+  refusal      - unanswerable questions: strict refusal (coverage "none") and
+                 gap flagged (coverage "none" or "partial")
+                 answerable questions: false-refusal rate, partial-answer rate
   correctness  - judge vs reference: correct=1, partial=0.5, incorrect=0
                  (over all answerable questions; a refusal there scores 0)
   faithfulness - share of answer claims supported by the retrieved sources
@@ -179,9 +180,11 @@ def main() -> None:
             spans = [SimpleNamespace(doc_id=r["doc_id"], start=r["start"], end=r["end"])
                      for r in a["retrieved"] if r["chunk_id"] in cited]
             gold_cite = float(any(matches(s, g) for s in spans for g in q["gold"]))
+        # Runs before v2 only had `refused`; map it onto coverage for comparability.
+        coverage = a.get("coverage") or ("none" if a["refused"] else "full")
         rows.append({
             "id": qid, "answerable": q["answerable"], "type": q["type"], "country": q["country"],
-            "refused": a["refused"], "verdict": verdict,
+            "refused": a["refused"], "coverage": coverage, "verdict": verdict,
             "correctness": CORRECTNESS_SCORE.get(verdict) if verdict else None,
             "faithfulness": faith, "citation_accuracy": cite_acc,
             "quote_verified": (sum(c["quote_verified"] for c in cits) / len(cits)
@@ -204,8 +207,12 @@ def main() -> None:
         "citation_accuracy": mean([r["citation_accuracy"] for r in rows]),
         "quote_verified": mean([r["quote_verified"] for r in rows]),
         "gold_cite_hit": mean([r["gold_cite"] for r in ans_rows]),
+        # Unanswerable: did it decline outright (strict), or at least flag the missing
+        # information (none or partial)? Near-misses are best answered "partial".
         "refusal_recall_unanswerable": mean([r["refused"] for r in una_rows]),
+        "gap_flagged_unanswerable": mean([r["coverage"] != "full" for r in una_rows]),
         "false_refusal_rate_answerable": mean([r["refused"] for r in ans_rows]),
+        "partial_rate_answerable": mean([r["coverage"] == "partial" for r in ans_rows]),
         "latency_total_p50_ms": pct([r["latency_total_ms"] for r in rows], 50),
         "latency_total_p95_ms": pct([r["latency_total_ms"] for r in rows], 95),
         "latency_generation_p50_ms": pct([r["latency_generation_ms"] for r in rows], 50),

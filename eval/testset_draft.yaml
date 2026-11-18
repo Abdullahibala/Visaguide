@@ -531,11 +531,18 @@
 
 - id: q049
   question: If I apply for Turkish GSS after the three-month deadline, can I assume I will still be covered retroactively?
-  answerable: false
+  answerable: true
   country: turkiye
   type: conditional
-  answer: The corpus gives the three-month application window but does not say that late enrollment is retroactive.
-  notes: 'Near-miss: the specific retroactive coverage detail is absent.'
+  answer: No. If you don't apply within the 3-month period you cannot benefit from GSS afterwards, so you would need private health insurance instead.
+  gold:
+  - doc: tu_8a3e0c1da1
+    quote: Students who do not apply for the GSS within the 3-month legal period for the application cannot benefit from this right afterward.
+    group: a
+  - doc: tu_2dba99a087
+    quote: if they lose the right of carrying insurance by not requesting within three months, private health insurance
+    group: a
+  notes: 'Relabelled after the dev run (dev split): first labelled unanswerable, but Sabancı and the migration authority both state it. Found because the model answered it correctly.'
 
 - id: q050
   question: If I lose my Turkish residence permit card, is there a deadline in days for getting a replacement?
