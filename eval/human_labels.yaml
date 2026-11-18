@@ -1,0 +1,4042 @@
+# Human labels for checking the LLM judge. Label BEFORE looking at the judge's output.
+#
+# faithful:    yes = every factual claim in `answer` is stated in `sources`
+#              no  = at least one claim is not stated there (even if true in reality)
+# correctness: compare `answer` with `reference_answer`
+#              correct   = all key facts, nothing contradicting
+#              partial   = some key facts / vaguer, nothing contradicting
+#              incorrect = contradicts a key fact, wrong number/rule, or doesn't answer
+#              (leave as n/a for unanswerable questions)
+
+- id: q002
+  question: Can international students in Türkiye work part-time, and does it depend on whether they are
+    bachelor's or master's students?
+  reference_answer: Associate and undergraduate students can work part-time only after completing their
+    first year of study; graduate students are not subject to that first-year restriction. A work permit
+    is still required.
+  answer: 'Yes, but not on your student residence permit alone: you first need a separate work permit
+    [S1][S3]. According to METU, you cannot apply for it yourself; you first find a job, and the employer
+    applies for your permit [S3]. The rules do depend on your level of study. If you are an associate
+    or bachelor''s student, you can work part-time only after completing your first year [S2][S3]. If
+    you are a master''s or PhD student, that first-year limit does not apply [S2]; you can get a permit
+    from your first year, for full-time or part-time jobs [S3]. Graduate students may also work as researchers
+    in projects related to their studies [S1]. METU states that permits at both levels are only for jobs
+    outside the university or campus [S3]. Applications for unrelated jobs in entertainment or domestic
+    work are evaluated negatively [S2]. If you are a Türkiye Scholarships holder, the YTB is consulted
+    [S2]. Rules can change, so confirm with the Ministry of Labour or your university''s international
+    office.'
+  sources:
+    S1: '**Working while studying**
+
+
+      In particular, international students enrolled in a master''s or PhD program in Türkiye can work
+      as researchers in scientific projects related to their work to finance their graduate studies. Some
+      private universities also accept graduate students with full scholarships and can provide assistantships
+      for students in exchange for this scholarship. Undergraduate students will often find opportunities
+      to work in a part-time job, according to their course schedules.
+
+
+      If you have a plan to work in your student life, what you need to know first is that your student
+      residence permit does not cover the work permit alone. Therefore, if you want to work during your
+      studies, you will first need to obtain a work permit. There are different types of work permits
+      such as short-term, perpetual, independent work and are given by General Directorate of International
+      Labour.'
+    S2: '**9. Foreign students**
+
+
+      9.1. Foreign students who are enrolled in associate and undergraduate degree programs at a higher
+      education institution in Türkiye can work part-time after completing their first year of study.
+
+
+      9.2. Work permit applications for graduate students enrolled in formal education programs will not
+      be subject to the limitations mentioned in the first paragraph.
+
+
+      9.3. The status of the foreigner as a student will be verified based on the records of the Council
+      of Higher Education (Yükseköğretim Kurulu - YÖK).
+
+
+      9.4. Work permit applications for foreign students wishing to work in jobs unrelated to their field
+      of study in entertainment or domestic work industry will be evaluated negatively.
+
+
+      9.5. In evaluating work permit applications for foreign students enrolled in associate and undergraduate
+      degree programs, factors such as the city in which the student is studying will be considered.
+
+
+      9.6. For foreign students studying under the Türkiye Scholarships Program (Türkiye Bursları), the
+      opinion of the Presidency for Turks Abroad and Related Communities (Yurtdışı Türkler ve Akraba Topluluklar
+      Başkanlığı) will be sought in evaluating work permit applications.'
+    S3: '## Work Permits
+
+
+      ## Students:
+
+
+      **Your residence permit does not automatically give you the right to work in Türkiye.** You need
+      an official work permit to work in Türkiye. The work permit is not something individuals can apply
+      for individually. The company that wants to hire you should apply for your work permit. In other
+      words, inTürkiye, you first need to find a job, and then the company should apply for a work permit
+      for you.
+
+
+      - Students at the undergraduate level can only get a work permit after they complete their first
+      year at the university.
+
+      - Students at the undergraduate level can only get a work permit for part-time jobs.
+
+      - Students at the undergraduate level can only get a work permit for jobs outside of the university/campus.
+
+
+      - Students at the graduate level can get a work permit starting from their first year at the university.
+
+      - Students at the graduate level can get a work permit for both full-time and part-time jobs.
+
+      - Students at the graduate level can only get a work permit for jobs outside of the university/campus.'
+    S4: International students have a variety of options to meet their accommodation needs throughout
+      their educational life in Türkiye. Students can stay in university dormitories located within the
+      campuses, in state dormitories managed by the KYK (Higher Education Credit and Hostels Institution)
+      located at various points in the city, in private dormitories, or in the apartments they rent in
+      the city.
+    S5: '## Rules for part time jobs in Germany
+
+
+      Labour regulations for international students are very strict. So it is important to know them.
+      Violators can be expelled. As an international student, your permitted working hours depend on whether
+      you are from the EU (including Iceland, Liechtenstein, Norway and Switzerland) or not.
+
+
+      The provision on secondary employment is very closely linked to the residence title. Therefore,
+      check exactly which regulations apply to you.'
+    S6: '**EQUIVALENCE**: It is the determination of equivalence of associate degree, undergraduate and
+      master''s diplomas obtained from overseas higher education institutions and programs to Associate
+      degree, Bachelor’s and Master''s degrees awarded by higher education institutions in Türkiye in
+      terms of achievements in related education level. Academic level of graduated higher education program,
+      the degree and the qualification, the total of national credits and/or ECTS required for graduation
+      are evaluated in terms of knowledge, skills and competencies that need to be gained.
+
+
+      <u>Diploma Equivalence Certificate:</u> Those who want to perform professions according to their
+      graduated International Higher Education program and those who graduated from health fields (compulsory)
+      and who want to have a Master''s or PhD education in Türkiye can use this document.
+
+
+      <u>Graduation Recognition Certificate:</u> Only those who want to document "Higher Education Graduation"
+      as a result of evaluation of academic degrees without evaluation of vocational achievements.
+
+
+      For Diploma Equivalence and Graduation Recognition documents, pre-applications must be made at the
+      following web site addresses.
+
+
+      Turkish citizens: https://www.turkiye.gov.tr/yok-denklik-basvurusu
+
+
+      Foreign nationals: http://denklikbasvuru.yok.gov.tr/denklik/yu-denklik-basvuru-form'
+    S7: 'and freedom of establishment and may work self-employed or for an
+
+      employer without restriction.
+
+      3.2
+
+      Students from non-EU states
+
+      International students (as well as Studienkolleg participants) from non-EU
+
+      countries are allowed to work but must follow several rules. As an international
+
+      student you are allowed to work part-time from the first year of your preparatory
+
+      programme (language course, preparatory college, preparatory course, etc.).
+
+      The rules that apply in this context are the following:
+
+      “Employment of up to 140 days in accordance with § 16b (3) AufenthG and part-time
+
+      on-campus student work is allowed.”
+
+      3.2.1 140-day rule
+
+      International students from non-EU states may work 140 days or 280 half-days per
+
+      year without needing the approval of the Employment Agency.
+
+      The 140 full days refer to your workday account. The calculation is taken with
+
+      reference to the current calendar year.
+
+      Your workday account can also be filled with half days. You can decide for each
+
+      calendar week how your workday account is to be filled. The following options are
+
+      available:
+
+      1. working hours of up to four hours a day count as a half day if the usual daily
+
+      working time totals eight hours (the maximum duration for a half day is'
+    S8: 'These students studying in Türkiye are of great importance in building bridges of friendship
+      between countries. Today, there are international graduates from Turkish universities in 194 countries.
+      These individuals have carried the knowledge and skills they acquired in our country into the future
+      in a way that contributes positively to our relations with their own countries.
+
+
+      We strongly urge the public to trust the information shared transparently by official institutions
+      and not to give credence to baseless claims that seek to harm our country''s education system and
+      international relations.'
+  faithful: ''
+  correctness: ''
+- id: q008
+  question: Can I start attending classes at a German university before completing its enrolment process?
+  reference_answer: No. Enrolment is required before studies commence.
+  answer: 'No. You are only allowed to attend courses at a German university once you are officially enrolled
+    (matriculated) [S1][S5]. Accepting a study place is not enough: you officially become a student only
+    when you enrol [S2]. After enrolment you can start attending classes and take exams [S3]. Practical
+    steps: Your letter of acceptance gives the enrolment procedure, dates and required documents (typically
+    proof of health insurance, semester fee receipt, passport photo, ID/passport) [S3]. Enrolment deadlines
+    are often short, and if you are late or forget documents you will not be able to enrol [S6]. In many
+    cases you must enrol in person, so arrive in Germany before the deadline [S2]. Please confirm details
+    with your university''s international or admissions office; this is not legal advice.'
+  sources:
+    S1: 'With matriculation – enrolment – your studies officially begin.
+
+
+      The certificate confirming enrolment is called an “Immatrikulationsbescheinigung”. It’s an important
+      document that you’ll need on future occasions.
+
+
+      Start to prepare
+
+
+      All students have to enrol at university before they can commence their studies. The enrolment period
+      is often quite short. After you have enrolled, you will receive a student ID.
+
+
+      Before you can begin studying, you first have to enrol. This procedure is called enrolment or matriculation.
+      Once you’re officially enrolled, you are allowed to attend courses at university, take examinations
+      and obtain an academic degree. Enrolment allows you to gain access to all the facilities at the
+      university. Students are normally required to enrol in person at the Office of Student Affairs („Studentensekretariat“)
+      at the university.
+
+
+      You may enrol if you have received notification of admission from your German university. If the
+      university accepts your for a study place, it will send you the by mail. The letter also includes
+      information concerning the enrolment period.
+
+
+      The enrolment period is often quite short! You will need to present various documents for enrolment.'
+    S2: "51\nSTUDYING IN GERMANY\nor flat once you arrive, for example.\nYou will also come into frequent\
+      \ contact\nwith the student union as your stay goes on,\nfrom lunch in the cafeteria to the sport\
+      \ and\nlanguage courses which some student un-\nions offer. You can also access information\nand\
+      \ advice on a range of issues here.\n2.2 \aENROLLING AT YOUR HIGHER\nEDUCATION INSTITUTION\nYou\
+      \ don’t become a student when you get\naccepted onto a study programme. You\nofficially become a\
+      \ student when you enrol.\nIn Germany this is known as ‘Immatrikula-\ntion’. At some higher education\
+      \ institutions\nyou can do this online or by post, so you can\ncomplete this task before you even\
+      \ get to\nGermany. However, in many cases you still\nhave to enrol in person at your higher edu-\n\
+      cation institution. That makes it essential to\nget to Germany before the deadline."
+    S3: "You will find the details of the enrolment\nprocedure and the specific dates in your\nletter\
+      \ of acceptance. It will also list the\ndocuments you need to enrol. Generally,\nthese are:\n\a\
+      letter of acceptence\n\aproof of health insurance\n\areceipt for payment of the semester fee\n\a\
+      passport photo\n\aID card/passport (and possibly your visa)\n\aand sometimes original copies of\
+      \ exami-\nnation or degree certificates\nIf you have any questions, get in touch with\nthe international\
+      \ office or the admissions\noffice at your higher education institution.\nThat way you can make\
+      \ sure you have\neverything you need to enrol and that\nnothing will go wrong.\nOnce you have enrolled,\
+      \ you will receive\nyour student ID card and your semester\nticket (if applicable). This usually\
+      \ happens\nby post. Now you are officially a student\nat a German higher education institution!\n\
+      You can start attending classes and take\nexams. You also have access to facilities\nsuch as the\
+      \ institution’s library and sport-\ning facilities. You can also take advantage\nof discounted student\
+      \ tickets for cultural\ninstitutions."
+    S4: "50\nPREPARATION\nIN GERMANY\nTIPS\nOnce you have arrived in Germany you will\nneed to get several\
+      \ things sorted out over\nthe first few days and weeks. If your higher\neducation institution only\
+      \ accepts enrol-\nment in person, it’s essential to enrol before\nthe deadline. You may also need\
+      \ to deal\nwith bureaucracy, especially if you need a\nresidence permit for Germany. You will also\n\
+      have to choose the lectures and seminars\nyou are going to attend and make sure the\ntimetable is\
+      \ possible.\nThis may seem like a lot of work, but you will\nrise to the challenge – and don’t forget,\
+      \ you\ndon’t have to do it all on your own. You will\nfind many places where you can get help.\n\
+      That’s what this chapter is all about. We\nwant you to get off to as smooth a start as\npossible\
+      \ in Germany!\n2 \aYOU’VE ARRIVED IN\nGERMANY – WHAT’S NEXT?\nTIP: Try to plan your journey so you\
+      \ don’t arrive in Germany on a weekend. The\ninternational office will be closed on Saturdays and\
+      \ Sundays, as are banks and\nadministrative offices. It may also be difficult to get the key to\
+      \ move into your\nstudent residence if"
+    S5: 'Once you have enrolled, you will receive a certificate of enrolment which also serves as your
+      provisional student ID. You will have to present this certificate of enrolment to apply for a at
+      the Alien Registration Office. You will also receive an electronic payment slip with which you must
+      pay the semester contribution and possible tuition fees. As soon as the university receives your
+      payment, it will send you your official student ID card by post.
+
+
+      Every student at university is issued a student ID card. You will need your card to use the library,
+      dining hall, computer rooms, sports facilities, etc. The student ID frequently doubles as a ticket
+      for public transportation in the university town. You can also receive special student discounts
+      with your card, for example, on tickets to cultural events, swimming pools, museums and trade fairs.
+
+
+      Only when you are enrolled (matriculated) are you allowed to attend courses at the university, take
+      exams and obtain an academic degree.
+
+
+      If you are spending more than one semester in Germany, you should definitely pay attention to the
+      deadline for re-registration.'
+    S6: '## How do I enrol?
+
+
+      You can enrol at your German higher education institution as soon as you receive your from the International
+      Office or the Stiftung für Hochschulzulassung. Information on when you have to matriculate will
+      be included.
+
+
+      Every higher education institution has its own rules. Usually you will have to go to the registrar''s
+      office in person on a certain date. Sometimes it is also sufficient to send the necessary documents
+      to your higher education institution by post within a certain deadline.
+
+
+      **TIP:** The most important thing is to be sure you are fully informed. Enrollment deadlines are
+      often short. If you are too late or forget documents you will not be able to enrol.'
+    S7: 'enrol once the
+
+      deadline has passed.
+
+      As you can see, the letters of acceptance are
+
+      sent out not long before the semester starts.
+
+      If you wait until you receive the letter before
+
+      getting on with your other preparations for
+
+      studying in Germany, you can find yourself
+
+      facing a lot of stress. You may even be un-
+
+      able to get to Germany in time for the start
+
+      of the semester. In this section, we’ll explain
+
+      some of the things which you should get on
+
+      with in advance.
+
+      Funding
+
+      Before you come to Germany, you need to
+
+      make absolutely sure of how you will fund
+
+      your studies. You will need to know which
+
+      costs to expect and the different funding
+
+      opportunities which are available. We’ll talk
+
+      about those in the next few sections.
+
+      But before we go any further: it is hard to
+
+      give a general view of how much money you
+
+      will need to live in Germany. It depends too
+
+      much on where you are studying and your
+
+      lifestyle.
+
+      Nevertheless, we can say in general that
+
+      Germany is not very expensive when
+
+      compared to other European countries.
+
+      Prices are higher in most of Germany’s
+
+      immediate neighbours, while northern
+
+      European countries and'
+    S8: 'Anyone who wants to enrol at a German university must have health insurance.
+
+
+      Depending on the country you come from, your health insurance may also be valid in Germany. Find
+      out in good time.
+
+
+      Check the requirements
+
+
+      If you’d like to study in Germany, you have to have health insurance. You will need to present proof
+      of health insurance when you enrol at university and apply for a residence permit. Make sure to
+      take care of your health insurance status before you come to Germany.
+
+
+      The first thing you should do is to find out whether your health insurance policy in your home country
+      is also valid in Germany. Private domestic and foreign health insurance policies from other countries
+      may also be recognised in Germany. You should inquire about the details with your health insurance
+      provider before leaving home.'
+  faithful: ''
+  correctness: ''
+- id: q018
+  question: How long might it take for Sabancı applicants to receive a decision and residence permit card?
+  reference_answer: The university says evaluation and card preparation may take up to 90 days; it also
+    gives a 30–90 day range for notification.
+  answer: 'You can expect a processing time of about 30–90 days after your application is received for
+    evaluation, according to the Directorate General of Migration Management''s rules [S1]. After you
+    submit your documents to the IRO, your file goes to the Istanbul Provincial Immigration Administration,
+    and the result is sent to you within 30–90 days by email/SMS and on the e-ikamet website [S2]. It
+    may take up to 90 days for approval and card preparation [S2]. The same timeline applies to extensions
+    and exchange students [S3][S4].
+
+
+    Key points:
+
+    - The IRO does not receive results, so check the website regularly [S2].
+
+    - Cards go to the address on your address document; tracking is your responsibility [S2].
+
+    - If you gave the Tuzla Campus address, the Communication Center will notify you when your card arrives
+    [S2].
+
+    - After receiving it, send a copy to irolegal@sabanciuniv.edu and studentinfo@sabanciuniv.edu [S2].
+
+
+    Timelines can change; confirm with the migration authority.'
+  sources:
+    S1: '**How long will it take to receive my student residence permit card?**
+
+
+      According to the decisions and rules of the Directorate General of Migration Management, there is
+      a processing time of 30-90 days after your application is received for evaluation.'
+    S2: '#### Step 6: Tracking your Residence Permit Card
+
+
+      After you submit your documents to IRO, we will deliver your file to the Istanbul Provincial Immigration
+      Administration. The evaluation result will be delivered to the student within 30-90 days via email/SMS
+      and Immigration Office website https://e-ikamet.goc.gov.tr/Ikamet/DevamEdenBasvuruGiris
+
+
+      The authority to evaluate and announce results lies with the Directorate General of Migration Management.
+      The IRO does not receive application results. Therefore, we recommend regularly checking the website
+      for updates.
+
+
+      It may take up to 90 days for your application to be approved and for your cards to be prepared.
+      Your cards will be sent to the addresses listed on the address document you provided in your application.
+      Tracking the cards is the student''s personal responsibility.
+
+
+      If you provided Sabancı University Tuzla Campus as your address in your residence permit application
+      form, your card will be sent to the Communication Center on campus. You will be notified by the
+      Communication Center once your card arrives.
+
+
+      After receiving your card, please don''t forget to send a copy to irolegal@sabanciuniv.edu and studentinfo@sabanciuniv.edu.'
+    S3: '#### Step 6: Tracking your Residence Permit Card
+
+
+      After you submit your documents to IRO, we will deliver your file to the Istanbul Provincial Immigration
+      Administration. The evaluation result will be delivered to the student within 30-90 days via email/SMS
+      and Immigration Office website https://e-ikamet.goc.gov.tr/Ikamet/DevamEdenBasvuruGiris
+
+
+      The authority to evaluate and announce results lies with the Directorate General of Migration Management.
+      The IRO does not receive application results. Therefore, we recommend regularly checking the website
+      for updates.
+
+
+      It may take up to 90 days for your application to be approved and for your cards to be prepared.
+      Your cards will be sent to the addresses listed on the address document you provided in your application.
+      Tracking the cards is the student''s personal responsibility.
+
+
+      If you provided Sabancı University Tuzla Campus as your address in your residence permit application
+      form, your card will be sent to the Communication Center on campus. You will be notified by the
+      Communication Center once your card arrives.
+
+
+      After receiving your card, please don''t forget to send a copy to irolegal@sabanciuniv.edu and studentinfo@sabanciuniv.edu.'
+    S4: '#### Step 6: Tracking your Residence Permit Card
+
+
+      **\*\*\*Submit your all documents to IRO between 21st March 2025\*\***
+
+
+      After you submit your documents to IRO, we will deliver your file to the Istanbul Provincial Immigration
+      Administration. The evaluation result will be delivered to the student within 30-90 days via email/SMS
+      and Immigration Office website https://e-ikamet.goc.gov.tr/Ikamet/DevamEdenBasvuruGiris
+
+
+      The authority to evaluate and announce results lies with the Directorate General of Migration Management.
+      The IRO does not receive application results. Therefore, we recommend regularly checking the website
+      for updates.
+
+
+      It may take up to 90 days for your application to be approved and for your cards to be prepared.
+      Your cards will be sent to the addresses listed on the address document you provided in your application.
+      Tracking the cards is the student''s personal responsibility.
+
+
+      If you provided Sabancı University Tuzla Campus as your address in your residence permit application
+      form, your card will be sent to the Communication Center on campus. You will be notified by the
+      Communication Center once your card arrives.
+
+
+      After receiving your card, please don''t forget to send a copy to irolegal@sabanciuniv.edu and studentinfo@sabanciuniv.edu.'
+    S5: '#### Address Registration
+
+
+      Individuals who have a residence permit card must register their address within 20 days of receiving
+      their card. Additionally, if your current address changes, you must register your new address as
+      well. Erasmus and Exchange Program students can skip this step if they will not extend their permits
+      in Turkey.
+
+
+      You must book an appointment through Immigration Office Appointment System to register your address.
+      It is mandatory to go to the immigration office on the appointment day for address registration.
+
+
+      In order to book an appointment, you need to have an e-devlet access and follow this guide.
+
+
+      Below you will find the required documents for the process. After reviewing and collecting the required
+      documents *according to where you stay*, you can book your appointment and register your address
+      at the Immigration Office in person.'
+    S6: 'To apply for this type of permit, if your current card has not expired, you can apply for a transfer
+      on the official website a couple of days before your official graduation date. However, if your
+      card has expired and the period you have stayed in the country does not exceed 10 days, you may
+      need to make a first application for a short-term residence permit and select ''graduation'' as
+      the reason. The important thing here is to apply within 6 months after graduation. Additionally,
+      if you apply after your residence permit card has expired and this exceeds 10 days, the Directorate
+      General of Migration Management may negatively evaluate your application or require you to leave
+      and re-enter Turkey. Therefore, the expiration date of your current card and your graduation dates
+      are very important in your application. This is why we recommend applying for this type of permit
+      before your current card expires.
+
+
+      **Application link for the transfer application to a short-term residence permit:**https://e-ikamet.goc.gov.tr/Ikamet/UzatmaGecisGiris/GecisBasvuru
+
+
+      This situation DOES NOT apply to the students who cancel their registration, the students who freeze
+      their registration, the students who have a hold, or the students who have dismissal from the university.'
+    S7: '#### Residence Permit After Graduation
+
+
+      As is known, after your graduation, you must leave Turkey within 10 days after the expiration date
+      of your student residence permit card. However, some of our students wish to stay in Turkey for
+      reasons such as finding a job or continuing their education. To enable these students to stay in
+      Turkey legally without needing to leave the country, all our full-time students who meet the condition
+      of **having graduated within the last 6 months** from the university can apply for a short-term
+      residence permit transition from a student residence permit. In this way, you can get a short-term
+      residence permit for about up to 1 year. We briefly mention the general information on the issue
+      here. However, you can call 157 for the details and the best answers.'
+    S8: 'Note: We have been informed that if students'' current residence permits extend beyond their
+      graduation date, these permits will remain active. However, we do not know how long they will remain
+      active, and it is generally understood that residence permits may be canceled within 90 days after
+      graduation. Therefore, we recommend that you apply for a short-term residence permit 5 days before
+      your graduation date, which you can find out from student resources. You can check the status of
+      your permit by calling 157.'
+  faithful: ''
+  correctness: ''
+- id: q021
+  question: What is the Turkish foreign national identity number used for at METU besides identifying
+    me?
+  reference_answer: METU uses it in its Student Affairs Information System; without one, students cannot
+    see grades, obtain student certificates, or graduate.
+  answer: At METU, your foreign national identity number is used in the Student Affairs Information System
+    (SAIS). SAIS requires it when you request your end-of-semester grades, when you request a student
+    certificate, and when you graduate [S1]. Without it, you won't be able to see your grades, get student
+    certificates or graduate [S1]. If you haven't submitted it yet, give it to the responsible International
+    Students' advisor at the Registrar's Office [S1]. You can find the number on your residence permit
+    card, or look it up at https://tckimlik.nvi.gov.tr/ [S1]. The number also matters for health insurance.
+    If you want General Health Insurance (GSS), you must apply immediately after getting the number [S1].
+    The GSS application needs a student certificate showing your foreigner identification number [S3].
+    This isn't legal advice, so please confirm the details with METU's Registrar's Office.
+  sources:
+    S1: '## Foreign National Identity Number
+
+
+      Every foreign resident, just like any Turkish citizen, has an identity number issued by the Turkish
+      authorities. This number is also used in METU’s Student Affairs Information System (SAIS). METU
+      SAIS requires this number when
+
+
+      1. you request to learn your grades at the end of the semester,
+
+      2. you request a student certificate,
+
+      3. you graduate.
+
+
+      In other words, students who do not have this number will not be able to learn their grades, get
+      student certificates or graduate. For this reason, those who have not submitted their Foreign National
+      Identity numbers previously, need to submit the number to the International Students'' advisors
+      who is responsible (see for a list of advisors of Registrar’s Office, http://oidb.metu.edu.tr/en/personnel-contact-information).
+
+
+      Foreign national identity number is written on your residence permit card. Alternatively, you can
+      search it from https://tckimlik.nvi.gov.tr/.
+
+
+      **WARNING**: Those who want to benefit from the General Health Insurance services must apply immediately
+      after getting the foreign national id number.'
+    S2: 'b. “No, I am outside Türkiye” — with this option,
+
+      the foreign national can log in to the system
+
+      using the 16-digit reference number obtained
+
+      from a Turkish foreign mission, together with
+
+      their passport information.
+
+
+      WORK PERMIT EXEMPTION
+
+      APPLICATION GUIDE
+
+      3
+
+
+      Once the information is verified and the user logs in to the system, an e-mail verification screen
+      appears
+
+      for users without an existing registration. The OTP code sent to the e-mail address is entered into
+      the
+
+      system to complete verification.
+
+
+      If the user''s profile has not been created yet, the system redirects to the Personal Information
+      section.
+
+      While Turkish citizen users only need to complete and verify the Contact Information section, foreign
+
+      nationals applying for a Work Permit Exemption must complete the identity, photo, contact, passport,
+
+      education, and career information fields.
+
+
+      WORK PERMIT EXEMPTION
+
+      APPLICATION GUIDE
+
+      4
+
+
+      2. ENTERING USER INFORMATION
+
+      2.1. Personal Information'
+    S3: '#### How to Apply
+
+
+      **Step 1: Collect the required documents**
+
+
+      - Passport
+
+      - Residence Permit Card (if available)
+
+      - Student Certificate showing your foreigner identification number and the start date of the academic
+      year. You can obtain this document through the METU Student Portal or by visiting the Registrar''s
+      Office.'
+    S4: '1. A portrait photo
+
+      2. Official Identification Document (Applicants holding a passport need to upload the ID page of
+      their passports. Other applicants can upload a copy of their national identification card instead
+      of passport)
+
+      3. High school diploma/Transitory graduation certificate (The original high school diploma needs
+      to be uploaded. Those who have not yet received their diploma need to upload an official letter
+      -Transitory Graduation Certificate- taken from their high school stating the expected graduation
+      date and the expected CGPA. An Equivalence Letter from the Ministry of Education of Türkiye or from
+      Turkish Embassies which certify that the diploma is equivalent to a Turkish High School Diploma
+      is not required for the application. This document will be required during registration if the applicant
+      receives admission)
+
+      4. Transcript showing all the grades throughout high school education (Applicants should submit
+      an official transcript that shows the all courses and grades taken throughout high school)
+
+      5. A copy of the primary exam/diploma that will be used in the application (The exam/diploma result
+      to be used in the application -SAT, A-levels, International Baccalaureate, TRYÖS etc.- needs to
+      be uploaded. Only the exams/diplomas listed at the "Application Requirements" section are accepted.
+      It is not'
+    S5: 'Residence Permit Application Steps
+
+      International Students Office
+
+      7th Step: Submitting The Residence Permit Card Informations to the University
+
+      After receiving the residence permit card, all international students registered in our university
+      are obliged to inform the residence
+
+      permit card informations and Turkish ID numbers to Registrar’s Office.
+
+      International Students who do not have their Turkish Foreign ID in the system are restricted from
+      to entry to the Student Information
+
+      System. International students are obliged to inform the Registrar''s Office within 20 working days
+      after receiving their residence card
+
+      as follows. Until this procedure is completed, you are not allowed to register for courses or receive
+      official documents(Transcript etc.)
+
+      You may get help for this process from our website!
+
+
+      International Students Office Info
+
+      International Students Office
+
+      Please do not hesitate to contact us for further questions!
+
+      Contact Informations:
+
+      Website: https://www.sis.itu.edu.tr/EN/student/intenational-students/residence-permit.php
+
+      Email: intstudents@itu.edu.tr
+
+      Phone: +902122853400
+
+      Address: ITU Ayazağa Campus, Registrar’s Office Building, 34469, Maslak, Sarıyer, İstanbul
+
+
+      INTERNATIONAL STUDENTS
+
+      OFFICE'
+    S6: 'Identity Information section, depending on the login option you used, some information is automatically
+
+      retrieved from the relevant institutions, while the remaining information must be entered by the
+      foreign
+
+      applicant. This section contains the following information:
+
+      ● Biometric Photo
+
+      ● Foreigner ID Number
+
+      ● Date of Birth
+
+      ● Full Name
+
+      ● Parents'' Names
+
+      ● Marital Status
+
+      ● Gender
+
+      ● Place of Birth
+
+      ● Nationality
+
+      ● Spouse Information (if
+
+      any)
+
+
+      Note: Even though your photo is biometric, if you get an
+
+      error during the biometric check, izin.destek@csgb.gov.tr
+
+      by stating your “Profile ID” (found at the top right of the My
+
+      Personal Information section) in a notification sent to the e-
+
+      mail address, the relevant staff will review the photo you
+
+      uploaded and, if it is deemed appropriate, your photo
+
+      information will be defined manually.
+
+
+      Note: Employers, or persons authorized by the employer, who are Turkish citizens will see and need
+      to
+
+      fill in only the “Identity Information” and “Contact Information” fields when logging in to the
+      system.
+
+
+      WORK PERMIT EXEMPTION
+
+      APPLICATION GUIDE
+
+      5
+
+
+      2.2. Contact Information'
+    S7: '## **Which German mission in Türkiye is responsible?**
+
+
+      All national visa applications of non-Turkish foreign nationals are processed at the visa section
+      of the Consulate General **in ISTANBUL.**
+
+
+      ## **How can I book an appointment?**
+
+
+      Please check the online booking system with our external service provider iDATA that, based on your
+      information, will guide you to the correct appointment category, first. Please ensure that you provide
+      **complete and accurate information** to avoid incorrect registrations and lengthy rebookings.
+
+
+      Depending on your visa category, you will be able to **register with iDATA** on a waiting list **or**
+      you will be **directed to the** Consular Services Portal that allows you register and subsequently
+      apply online directly. For the appointment registration with iDATA, they charge a fee of **12 €.**
+
+
+      If you wish to apply with your **family**, please register **as a group** in the portal or with
+      iDATA. There are two different appointment systems for **Turkish and non-Turkish** nationals. Please
+      make sure to register in only one system even if you and your family do not share the same nationality.'
+    S8: '- ##### In what cases can Institution/School recognition document be used? In what cases can
+      Institution/School recognition document be used?
+
+      - For students who want to study abroad, to determine whether the institution they want to study
+      is accepted as authorized to give academic degrees by Council of Higher Education.
+
+      - For use when switching from higher education institutions abroad to higher education institutions
+      in Turkey.
+
+      - In order to provide information to institutions such as for health payments (SSI), Ministry of
+      Foreign Affairs, Ministry of Interior, Body of Lawyers, Governorates and Universities, depending
+      on the request of the person who graduated from abroad.
+
+      - To make an application to the chairmanship of Interuniversity Board to obtain a doctorate degree
+      from the higher education institutions abroad.
+
+      - For foreign nationals who have graduated from higher education institutions in Turkish Republic
+      of Northern Cyprus and want to use their diploma outside Turkey.
+
+      - For foreign students who will begin postgraduate education in Turkey, excluding health fields.'
+  faithful: ''
+  correctness: ''
+- id: q025
+  question: If I graduate from a Turkish higher education program and want to remain to look for work,
+    what permit might I apply for?
+  reference_answer: A short-term residence permit may be available if the application is made within six
+    months of graduation; it can be issued once for up to one year.
+  answer: 'You can apply for a short-term residence permit under the "those who graduated from a Turkish
+    university" category, which gives about one year to look for work in Türkiye [S1][S7]. Key conditions:
+    - Apply within six months after graduation [S1][S7]; METU adds that this must be before your student
+    residence permit expires [S4]. - If your student card''s expiry date is after your graduation date,
+    you may stay until that date [S4]; otherwise you must leave within 10 days after your student card
+    expires [S7]. - The permit can be extended for one more year if you apply before it expires or within
+    90 days after expiry [S1]. - Each new graduation (undergraduate, master''s, PhD) gives a separate
+    right to apply [S4]. Note that to actually work, you need a separate work permit [S6]. These sources
+    are university guidance, not legal advice; confirm details with the Migration Office (e.g. by calling
+    157) [S7].'
+  sources:
+    S1: '## After you graduate:
+
+
+      Turkish laws allow students who graduate from Turkish higher education institutions to get a one-year-long
+      residence permit, which could be used as an opportunity to seek for a job in Türkiye. To get this
+      type of residence permit, you need to apply for a short-term residence permit within six months
+      after your graduation under the "those who graduated from a Turkish university" category.
+
+
+      After one year, this permit can be extended for an additional one year if the person applies before
+      the permit expires or within 90 days after it expires.'
+    S2: '##### I''m a student in Turkey. Where can I apply for a work permit?
+
+
+      Students attending a formal associate, undergraduate, graduate or postgraduate programme in Turkey
+      may work provided that they obtain a work permit. However the right of work for associate or undergraduate
+      students starts after the first year and is regulated by related law. Applications are made to the
+      Ministry of Labor, Social Services and Family.
+
+
+      10'
+    S3: '##### Can graduate or doctoral students apply for a work permit while studying in Turkey?
+
+
+      Graduate and doctoral students, studying in Turkey, can work if they receive a work permit. Students
+      who obtain a work permit are exempted from the obligation to obtain a residence permit during the
+      period of work permit. However, the student must obtain a residence permit when the work permit
+      expires or is not extended.
+
+
+      11'
+    S4: 'from the program voluntarily or are dismissed from the program is submitted to the Ankara Migration
+      Office every semester. Their student residence permits are canceled accordingly. Therefore, students
+      must carefully follow their residence procedures.
+
+      7. According to information received from the Migration Office (as of June 2026), when you graduate
+      from your program and if your residence permit card''s expiry date is after your graduation date,
+      you may stay in Türkiye until the expiry date stated on your card. Those who wish to stay longer
+      must apply for a short-term residence permit within six months following graduation, before their
+      student residence permit expires. Each new graduation at a higher education level grants a separate
+      right to apply for a post-graduation short-term residence permit. Therefore, you may apply for this
+      permit after your undergraduate, master''s, and PhD graduations separately.
+
+      8. When applying for an extension, after the positive evaluation of your application, your new card
+      will not be printed until your previous card expires. Therefore, if you need proof of your new permit
+      before your new card is issued, you may obtain a document via: https://www.turkiye.gov.tr/goc-idaresi-ikamet-izni-kisisel-bilgi-sorgula...
+
+      9. If you wish to leave Türkiye while your residence permit application is under evaluation'
+    S5: 'Right of work for (foreign) students
+
+
+      Foreign students attending an associate, undergraduate, graduate or postgraduate programme in Turkey
+      may work, provided that they obtain a work permit. However the right of work for associate or undergraduate
+      students starts after the first year (of their study). Work permit applications shall be made to
+      the Ministry of Labour and Social Security.
+
+
+      What Are The Reasons Of Refusal, Cancelation Or Non-Renewal Of Student Residence Permits?
+
+
+      Under the following cases a student residence permit shall not be issued, be cancelled if has been
+      issued, be refused renewal when:
+
+
+      - The requirements for issuing a student residence permit are not met or no longer apply;
+
+
+      - Evidence exists that the studies are possibly not to be continued;
+
+
+      - It is determined that the student residence permit has been used for a purpose other than it is
+      issued for;
+
+
+      - There is a current removal decision or an entry ban to Turkey with respect to the foreigner
+
+
+      4'
+    S6: '**Working while studying**
+
+
+      In particular, international students enrolled in a master''s or PhD program in Türkiye can work
+      as researchers in scientific projects related to their work to finance their graduate studies. Some
+      private universities also accept graduate students with full scholarships and can provide assistantships
+      for students in exchange for this scholarship. Undergraduate students will often find opportunities
+      to work in a part-time job, according to their course schedules.
+
+
+      If you have a plan to work in your student life, what you need to know first is that your student
+      residence permit does not cover the work permit alone. Therefore, if you want to work during your
+      studies, you will first need to obtain a work permit. There are different types of work permits
+      such as short-term, perpetual, independent work and are given by General Directorate of International
+      Labour.'
+    S7: '#### Residence Permit After Graduation
+
+
+      As is known, after your graduation, you must leave Turkey within 10 days after the expiration date
+      of your student residence permit card. However, some of our students wish to stay in Turkey for
+      reasons such as finding a job or continuing their education. To enable these students to stay in
+      Turkey legally without needing to leave the country, all our full-time students who meet the condition
+      of **having graduated within the last 6 months** from the university can apply for a short-term
+      residence permit transition from a student residence permit. In this way, you can get a short-term
+      residence permit for about up to 1 year. We briefly mention the general information on the issue
+      here. However, you can call 157 for the details and the best answers.'
+    S8: 'The student residence permit will not entitle the parents as well as other family members of
+      the foreigner any right to obtain a residence permit. They may apply separately for a residence
+      permit if they meet the conditions.
+
+
+      Foreign students attending a pre-graduate/associate, under¬graduate, graduate or doctorate program
+      in Turkey may work, provided that they obtain a work permit. However the right of work for pre-graduate/associate
+      or undergraduate students starts after the first year of their study and the weekly working hours
+      will not exceed maximum twenty-four hours. The principles and procedures governing the right of
+      work for pre-graduate/associate or undergraduate students will be determined separately.'
+  faithful: ''
+  correctness: ''
+- id: q034
+  question: If I want to freelance while studying in Germany as an international student, is the usual
+    student work allowance enough by itself?
+  reference_answer: No. Self-employed or freelance work is only possible if the foreigners authority permits
+    it.
+  answer: No, not if you are from a non-EU country. The standard allowance of 140 full days or 280 half
+    days a year covers ordinary jobs, but self-employed or freelance work is only possible if the Ausländerbehörde
+    (foreigners' office) permits it [S3]. The DAAD guide says such work is evaluated case by case [S4].
+    In Hamburg, you apply for this permit at the Foreigners Registration Department. It may be granted
+    only if it does not jeopardise completing your studies [S1]. Freelancing beyond the 140-day rule is
+    usually allowed only for work in a limited timescale [S1]. Freelancing without a permit can bring
+    a fine of up to 5,000 euros and put your residence right at risk [S1]. Students from the EU may work
+    self-employed without restriction [S8]. The Hamburg details come from one city's guide, so other cities
+    may differ. This is not legal advice; please confirm with your local foreigners' office.
+  sources:
+    S1: 'Registration Department for this.
+
+      Students from non-EU states who wish to work self-employed or as a freelancer
+
+      (e.g. teaching, translating, interpreting, etc.) may apply for a permit for this from
+
+      the Foreigners Registration Department. Self- employment may be allowed during
+
+      studies, but only if this does not jeopardise the completion of the studies (e.g. when
+
+      doing voluntary work in principle similarly to an employee). A permit for working
+
+      self-employed or as a freelancer extending beyond the 140-day rule will usually only
+
+      be granted when this involves work in a limited timescale.
+
+      If you work self-employed or as a freelancer without a permit you are also acting
+
+      improperly and may be fined up to 5000 euros and may be risking your right of
+
+      residence in Germany.
+
+      3.2.8 Family members
+
+      Your family members may have unrestricted gainful employment (i.e. self-
+
+      employed, as a freelancer and dependent as an employee) if they enjoy freedom of
+
+      movement themselves or if they have a residence title for the purpose of
+
+      subsequent immigration of dependents according to §§ 27 to 36 AufenthG.'
+    S2: 'the special
+
+      conditions
+
+      at
+
+      http://www.hamburg.de/contentblob/2807058/data/freischaffende-
+
+      kuenstler.pdf.
+
+      In both cases, whether you want to work as an entrepreneur or freelancer, your
+
+      activities must promise at least as much income as you need to independently
+
+      ensure your means of subsistence (standard rate of unemployment benefit,
+
+      Bürgergeld, according to SGB II plus the actual costs of your accommodation and
+
+      at least 100 euros for allowances (see Part-time posts) as well as health and care
+
+      insurance).
+
+      Self-employed and freelance workers are legally obliged in Germany to take out
+
+      sufficient health and long term care insurance (Pflegeversicherung) whose scope of
+
+      benefits corresponds roughly to that of the statutory health insurance in Germany.
+
+      Before concluding such insurance you should seek advice from an independent body
+
+      such as Studierendenwerk Hamburg (see A below). Freelance artists may get
+
+      insurance at the Künstlersozialkasse (KSK).19
+
+      8.3
+
+      Family members
+
+      Your family members may have unrestricted gainful employment (i.e. self-employed
+
+      and dependant) if they enjoy freedom of movement themselves or if they have a
+
+      residence title for the purpose of subsequent immigration of dependents according
+
+      to §§ 27 to 36 AufenthG. If your family members have any other residence permit,
+
+      their respective right to gainful employment results from the documents issued by'
+    S3: '# Side jobs
+
+
+      There are many ways for international students in Germany to earn money while they study, for example
+      as wait staff, academic assistants or private tutors. But there are some restrictions.
+
+
+      ## Rules for students
+
+
+      Students from the European Union, Iceland, Liechtenstein, Norway and Switzerland enjoy **unrestricted
+      access** to the German labour market and have practically the same rights as German students. However,
+      if they work more than 20 hours per week they must pay certain insurance contributions (just like
+      German students). For students from other countries, special legal regulations apply:
+
+
+      1. International students from other countries are allowed to work 140 full days or 280 half days
+      per year. Self-employed work or freelancing is only possible if permitted by the Ausländerbehörde.
+
+      2. Students who want to work more need permission from the (Federal Employment Agency) and the (foreigners''
+      office), which in turn will ask the Agentur für Arbeit (employment agency). Permission can only
+      be granted in cases of special financial need.'
+    S4: "studies will take up a lot of your time,\ntoo. It is very unlikely that you will be able\nto\
+      \ fund your studies completely by working\npart-time, and on top of this there are rules\non how\
+      \ much students can work.\nIf you come from the EU or EEA, you have\nthe same employment rights\
+      \ as German\nstudents. You have free access to the em-\nployment market. However, if you work\n\
+      more than 20 hours a week you must pay\ninsurance contributions. Your studies will\nalso suffer\
+      \ if you are working that long every\nweek.\nIf you come from a non-EU or EEA country,\nthe following\
+      \ rules apply to you:\n\aYou can work up to 140 full days or 280\nhalf days a year without having\
+      \ to get ap-\nproval. Self-employed or freelance work\nmust be evaluated on a case-by-case\nbasis.\n\
+      \aIf you want to work more than these lim-\nits, you must get approval from your local\nemployment\
+      \ agency and the immigration\noffice.\n\aResearch assistants at higher education\ninstitutions are\
+      \ exempt from these rules.\nThere is no limit on how much they can\nwork, but they must still inform\
+      \ the immi-\ngration office.\nYou can find more information at"
+    S5: 'How can you cover these costs? While most
+
+      international students are supported by
+
+      their parents, one in two also makes an
+
+      income by working part-time. A further
+
+      22% have savings and 15% receive schol-
+
+      arships.
+
+      EARNING MONEY AND STUDYING
+
+      If you want to earn money from a job, you need to be aware of the law. No spe-
+
+      cial rules apply to students from the EEA (European Economic Area) or Switzer-
+
+      land, who can work up to 20 hours a week, just like their German counterparts.
+
+      All other students, however, can only work up to 140 full days or 280 half days a
+
+      year. If you want to work more, you will need to get approval. Are you interested
+
+      in a position as a working student? In this case, inform yourself about the current
+
+      conditions.
+
+      There are all kinds of scholarships in Ger-
+
+      many, but unlike other countries, these
+
+      are not always awarded by higher educa-
+
+      tion institutions. The German Academic
+
+      Exchange Service (DAAD) stands out in this
+
+      area thanks to the wide range of scholar-
+
+      ships it offers for international students.
+
+      You can find out more in your home country
+
+      through the DAAD’s global network. Other
+
+      organisations which offer'
+    S6: '24
+
+      Studying and Working in Germany
+
+      ... I am already living and working in Germany under another
+
+      residence title, and I also want to take up self-employment
+
+      A residence title can generally be issued either for dependent employment
+
+      or freelance/self-employment.
+
+      If you have already received a residence permit for freelance employment,
+
+      you can be allowed to take up self-employment without requiring a new
+
+      residence permit (section 21 subs. 6 Residence Act). This requires the nec-
+
+      essary permits under other regulations to have been issued or their issu-
+
+      ance be pending.
+
+      2.5
+
+      Persons seeking employment
+
+      Î
+
+      Î
+
+      I am...
+
+      Î
+
+      Î
+
+      ... seeking employment
+
+      ... after having recently graduated from a German university
+
+      (Residence title under section 16 subs. 4 Residence Act)
+
+      Have you recently completed your studies at a German university? Are
+
+      you also able to secure your livelihood in Germany by yourself? In this
+
+      case, your residence permit can be extended in order to find suitable em-
+
+      ployment after graduating.'
+    S7: '## Rules for part time jobs in Germany
+
+
+      Labour regulations for international students are very strict. So it is important to know them.
+      Violators can be expelled. As an international student, your permitted working hours depend on whether
+      you are from the EU (including Iceland, Liechtenstein, Norway and Switzerland) or not.
+
+
+      The provision on secondary employment is very closely linked to the residence title. Therefore,
+      check exactly which regulations apply to you.'
+    S8: '3
+
+      Working during studies
+
+      Generally all students in Germany may work no more than 20 hours per week during
+
+      a lecture period (Vorlesungszeit), in order to be considered as students within the
+
+      social security system.
+
+      Anyone who works more than 20 hours per week while the university is in session
+
+      counts as an employee under social security law and must then pay earnings-related
+
+      contributions to health, pension and unemployment insurance schemes (Kranken-,
+
+      Renten- und Arbeitslosenversicherung). Employee status under social security law
+
+      may, however, lead to loss of your student residence permit if the amount of work
+
+      you do impairs the success of your studies. Since there are various things you need
+
+      to take into consideration when temping, especially if you are combining multiple
+
+      jobs, it is advisable to seek advice on details from the Hamburg student union (see
+
+      no. A).
+
+      3.1
+
+      Students from EU states
+
+      Students from the EU states and their family members enjoy freedom of movement
+
+      for workers and freedom of establishment and may work self-employed or for an
+
+      employer without restriction.
+
+      3.2
+
+      Students from non-EU states
+
+      International students (as well as Studienkolleg participants) from non-EU
+
+      countries are allowed to work but must follow several rules. As an'
+  faithful: ''
+  correctness: ''
+- id: q035
+  question: Can students from outside the EU simply exceed the German student work-day limit if they find
+    more shifts?
+  reference_answer: They need permission from the Federal Employment Agency to work more than the stated
+    140 full or 280 half days.
+  answer: 'No. As a non-EU student you may work 140 full days or 280 half days per calendar year without
+    approval [S3][S6]. If you want to work more, you need approval from the employment agency and the
+    immigration office (Ausländerbehörde) [S3][S4]. Sources describe this permission as limited: DAAD
+    says it is granted only in cases of special financial need [S4], and TUM says exceptions are made
+    only in individual cases, with no automatic right [S1]. Working beyond 140 days off campus without
+    a permit can bring a fine of up to 5,000 euros and a check on revoking your residence permit [S8].
+    Both you and your employer must check whether the 140 days are used up [S8]. The limit resets only
+    in January, not when you extend your permit [S2]. Part-time on-campus student jobs are allowed throughout
+    the year [S1][S6], and research assistants at universities are exempt but must inform the immigration
+    office [S3]. This is not legal advice; confirm with your Foreigners'' Office.'
+  sources:
+    S1: '## 8. Find a part-time job
+
+
+      Foreign students enrolled in a German university may work up to a maximum of 140 full days per calendar
+      year. Additionally, part-time student employment at a school of higher education is permitted throughout
+      the year. However, for this you require the **authorization pursuant to immigration law from the
+      Foreigners’ Office in your residence permit** (Section 16b, para 3 AufenthG, German Residence Act).
+      Any employment beyond this will generally not be possible. Exceptions can only be made in individual
+      cases for temporary hardships or with a special justification. However, students do not have an
+      automatic right to this exception.
+
+
+      EU students from the "old" EU states are normally permitted to work for an unlimited period of time
+      (within the scope of the general provisions for students); citizens of the "new" EU states (accession
+      from 2004 on) require permission from the employment agency for employment for more than 120 days.
+
+
+      In case of an employment relationship (e.g. Mini job, Hiwi-job, working student) during an exchange
+      stay to at least finance themselves on a partially part, there is an obligation to have health insurance.'
+    S2: '2. during the lecture period you can work up to 20 hours a week. This will then be
+
+      counted as two and a half days on your workday account. You are free to distribute
+
+      the working hours within the week;
+
+      3. outside the period of lectures you can work without restriction. These working
+
+      hours are then counted as two and a half days on your working day account.
+
+      Night shifts of a maximum of eight hours count as one working day. This means
+
+      that you can also have fixed student jobs - e.g. three working days a week for 40
+
+      weeks a year. The only days counted are those on which you do in fact work. Paid
+
+      or unpaid holidays and sick days are therefore not counted towards the 140 days
+
+      or 280 half days. When calculating the annual period, the calendar year is essential.
+
+      This applies regardless of when you arrive in Germany or when you complete your
+
+      studies. So, if you have already worked for 140 days in October and then decide to
+
+      extend your residence permit, you will not receive a new 140 days, but will be
+
+      allowed to work again in January of the following year.'
+    S3: "studies will take up a lot of your time,\ntoo. It is very unlikely that you will be able\nto\
+      \ fund your studies completely by working\npart-time, and on top of this there are rules\non how\
+      \ much students can work.\nIf you come from the EU or EEA, you have\nthe same employment rights\
+      \ as German\nstudents. You have free access to the em-\nployment market. However, if you work\n\
+      more than 20 hours a week you must pay\ninsurance contributions. Your studies will\nalso suffer\
+      \ if you are working that long every\nweek.\nIf you come from a non-EU or EEA country,\nthe following\
+      \ rules apply to you:\n\aYou can work up to 140 full days or 280\nhalf days a year without having\
+      \ to get ap-\nproval. Self-employed or freelance work\nmust be evaluated on a case-by-case\nbasis.\n\
+      \aIf you want to work more than these lim-\nits, you must get approval from your local\nemployment\
+      \ agency and the immigration\noffice.\n\aResearch assistants at higher education\ninstitutions are\
+      \ exempt from these rules.\nThere is no limit on how much they can\nwork, but they must still inform\
+      \ the immi-\ngration office.\nYou can find more information at"
+    S4: '# Side jobs
+
+
+      There are many ways for international students in Germany to earn money while they study, for example
+      as wait staff, academic assistants or private tutors. But there are some restrictions.
+
+
+      ## Rules for students
+
+
+      Students from the European Union, Iceland, Liechtenstein, Norway and Switzerland enjoy **unrestricted
+      access** to the German labour market and have practically the same rights as German students. However,
+      if they work more than 20 hours per week they must pay certain insurance contributions (just like
+      German students). For students from other countries, special legal regulations apply:
+
+
+      1. International students from other countries are allowed to work 140 full days or 280 half days
+      per year. Self-employed work or freelancing is only possible if permitted by the Ausländerbehörde.
+
+      2. Students who want to work more need permission from the (Federal Employment Agency) and the (foreigners''
+      office), which in turn will ask the Agentur für Arbeit (employment agency). Permission can only
+      be granted in cases of special financial need.'
+    S5: '3
+
+      Working during studies
+
+      Generally all students in Germany may work no more than 20 hours per week during
+
+      a lecture period (Vorlesungszeit), in order to be considered as students within the
+
+      social security system.
+
+      Anyone who works more than 20 hours per week while the university is in session
+
+      counts as an employee under social security law and must then pay earnings-related
+
+      contributions to health, pension and unemployment insurance schemes (Kranken-,
+
+      Renten- und Arbeitslosenversicherung). Employee status under social security law
+
+      may, however, lead to loss of your student residence permit if the amount of work
+
+      you do impairs the success of your studies. Since there are various things you need
+
+      to take into consideration when temping, especially if you are combining multiple
+
+      jobs, it is advisable to seek advice on details from the Hamburg student union (see
+
+      no. A).
+
+      3.1
+
+      Students from EU states
+
+      Students from the EU states and their family members enjoy freedom of movement
+
+      for workers and freedom of establishment and may work self-employed or for an
+
+      employer without restriction.
+
+      3.2
+
+      Students from non-EU states
+
+      International students (as well as Studienkolleg participants) from non-EU
+
+      countries are allowed to work but must follow several rules. As an'
+    S6: 'and freedom of establishment and may work self-employed or for an
+
+      employer without restriction.
+
+      3.2
+
+      Students from non-EU states
+
+      International students (as well as Studienkolleg participants) from non-EU
+
+      countries are allowed to work but must follow several rules. As an international
+
+      student you are allowed to work part-time from the first year of your preparatory
+
+      programme (language course, preparatory college, preparatory course, etc.).
+
+      The rules that apply in this context are the following:
+
+      “Employment of up to 140 days in accordance with § 16b (3) AufenthG and part-time
+
+      on-campus student work is allowed.”
+
+      3.2.1 140-day rule
+
+      International students from non-EU states may work 140 days or 280 half-days per
+
+      year without needing the approval of the Employment Agency.
+
+      The 140 full days refer to your workday account. The calculation is taken with
+
+      reference to the current calendar year.
+
+      Your workday account can also be filled with half days. You can decide for each
+
+      calendar week how your workday account is to be filled. The following options are
+
+      available:
+
+      1. working hours of up to four hours a day count as a half day if the usual daily
+
+      working time totals eight hours (the maximum duration for a half day is'
+    S7: 'How can you cover these costs? While most
+
+      international students are supported by
+
+      their parents, one in two also makes an
+
+      income by working part-time. A further
+
+      22% have savings and 15% receive schol-
+
+      arships.
+
+      EARNING MONEY AND STUDYING
+
+      If you want to earn money from a job, you need to be aware of the law. No spe-
+
+      cial rules apply to students from the EEA (European Economic Area) or Switzer-
+
+      land, who can work up to 20 hours a week, just like their German counterparts.
+
+      All other students, however, can only work up to 140 full days or 280 half days a
+
+      year. If you want to work more, you will need to get approval. Are you interested
+
+      in a position as a working student? In this case, inform yourself about the current
+
+      conditions.
+
+      There are all kinds of scholarships in Ger-
+
+      many, but unlike other countries, these
+
+      are not always awarded by higher educa-
+
+      tion institutions. The German Academic
+
+      Exchange Service (DAAD) stands out in this
+
+      area thanks to the wide range of scholar-
+
+      ships it offers for international students.
+
+      You can find out more in your home country
+
+      through the DAAD’s global network. Other
+
+      organisations which offer'
+    S8: 'Caution: Anybody who works for more than 140 days (“off campus”) per year and
+
+      has no permit from the Foreigners Registration Department is acting improperly
+
+      and may be fined up to 5000 euros. The Foreigners Registration Department will
+
+      also check whether revocation of the previous residence permit according to §
+
+      52 Para. 3 AufenthG comes into question and thereby the ending of your right of
+
+      residence in Germany.
+
+      Whether the 140 days have already been used up must be checked by employees
+
+      and employers.
+
+      3.2.7 Working self-employed or as a freelancer
+
+      Students from non-EU states require a permit for working self-employed or for
+
+      freelance jobs. If you receive a job offer which does not involve a 450 euro/month
+
+      job and you are to submit an invoice with tax number or a trade licence, then this is
+
+      a self-employed or freelance job which is only automatically permitted to EU
+
+      citizens. Students from non-EU states require a separate permit from the
+
+      Foreigners Registration Department for this.
+
+      Students from non-EU states who wish to work self-employed or as a freelancer
+
+      (e.g. teaching, translating, interpreting, etc.) may apply for a permit for this from
+
+      the Foreigners Registration Department. Self- employment may be allowed during'
+  faithful: ''
+  correctness: ''
+- id: q037
+  question: If my Turkish visa allows a longer visit, can I stay more than 90 days in any 180-day period?
+  reference_answer: No. The permitted stay cannot exceed 90 days within each 180-day period.
+  answer: 'No. With a visa you can stay in Türkiye a maximum of 90 days within 180 days, even if the visa
+    itself is valid for longer, such as one year [S4]. Turkish consular offices issue visas with a maximum
+    duration of stay of 90 days [S1]. Holding two passports does not get around this: you cannot stay
+    90 days on each passport within the same 180 days [S1].
+
+
+    To stay longer, you need a residence permit:
+
+    - Apply for a "Short Term Residence Permit" at the Provincial Directorate of Migration Administration
+    [S1].
+
+    - If you are coming on an education visa, it allows a 90-day stay only, so you must apply for a residence
+    permit at e-ikamet.goc.gov.tr to stay beyond that [S8].
+
+
+    If you overstay your visa, you will have to pay a fine [S3].
+
+
+    This is not legal advice, and the rules can change. Please confirm your situation with the Presidency
+    of Migration Management or a Turkish consulate.'
+  sources:
+    S1: '\- It is not possible for foreigners holding two passports to stay in Türkiye for 90 days each
+      with their two different passports within the last 180 days.
+
+
+      \- In all types of visa applications, Turkish consular offices may issue visas with a maximum duration
+      of stay of 90 days. The foreigners who wish to stay longer than 90 days in Türkiye, should apply
+      for “Short Term Residence Permit” at the Provincial Directorate of Migration Administration in order
+      to extend their residence.
+
+
+      \- The residence permit of the foreigners will be cancelled if they stay outside Türkiye for longer
+      than 120 days in total during the last year.'
+    S2: By issuing a residence permit for the foreigners who will stay in Turkey for more than the maximum
+      allowed visa period or visa exemption period, it is aimed to ensure that the visas or visa exemptions,
+      which are mostly issued for touristic purposes, are not used for unintended purposes. In this regard,
+      if the foreigners, who have completed their 90 days in a 180 day-period, want to stay in our country
+      for more than the issued duration, then they are required to apply for one of the residence permit
+      types, of which they meet the conditions, and to obtain a residence permit.
+    S3: 'Foreigners arriving at our border gates after completing the stay duration of 90 days within
+      180 days in Turkey may be allowed to enter into the country if there is not any other obstacle to
+      the entry and if they pledge to apply to the Foreigners Department in the province where they will
+      stay within ten (10) days to obtain a residence permit as of the date of entry. In this respect,
+      the entry procedures will be initiated within the scope of the general provisions for the foreigners
+      who accept the conditions stated in the standard form handed to them.
+
+
+      Those who do not apply for a residence permit within ten days will be regarded as having committed
+      a residence permit violation as of the entry date.
+
+
+      An entry ban order will not be issued against the foreigners who exceed the duration of visa, visa
+      exemption or residence permit for more than ten days and arrive at the border gates to exit before
+      a removal decision is taken against them. However, the foreigners who violate the mentioned durations
+      of visa, visa exemption, work permit or residence permit will pay a fine.'
+    S4: '##### I have a one-year visa. Can I stay in Turkey continuously in one-year ?
+
+
+      You can stay in Turkey maximum 90 days within 180 days with a visa.
+
+
+      3
+
+
+      ##### I want to apply for the residence permit but there is no Turkish Consulate in my residence
+      country. How may I enter Turkey?
+
+
+      If you do not have the right for visa exemption, you can enter to Turkey with applying a visa from
+      the Turkish Foreign Representative Office in any of third countries.
+
+
+      4'
+    S5: '\- For United Nations (UN) Travel Document (Laissez-Passer) holders who have blue UN travel documents,
+      visa exemption with 90 days length of stay within the preceding 180 days may apply during their
+      official visit to Türkiye if they can certify their official assignment. Red UN Travel Document
+      holders, shall be exempt from entry visa and may stay in Türkiye 90 days within the preceding 180
+      days regardless of their purpose of visit. General visa provisions shall apply for Blue UN travel
+      document holders subject to regulations specified according to their country of origin.
+
+
+      \- Visa applications for travels except for touristic or trade purposes (work or study etc.) will
+      need to obtain visa through Turkish Representations in the abroad.
+
+
+      \- Regardless of the visa regime applied towards the citizens of a country, the travel document
+      holders of that country need to obtain visa from Turkish missions beforehand.'
+    S6: 'Example A: In order to enter Türkiye having a visa with 90 days “duration of stay”, foreigners
+      should hold a travel document valid at least for an additional 60 days which totals to 150 days
+      (90 days + 60 days) of validity at the time of entrance.
+
+
+      Example B: In order to enter Türkiye having a visa with 30 days “duration of stay”, foreigners should
+      hold a travel document valid at least for an additional 60 days which totals to 90 days (30 days
+      + 60 days) of validity at the time of entrance."
+
+
+      The following categories are exempted from this provision:
+
+
+      \- Citizens of countries who are allowed to enter Türkiye with their national ID’s in accordance
+      with “European Agreement on Regulations governing the Movement of Persons between Member States
+      of the Council of Europe”,
+
+
+      Holders of diplomatic and official passports are also exempted from this Article.'
+    S7: '**Slovakia**: Ordinary passport holders are exempt from visa for their travels to Türkiye with
+      touristic purposes up to 90 days within 180 days, starting from the first entry date. Official passport
+      holders are exempt from visa for their travels up to 90 days within 180 days, starting from the
+      first entry date.
+
+
+      **Slovenia**: Ordinary passport holders are exempted from visa for their travels to Türkiye with
+      touristic purposes up to 90 days within 180 days, starting from the first entry date. Official passport
+      holders are exempted from visa for their travels to Türkiye up to 90 days within six months.
+
+
+      **Solomon Islands**: Ordinary and official passport holders are required to have visa to enter Türkiye.
+      Ordinary and official passport holders can get their visas from Turkish diplomatic or consular representations
+      abroad. Ordinary passport holders who hold a valid Schengen members or USA, UK, Ireland visa or
+      residence permit may get their visas via the website www.evisa.gov.tr provided that they meet certain
+      conditions.
+
+
+      **Somalia**: Ordinary and official passport holders are required to have visa to enter Türkiye.'
+    S8: 'Important notes:
+
+      • Your education visa will have 90-day stay only. You must apply for a residence permit
+
+      on https://e-ikamet.goc.gov.tr which will allow you to stay beyond that period.
+
+      • In individual cases, you may be required to provide additional documents.
+
+      • Please do not finalize your travel arrangements until you are notified about the
+
+      outcome of your visa application.
+
+      • It is strongly advised for applicants to apply at least one month prior to their intended
+
+      trip.
+
+      • Turkish Consulate in New York cannot expedite a visa application.'
+  faithful: ''
+  correctness: ''
+- id: q040
+  question: I have a Türkiye scholarship but no Turkish proficiency certificate. What language support
+    may be offered?
+  reference_answer: A one-year language preparation program is offered to students admitted to Turkish
+    higher education programs without a Turkish proficiency certificate.
+  answer: With a Türkiye Scholarship, you can study a 1-year Turkish language course, which is part of
+    the programme [S4]. The Türkiye Scholarships website presents this course as a standard benefit; it
+    does not say it depends on whether you lack a Turkish Proficiency Certificate [S4]. If you are instead
+    on the separate CoHE (YÖK) Scholarship, a one-year language preparation is offered when admitted students
+    do not have a Turkish Proficiency Certificate [S1]. That scholarship also covers Turkish language
+    tuition costs for non-Turkish scholars [S2]. Separately, some universities in Türkiye offer Turkish
+    language training [S3]. Note that individual universities may limit which certificates they accept
+    later. For example, ITU accepts only certificates from ITU TÖMER or the Yunus Emre Institute [S6].
+    This is not legal advice, so please confirm the details with Türkiye Scholarships and your university.
+  sources:
+    S1: '**CoHE Scholarship for International Students**
+
+
+      It is aimed for international students at undergraduate and graduate levels in countries signing
+      protocols with the Council of Higher Education. If students who are admitted in Turkish higher education
+      programs do not have Turkish Proficiency Certificate, a one year language preparation is offered
+      to the students.
+
+
+      For more information about YÖK Scholarship Click here'
+    S2: '- ##### What Are The Supports Offered To Foreign Students By CoHE Scholarship?
+
+      - **800 TL** Scholarship Fee to undergraduate students **, 1400 TL** to graduate students
+
+      - Undergraduate and graduate tuition fee
+
+      - Turkish language tuition costs for non-Turkish scholars
+
+      - Health insurance
+
+      - Accommodation in dormitories of Institution of Credit and Dormitories
+
+
+      - ##### Which countries benefit from CoHE scholarship awarded to foreign students as of 2018-2019
+      academic year? Albania, Bangladesh, Palestine, Kosovo, Macedonia, Pakistan (Azad Kashmir region),
+      Rwanda and Ukraine.
+
+
+      - ##### Who Can Apply To CoHE Scholarship Awarded To Foreign Students?
+
+      - Foreign students who are coming from countries where CoHE signed a protocol
+
+
+      - ##### What is a Turcology Scholarship? What is a Turcology Scholarship? Provided that the countries
+      where the Council of Higher Education has signed cooperation act and / or a memorandum of understanding
+      have priority, this is a scholarship which started for the first time in the 2017-2018 academic
+      year for the undergraduate students who are studying in Turkish Language and Literature, Turcology
+      and Turkish Language programs of foreign countries and higher education institutions to be determined
+      by the Council of Higher Education.'
+    S3: '- ##### What are the supports given to students coming to Turkey?
+
+      - It is possible to participate in the operation with or without grants. The amount of grants varies
+      according to the countries.
+
+      - Students who come to Turkey for education mobility are exempt from tuition fees.
+
+      - Students who come to Turkey for internship mobility are exempt from work permits.
+
+      - There are universities with facilities such as accommodation, transportation support and Turkish
+      language training.
+
+
+      - ##### From which can scholars come to Turkey?
+
+      - With a few exceptions, participation from all countries of the world is possible.'
+    S4: 'SUBSCRIBE!
+
+
+      high-quality education in Türkiye!
+
+
+      A Comprehensive and Unique Scholarship Program
+
+
+      Türkiye Scholarships considers everything that international students will need during their academic
+      studies while discovering Türkiye and acquiring new skills.
+
+
+      \* Provides **university and department placements** unlike other higher education scholarship programs.
+
+
+      \* **Covers** tuition fees.
+
+
+      \* Allows you to learn the language of the country by studying **a 1-year Turkish language course.**
+      Thus, resources are diversified in your academic research and daily life becomes more pleasurable.
+
+
+      \* Provides **accommodation** for students arriving in a new country.
+
+
+      \* Covers your **once-off flight ticket.**
+
+
+      \* Allows you to take full advantage of widespread health services with **general health insurance.**
+
+
+      \* Also provides **monthly stipend.** 6.500 TL at Associate’s and Bachelor’s levels, 9.500 TL at
+      Master''s level and 13.000 TL at PhD level per month.'
+    S5: '- ##### I lost my Turkish Proficiency Certificate. What should I do? I lost my Turkish Proficiency
+      Certificate. What should I do? A candidate who loses Turkish Proficiency Certificate may submit
+      a petition containing his/her request for a new document to the center where he / she has entered
+      the exam and may request a new one-off document provided that he / she pays 20% of the examination
+      fee.
+
+
+      - ##### What should I take with me when entering the Turkish Proficiency Exam? What should I take
+      with me when entering the Turkish Proficiency Exam? You must have your exam entry certificate with
+      your ID or passport on the day of the exam. You can have water with you in transparent bottle. It
+      is not allowed to enter the exam hall with watch, mobile phone, pager, calculator, bag etc! There
+      is a wall clock in each examination room so that the candidates can check time and duration. Please
+      note that you must be at the test center at least half an hour before the start of the test'
+    S6: 'In accordance with the decision of the ITU Senate dated 22.12.2022 and numbered 820, the Turkish
+      Proficiency Certificate will be valid only if it is obtained from ITU Turkish Teaching Application
+      and Research Center (TÖMER) or Yunus Emre Institute, to be implemented as of the 2023-2024 Academic
+      Year. Certificates obtained from other TÖMER centers will not be valid.
+
+
+      You may reach the foreign language exams accepted by the ITU Senate and the minimum scores, here
+      .
+
+
+      You can find detailed information about ITU TÖMER (Turkish Language Center) here.
+
+
+      +90 212 285 29 09
+
+
+      Registrar''s Office
+
+
+      34469 Maslak - İstanbul'
+    S7: '**Türkiye Scholarships**
+
+
+      In addition to providing financial support, Türkiye Scholarships allow international students to
+      be placed in the university in their intended application program. With this feature, it differs
+      from other scholarship programs in the world. The aim of Türkiye Scholarships is to ensure that
+      students benefit from social and cultural activities during their time in Türkiye as well as university
+      education. This Scholarship Program also covers the needs of students such as accommodation and
+      health insurance during the education period.
+
+
+      For more information about Türkiye Scholarships Click here'
+    S8: '- ##### What kind of services and opportunities do Turkey Scholarships offer to international
+      studen **What kind of services and opportunities do Turkey Scholarships offer to international students?**
+
+      Turkey Scholarships offer following services to scholarship holders: Scholarship candidates are
+      placed in universities and programs by Turkey Scholarships, Airport pick-up service and support
+      and orientation programmes about life in Turkey, Accommodation in Dormitories Monthly pocket money
+      Student Bank Account Procedures for Student Insurance Culture and Sports activities International
+      Students Academy, International Students Social Sciences Congress, Seminars and Workshops Internship
+      and Vocational Education Programs International Students Graduation Program Membership to Turkish
+      Alumni Network
+
+
+      - ##### What are the documents required for applying? **What are the documents required for applying?**
+
+      For applications through Internet, all applicants must present the following documents: A valid
+      ID document/card or a valid passport A recently taken photo of the candidate National Exam results
+      (if any) Diploma or Temporary Graduation Certificate Academic Transcript International exam results
+      (if requested by the selected program, such as GRE, GMAT) Language exam results (if requested by
+      the selected program) A written example of the research topic and the work you have done (for PhD
+      applicants only)'
+  faithful: ''
+  correctness: ''
+- id: q043
+  question: Do I need travel medical insurance for the Turkish student visa application through Miami?
+  reference_answer: Yes. The checklist requires international health insurance with at least $35,000 coverage
+    for urgent medical expenses or repatriation, covering the entire stay.
+  answer: 'Yes. For a Turkish student visa through the Consulate General in Miami, you must show proof
+    of international health insurance, and international travel health insurance is acceptable [S1]. Key
+    conditions: it needs a minimum coverage limit of $35,000 for the entire validity of your visa, for
+    urgent medical expenses and/or repatriation due to accident or sudden illness [S1]. It must cover
+    your entire stay [S1]. The insurance document must show your name and surname [S2]. More generally,
+    Türkiye''s Foreign Ministry also says all visa applicants need medical insurance valid during their
+    stay [S7]. Note that once you are in Türkiye, separate health insurance rules apply to residence permits
+    [S8]. These rules can change, so please confirm details with the Miami consulate (consulate.miami@mfa.gov.tr)
+    before applying [S2]; this is not legal advice.'
+  sources:
+    S1: 'contact details, and Turkish ID
+
+      number of the host
+
+      o A letter of undertaking from the host
+
+      o A rental agreement for the Property
+
+      o Dormatory information.
+
+      8. Bank statements of the last 3 months.
+
+      • If the applicant covers their own expenses, the account must show at least 50 USD per
+
+      day for the planned stay
+
+      • If someone else covers the expenses, their bank statement and a letter of financial
+
+      guarantee must be provided
+
+      9. Proof of International Health insurance
+
+      • with a minimum coverage limit of $35,000 for the entire validity of your visa for urgent
+
+      medical expenses and/or repatriation due to accident or sudden illness.
+
+      • Must cover the entire duration of stay
+
+      • International travel health insurance is acceptable
+
+      10. Good Conduct Record / Criminal Background Check
+
+      • Must be obtained from the FBI
+
+      • Records from local police departments or other agencies are not accepted'
+    S2: '•
+
+      Visa applicants should be resident in our jurisdiction area (Florida, SC, NC, Georgia,
+
+      Puerto Rico)
+
+      •
+
+      Applicants are required to bring hard copies of the documents on the day of the interview.
+
+      •
+
+      In the event that neither Turkish nor English is spoken, every applicant is required to
+
+      arrange for a translator to accompany them to their interview. Failure to do so will
+
+      result in rescheduling the appointment with the stipulation that a translator must be
+
+      present.
+
+      •
+
+      Screenshots will not be accepted. Documents are requested in their original size.
+
+      •
+
+      The documents such as travel insurance, flight and hotel reservations must contain the name
+
+      and surname of the applicant/s.
+
+      •
+
+      In individual cases, the applicant may be required to provide additional documents which
+
+      may delay the visa issuance.
+
+      •
+
+      Turkish Consulate in Miami cannot expedite a visa application.
+
+      •
+
+      Please do not finalize your travel arrangements until you are notified about the outcome of
+
+      your visa application.
+
+
+      For further questions you may contact with us from consulate.miami@mfa.gov.tr'
+    S3: '1. One fully completed and signed application form (Please bring the visa application form
+
+      generated by the system)
+
+      2. National passport or official travel document and Copies of the first page.
+
+      • Must have at least 6 months of validity remaining.
+
+      • with a blank page to affix the visa
+
+      3. One recent passport – size (2”x2”) photograph (biometric, white background)
+
+      4. Proof of legal status in US (Residency Card, visa, authorization form from USCIS etc.)
+
+      • Valid I-20 or the letter from school is required for the student visa holders.
+
+      5. Student Certificate and Acceptance Letter from the university at which you wish to
+
+      study with the YÖKSİS code.
+
+      6. Outbound Flight Reservation (These reservations do not need to be purchased yet)
+
+      7. Accommodation Information
+
+      • If staying at a commercial facility, a reservation confirmation is required
+
+      • If staying at a non-commercial residence, one of the following must be provided:
+
+      o signed letter including the address, full name, contact details, and Turkish ID
+
+      number of the host
+
+      o A letter of undertaking from the host
+
+      o A rental agreement for the Property
+
+      o Dormatory information.
+
+      8. Bank statements of the last 3 months.
+
+      • If the applicant covers'
+    S4: 'TURKISH CONSULATE GENERAL IN MIAMI
+
+
+      11. Diploma or Transcript
+
+      • A diploma or most recent transcript obtained from the last educational institution
+
+      attended.
+
+      12. Non-refundable visa fee: CASH ONLY
+
+      •
+
+      Single Entry: $60.00($185.00 refugee travel document holders/ USA citizens).
+
+      •
+
+      Multiple Entry: $180.00 ($265.00 refugee travel document holders/ USA citizens).
+
+      13. Optional:
+
+      A pre-paid envelope (mail carrier of your choice) if you would like your visa-issued passport
+
+      to be returned by mail. (Turkish Consulate General in Miami is not responsible for any
+
+      delivery issues)
+
+
+      IMPORTANT NOTES:'
+    S5: 'TURKISH CONSULATE GENERAL IN MIAMI
+
+
+      STUDENT VISA APPLICATION PROCEDURE
+
+      Foreign nationals intending to pursue studies in Türkiye are required to obtain an education
+
+      visa prior to their arrival.
+
+
+      Application Procedure:
+
+      1. Assemble the required documents listed below.
+
+      2. Start an online application on www.konsolosluk.gov.tr and upload the documents when
+
+      prompted.
+
+      3. Print out and sign the application form. (Requirement #2)
+
+      4. After submitting the application successfully, schedule an appointment for the interview
+
+      which will take place at the Consulate.
+
+      5. Be present at the Consulate on the day of the interview with the hard copies of all required
+
+      documents listed below.
+
+
+      REQUIRED DOCUMENTS FOR TOURISM-BUSINESS'
+    S6: '• You can visit the İstanbul Immigration Office and submit this document along with a petition
+      stating you applied for General Health Insurance with your residence permit. You do not need to
+      take an appointment to submit it. Students who do not apply for the GSS within the 3-month legal
+      period for the application cannot benefit from this right afterward. Therefore, students are strongly
+      advised not to ignore this procedure. If you change your program or your program level (e.g. from
+      undergraduate to master’s) you have the right to apply again.
+
+
+      **Please note that all students have to have a valid health insurance during their stay in Turkey.
+      You can use the ones stated above. If you have a private health insurance on your own apart from
+      Aksigorta, if your health insurance expires, you have to renew your health insurance in order to
+      use for your residence permit card applications. Also, you have to be careful about its validity
+      for the residency purposes.**
+
+
+      *\*Since the mentioned processes are managed and regulated by state bodies such as the Ministry
+      of Health and the Ministry of Internal Affairs, the practices are open to change.*'
+    S7: '\- Visitors who are not exempt from entry visa must obtain their visas or schedule an appointment
+      with the Turkish Consular offices via Pre-Application System for Turkish Sticker Visa (www.visa.gov.tr).
+      The applicants who meet the requirements will be directed by the Pre-Application System for Turkish
+      Sticker Visa to the e-Visa system (www.evisa.gov.tr) In those countries where Türkiye does not have
+      a consular representation can also use online scheduling for appointments with the nearest accredited
+      consular office of Türkiye.
+
+
+      \- In order to avoid inconveniences that may be caused by delays in processing, it is recommended
+      to apply for visas at least one month in advance before the planned travel.
+
+
+      \- The visas submitted to foreigners do not guarantee absolute rights of entry to Türkiye.
+
+
+      \- Visa fees are not refundable in cases where applications are rejected
+
+
+      \- All applicants are required to have a medical insurance that will be valid during their stay
+      in Türkiye.
+
+
+      \- The length of stay provided by visa or visa exemption cannot exceed 90 days within each 180 days.
+      The regulation of 90 days of stay within the last 180 days is binding for all foreigners that will
+      travel to Türkiye.'
+    S8: 1\) Private or public health insurance is not required for those who can benefit from the health
+      care services in Turkey within the framework of bilateral social security agreements, provided that
+      they document this situation. 2) “Travel health insurance” covering the duration of stay will be
+      requested from the foreigners who request a residence permit in Turkey for less than a year. If
+      the travel health insurance does not cover the whole residence permit duration, the residence permit
+      is given to the foreigner but she/he is notified that the residence permit should be used by extending
+      the insurance duration; otherwise, cancellation of the permit may be possible. 3) For the residence
+      permit applications for a year or more; a) Residence permit procedures of those who prove that they
+      have applied to the Social Security Administration to have general health insurance will be concluded
+      without seeking for the valid health insurance condition. However, they should apply to the Social
+      Security Administration after receiving the residence permit and inform the authority, which they
+      have received the residence permit from, after finalizing this insurance. Otherwise, their residence
+      permits will be cancelled. (Valid health insurance is not required for the relatives of these people,
+  faithful: ''
+  correctness: ''
+- id: q055
+  question: When I extend my student residence permit in Hamburg, can I show my funds with a normal bank
+    account instead of a blocked account?
+  reference_answer: Yes. A regular current account showing enough money is sufficient. A blocked account
+    is only needed if you apply for a student visa before entering Germany, because the embassy requires
+    it.
+  answer: Yes. According to the Hamburg guide, your own bank statement can serve as proof of funds if
+    it clearly shows you have enough money to support yourself for the period of the residence permit
+    you are applying for; a regular current account is sufficient, and a blocked account (Sperrkonto)
+    is not required [S1]. The blocked account is only needed if you enter Germany on a student visa, in
+    which case the embassy requires proof that one was set up [S1]. The amount you must show is 992 euros
+    a month for the whole permit period, i.e. 11,904 euros per year [S8]. In Hamburg, renewals are applied
+    for at the 'Hamburg Service vor Ort' offices, and proof of financing is one of the required documents
+    [S5]. Note that this guide is from 2024; please confirm current requirements with your Foreigners'
+    Registration Office, as this is not legal advice.
+  sources:
+    S1: 'receive the money (e.g. bank statements with corresponding
+
+      bank transfers).
+
+       Your own bank statement clearly showing that you have enough money to
+
+      support yourself for the period of the residence permit applied for. A regular
+
+      current account is sufficient for this purpose. A blocked account (Sperrkonto) is
+
+      not required, unless you don’t enter Germany until receiving a student visa. In
+
+      this case, you must provide the embassy with proof that a blocked account has
+
+      been set up.
+
+       Visa-free employment (see figure 3.2.1) carried out on up to 140 days or 280
+
+      half days can sometimes also be used as proof as funds (please provide
+
+      employment contract)
+
+       A bank guarantee to be renewed annually.'
+    S2: 'exchange students) on the bank account. Each month, you are allowed to withdraw EUR 992 only.
+      Not all banks offer blocked accounts. From abroad, you can apply for a blocked account. Note: After
+      entering Germany, you will have **no** access to the money on the blocked account. You will be able
+      to withdraw money from this blocked account after having received your residence permit only. Granting
+      of the residence permit may take several weeks! Please bring along sufficient cash or have sufficient
+      money on another account in order to pay for your living in the first three months! Please see here
+      for more information: https://www.study-in-germany.de/en/germany/arrival/residence-permit/
+
+      https://www.study-in-germany.de/en/plan-your-studies/requirements/proof-of-financing/
+
+      - Declaration of financial support in writing by your parents, stating that all expenses during
+      your stay for studies in Germany will be covered by your parents. This document must be submitted
+      in original form and in German (or as a certified translation). As a rule, the signature must be
+      certified by a notary or the German Consulate and carry and official seal. In addition, certified
+      proofs of your parents income have to be presented (to confirm that financial resources are sufficient
+      to fund your studies in Germany).
+
+      - Declaration of commitment (Article 68'
+    S3: 'of sufficient funds to cover living expenses: A blocked account with a German bank containing
+      at least 11,904 euros, or a declaration of financial support, or a scholarship certificate, or a
+      notarised declaration from your parents undertaking to cover your living costs for the duration
+      of your studies, accompanied by proof of your parents’ income for the last three months'
+    S4: 'Special case: housing benefit:
+
+      With a residence permit according to § 16b AufenthG, you may be entitled to
+
+      housing benefit. However, you may only receive housing benefit if your livelihood
+
+      as a student is already secured and the housing benefit is only received as a
+
+      supplement. If you receive housing benefit without your livelihood being otherwise
+
+      secured, then this is a reason for the Foreigners’ Registration Office to revoke
+
+      your residence permit and ask you to leave the country.
+
+
+      For international students with a residence permit according to § 16b AufenthG, it
+
+      is therefore essential to seek advice from the Studierendenwerk Hamburg (see
+
+      figure. 10.3) before applying for a housing allowance!
+
+
+      8 see footnote 5
+
+      9you can find out the Foreigners Registration office (Hamburg Service vor Ort) responsible for your
+      address
+
+      here: www.hamburg.de/behoerdenfinder
+
+
+      11'
+    S5: '2.2.4 Where and how do I apply for a residence permit
+
+      You can make the initial application for your first residence title (and the initial
+
+      registration of your place of residence) during an appointment with the Hamburg
+
+      Welcome Center8 (please book ahead). The subsequent renewal must be applied for
+
+      at the ‘Hamburg Service vor Ort’ offices.9
+
+      2.2.5 What documents do I need
+
+      
+
+      Fully
+
+      completed
+
+      application
+
+      form.
+
+      (Download:
+
+      https://welcome.hamburg.de/contentblob/103150/f5307b3e9d78264fd8f27e5f748
+
+      8eb87/data/amt-m-m31-antrag-ae-eng-fra.pdf) Can be downloaded on the web site
+
+      https://welcome.hamburg.de/formulare/
+
+      
+
+      Biometrically compliant photograph (no older than six months)
+
+      
+
+      Current registration confirmation
+
+      
+
+      Rental agreement or other proof of accommodation
+
+      
+
+      Current certificate of study/confirmation of enrolment
+
+      
+
+      Proof of financing
+
+      
+
+      Proof of health insurance
+
+      2.2.6 Proof of financing and health insurance
+
+      The proof of financing is required because the right of residence presupposes that
+
+      foreign students are able to finance their own living expense. The application for
+
+      child benefit, parental benefit or advance child support payments such as ‘Kinder-
+
+      / Elterngeld’ or ‘Unterhaltsvorschuss’ is possible under certain conditions and not
+
+      detrimental to your student residence under immigration law.'
+    S6: '- The Aliens Registration Office responsible for you depends on your place of residence: Ausländerbehörde
+      Stadt Karlsruhe, Ausländerbehörde Landratsamt Karlsruhe (in German)
+
+      - In general: The service phone number of authorities in Karlsruhe is 115 in the fixed network of
+      Karlsruhe.
+
+      6. Money in cash: EUR 75.00 to EUR 110.00 depending on the duration of the residence permit.
+
+      7. Personal documents
+
+      8. Proof of financial resources: You must prove that you have **at least EUR 992 per month (EUR
+      11904 per year or EUR 5952 for exchange students staying only 6 months)**. The following forms of
+      proof are possible:
+
+      - A scholarship award notification from a German foundation / university or from your home country.
+      If the scholarship amount is below EUR 992 per month, you have to prove that you have the remaining
+      financial resources.
+
+      - Blocked account with a bank in Germany: For a residence permit of one year, you have to deposit
+      EUR 11904 (EUR 5952 for exchange students) on the bank account. Each month, you are allowed to withdraw
+      EUR 992 only. Not all banks offer blocked accounts. From abroad, you can apply for a blocked account.
+      Note: After entering Germany, you will have **no** access'
+    S7: '# Welcome
+
+
+      # Opening / unblocking a blocked account (for students only)
+
+
+      Opening a blocked bank account in Germany and unblocking it: quick info
+
+
+      For students, the living expenses in Germany can be proven in the visa procedure by opening a blocked
+      account. You are free to choose the bank. You can find providers who offer this service worldwide
+      on the website of the German Foreign Office.
+
+
+      You would like to remove the blocking note on your account as you are not travelling anymore?
+
+
+      The German Embassy Colombo can issue a consular certificate in order to unblock your blocked account
+      with your German bank if you have
+
+
+      • not applied for a visa to enter Germany,
+
+
+      • applied for a visa but withdrew the application,
+
+
+      • applied for and obtained a visa but have not used it, or
+
+
+      • applied for and received a visa for entry, traveled, but have left Germany again before receiving
+      a residence permit from the Aliens Office.'
+    S8: 'In order to prove your livelihood, you must explain to the Foreigners’ Registration
+
+      Office, from which sources you finance your studies. According to the BAföG
+
+      (German law on student financing), you must have available funds of 992 euros a
+
+      month.
+
+      This monthly sum applies to the entire period for which you hold a residence permit,
+
+      i.e. normally for at least one year. The annual equivalent is 11,904 euros per year.
+
+
+      Proof of funds includes:'
+  faithful: ''
+  correctness: ''
+- id: q067
+  question: My German D visa runs out soon. When do I need to apply for the residence permit?
+  reference_answer: Yes. Munich's guidance says to apply before the national D visa or current residence
+    permit expires.
+  answer: 'Apply as soon as possible, and well before your D visa expires. The exact deadline depends
+    on your local Foreigners'' Office, and the sources differ:
+
+
+    - FU Berlin: at least eight weeks before your visa expires [S1].
+
+    - KIT and TUM: at least 6 weeks before expiry, soon after registering your address [S2][S3].
+
+    - RWTH Aachen: no later than one month before expiry [S4].
+
+    - DAAD: within three months of arriving in Germany [S5].
+
+
+    In Berlin, the official Service Berlin page says you apply only online, and no earlier than 4 months
+    before your current title expires [S6]. All sources were retrieved on the same date, so check your
+    own city''s office.
+
+
+    Once you have applied, you can stay in Germany while you wait for your appointment, even if your visa
+    expires ("Fiktionswirkung") [S2][S3]. Keep your visa and the office''s confirmation as proof [S2].
+
+
+    This is not legal advice; confirm the deadline with your local Foreigners'' Office.'
+  sources:
+    S1: 'APPLYING FORA RESIDENCE PERMIT
+
+      All students with a non-EU and non-EFTA (Andorra, Iceland, Liechtenstein, Norway) citizenship have
+      to apply for a residence
+
+      permit as soon as possible or at least eight weeks before their visa expires or your 90-day period
+      (in case you entered Germany
+
+      without a visa*) at the Foreigners'' Office (Aus/änderbehdrde) in Berlin.
+
+      Applying directly at LABO — Foreigners'' Office (Aus/änderbehörde)
+
+      You may arrange an appointment with the Foreigners'' Office (Aus/änderbehörde) online at the following
+      address:
+
+      http.//tinyur/.cοm//αbο-termin. Please note that online appointments are usually booked out months
+      in advance! You may also
+
+      submit your application at the Foreigners'' Office (Aus/änderbehörde) without arranging an appointment.
+      Their office is located
+
+      here:
+
+      https.//www. berlin. de/staο''tρΙan/νerwa/tυng/aυsΙaenderbehοerιΙe-ber/ιn-standοrt-keρ/erstr/ and
+      their office hours are: Mon, Tue
+
+      o7:oo-14:oo and Thu 1o:oo-18:oo. Please arrive early and expect very long waiting times if you decide
+      to go there without an
+
+      appointment.
+
+      Applying through the FU Pass-Service
+
+      In case you need a permit you also have the possibility of applying for a residence permit avia
+      the international office of the
+
+      university. The following documents are generally required to submit an application at our office:
+
+      Ίi
+
+      application form (AntragaufErteilungeinesAufentha/tstite/s/Antragaufein en befristetenAufentha/tstite/)
+
+      On request we can send you this form via'
+    S2: '**Important Information About Your Residence Permit**
+
+
+      - **Here, you can find a step by step guide.**
+
+      - Apply as soon as you have registered your address, and at least 6 weeks before your visa or current
+      permit expires.
+
+      - After submitting your application, you can stay in Germany while waiting for your appointment,
+      even if your visa expires. This is called “Fiktionswirkung.” Proof: your visa/previous permit +
+      confirmation from the Foreigners’ Office.
+
+      - You can travel within the Schengen Area during the first 90 days.
+
+      - Do not leave Germany after the initial 90 days unless you already have a residence permit.'
+    S3: '**Please note:** It is advisable to apply for a residence permit soon after registering your
+      residence (but at least 6 weeks before your visa / residence permit expires), since you may have
+      to deal with considerable delays at some Foreigners'' Offices. You are entitled to stay in Germany
+      while waiting to get an appointment, even if your visa / previous residence permit expires (so-called
+      "Fiktionswirkung" - proof: visa + Foreigners'' Office''s confirmation of receipt of your application).
+      However, students who entered Germany without a visa must not travel outside of Germany after the
+      permitted duration of their visa-free stay without a residence permit (i. e. they must stay in Germany
+      until obtaining their residence permit).'
+    S4: '### When and how do I apply for a residence permit?
+
+
+      If you are not from an EU country (with the exception of Iceland, Liechtenstein, or Norway) and
+      arrived in Germany on a student visa, you must apply for residence permit no later than one month
+      before your visa’s date of expiration. The Immigration Office of the Aachen city region is responsible
+      for this. You can find all the necessary information (contact information, documents, opening hours)
+      on the page Applying for and Extending Your Residence Permit.
+
+
+      Sometimes the Immigration Office requires an academic progress certificate in order to extend the
+      residence permit. You can find additional information about requesting this certificate as well
+      as general information about right of residence on the page Residence Permit.'
+    S5: "54\nPREPARATION\nIN GERMANY\nTIPS\nYou apply to the immigration office for your\nresidence permit.\
+      \ You must do this within\nthree months of arriving in Germany, and\nyou must do it in-person at\
+      \ the appropriate\noffice.\nYou will usually have to provide the follow-\ning documents:\n\apassport\
+      \ (including your visa if necessary)\n\aconfirmation of registration with the\nresidents registration\
+      \ office\n\aproof of health insurance\n\acertificate of enrolment\n\aYou may also need: proof of\
+      \ sufficient\nfunds, health certificate, rental contract,\nand a biometric passport photo\nFind\
+      \ out in advance which documents you\nwill need – you can check on the immigra-\ntion office’s website\
+      \ for this. Make absolute-\nly sure to take all these documents to your\nappointment: it is better\
+      \ to take too many\nthan too few! If you are missing anything at\nyour appointment you will usually\
+      \ need to\nmake a new one.\nYou also need to factor in the fee which you\nhave to pay at the office,\
+      \ which is usually\naround €100. Find out the fee in advance in\nthe immigration office which is\
+      \ responsible\nfor your area.\nContact your international office, where you\nwill find good and\
+      \ experienced people to talk\nto on questions about residence"
+    S6: '- Only online and at the earliest 4 months before your current residence title expires
+
+      - You will receive a PDF document to confirm your application. This document will certify that your
+      current residence title (national D visa or residence permit) remains valid in the federal territory
+      beyond the previous validity date. (This does not apply if you hold a Schengen visa (C visa) for
+      a short-term stay).
+
+      - The following applies to nationals of the beneficiary countries under Section 41 of the Ordinance
+      Govering Residence (see section “More information”): Did you arrive in Germany fewer than 91 days
+      ago and are now applying for a residence permit for the first time? Then your residence in Germany
+      is considered lawful until a decision is made on your application. This means that you can begin
+      your studies or the preparatory measures for your studies. However, you are not yet permitted to
+      start work.
+
+      - Please therefore make sure to save this document and print a copy if possible.
+
+      - In the case of an application being filed by an authorised representative: power of attorney stating
+      the subject matter of the procedure
+
+      -
+
+      Passport copies (in color)'
+    S7: '## Visa-free travel
+
+
+      British nationals do not require visas or residence permits for study or research visits not exceeding
+      90 days within a 180-day period - provided that they do not pursue any economic activity. This privilege
+      also applies to all other nationals who do not require visas for visits not exceeding 90 days.
+
+
+      For any stay exceeding the time limit above, British citizens may apply to the local immigration
+      office (*Ausländerbehörde*) for their residence permit after arrival in Germany and **without having
+      obtained a visa prior to travelling to Germany**. Please note that any application for a residence
+      permit needs to be filed within the first 90 days of your stay in Germany. **We strongly recommend
+      contacting the local immigration office as soon as possible after your arrival in Germany in order
+      to secure a timely appointment**. The visa-free privilege is also extended to citizens of Andorra,
+      Australia, Brazil, Canada, El Salvador, Honduras, Israel, Japan, Korea (Republic), Monaco, New Zealand,
+      San Marino and the United States of America.'
+    S8: '**Additional information:**
+
+
+      If your application is successful, you will be issued a limited validity entry visa - similar to
+      a UK entry clearance. Students on a year abroad/exchange placement may be issued a visa covering
+      their entire stay. Please make sure to check the validity of your visa! Once you have arrived in
+      Germany, please register your new residence with the local authorities (*Meldebehörde*) within 2
+      weeks of having moved in and apply to your local immigration office (*Ausländerbehörde*) for your
+      Electronic Residence Permit. **We strongly recommend contacting the local immigration office as
+      soon as possible after your arrival in Germany in order to secure a timely appointment.**
+
+
+      Further information on studying in Germany is available here.
+
+
+      Further information on living and working in Germany is available here.'
+  faithful: ''
+  correctness: ''
+- id: q068
+  question: If I have private health insurance in Germany, can I later switch to statutory insurance during
+    my studies?
+  reference_answer: DAAD says students with private insurance cannot change to statutory insurance during
+    their studies.
+  answer: 'It depends on how your private insurance is set up. If you use private insurance to be exempted
+    from statutory insurance, you generally cannot switch to statutory insurance during your studies [S1][S6].
+    Once a statutory provider issues the exemption confirmation, you are no longer allowed to join German
+    public health insurance for the rest of your studies [S6].
+
+
+    Private cover that only bridges the time before enrolment is different. Statutory student insurance
+    can only start after you take up residence and enrol, so you need private insurance until then [S5].
+    An Incoming-Health Insurance Package lets you move without a gap into long-term student insurance
+    with a statutory or private provider [S7].
+
+
+    The sources mainly describe home-country private insurance and the exemption process. Please confirm
+    your own case with your insurer or a statutory provider before you decide. This is not legal advice.'
+  sources:
+    S1: '### Is my health insurance valid in Germany?
+
+
+      Many international students do not need to obtain a new health insurance plan in Germany. You may
+      be able to keep your home country’s health insurance if Germany has a with your home country. This
+      mostly applies to students from the EU and the European Economic Area (Norway, Iceland, Liechtenstein).
+
+
+      If you are from one of these countries and have statutory health insurance, it is possible to have
+      it recognised in Germany. Private health insurance is also sometimes accepted. However, with private
+      insurance, you will not be able to change to statutory health insurance during your studies.
+
+
+      Regardless of whether you have statutory or private health insurance: Inform yourself by contacting
+      your insurance provider in your home country whether your insurance is valid in Germany. You will
+      usually need a . Additionally, you will also need a certificate proving that you are not required
+      to take out German statutory health insurance. This certificate is issued by the statutory health
+      insurance providers in Germany. The of your chosen higher education institution will surely support
+      you in this process.'
+    S2: '## Health insurance during your studies in Germany
+
+
+      As mentioned before: Every person in Germany is required to have health insurance – and so are you!
+      This applies not only to international students, but also if you participate in a preparatory course
+      or a .
+
+
+      There are two types of health insurance: private and statutory (in German: private und gesetzliche
+      Krankenversicherung). Generally, private health insurance plans offer more benefits, but they are
+      significantly more expensive and require advance payments. For this reason, most people are covered
+      by statutory health insurance. Statutory health insurance providers are required to offer a basic
+      plan which includes most doctor''s visits, a broad selection of medicines and, e.g., ER visits,
+      ambulance rides and hospital stays. This basic coverage is always unchanged, no matter which statutory
+      health insurance you choose.
+
+
+      By the way, with , (international) students are also automatically insured through the higher education
+      institution’s . The insurance covers e.g. all injuries during activities that take place on the
+      institution’s grounds or that are organised by the higher education institution. However, it doesn’t
+      replace your personal health insurance.'
+    S3: In case your current health insurance isn’t recognised in Germany, you must obtain health insurance
+      coverage once you arrive in the country or when you apply for a visa. If you are under 30 years
+      of age, you will profit from a reduced student rate of about 120-130 euros per month, which is offered
+      by statutory health insurance providers. As soon as you have reached 30, you will have to pay the
+      standard contribution though, even if you are still studying. This normal contribution is often
+      a lot more expensive than purchasing a student plan from a private insurance company. Therefore,
+      it might be worth checking whether private health insurance could be the cheaper option for you.
+      You could also research if there are any arrangements between the (Student Services) and insurance
+      providers targeting students older than 30. For more information on this, you can also contact the
+      local student services at your higher education institution in Germany.
+    S4: 'When you decide on your health insurance, you can select from a wide choice of insurance providers.
+      More information on statutory health insurance providers can be found on the website of the National
+      Association of Statutory Health Insurance Funds. Here, you will also find a list of the various
+      health insurance providers (only available in German). Regarding private health insurance providers,
+      you can find more information online. As there are many of them, please check carefully which one
+      you choose. The services offered vary, so it''s essential to ensure that a specific provider offers
+      the coverage that matters to you.
+
+
+      Another easy way for you to get insurance in Germany might be the service packages for international
+      students offered by many local Studierendenwerke. Next to accommodation and meals they all include
+      health insurance for Germany. Please refer to your local Studierendenwerk to see if this package
+      is available at your place of study.'
+    S5: 'If as a student you want to take out statutory health insurance, you must bear in mind that this
+
+      insurance can only begin when you take up residence in Germany and after enrolment. If you
+
+      enter Germany beforehand, private health insurance must be taken out for the period prior to
+
+      enrolment and registering for statutory health insurance. In its terms and conditions, travel
+
+      health insurance can exclude protection if a long-term or permanent stay is planned. So-called
+
+      incoming travel insurance can also contain such exclusions.
+
+      If applicable: for a preparatory language course/ preparatory college:
+
+      Preparatory language course:
+
+       Admission to the preparatory language course with at least 18 hours per week as well as
+
+       Proof of admission to university following the successful language acquisition
+
+       A1 certificate. A submitted language certificate must have been issued by an ALTE-certified
+
+      institution
+
+       Proof that fees have been paid
+
+      Preparatory study college:
+
+       Admission to preparatory study college as well as
+
+       B1 certificate. A submitted language certificate must have been issued by an ALTE-certified
+
+      institution
+
+       Proof that fees have been paid
+
+      In the case of preparatory language course or internship
+
+       Acceptance for preparatory language course or internship
+
+      Applicant of'
+    S6: 'If your (public or private) health insurance policy from your home country is recognised, then
+      you will need confirmation that you are exempted from public health insurance coverage when you
+      . In this case, when you arrive in Germany and before you at your German university, contact a German
+      health insurance provider in your town and have them issue you a letter certifying that you are
+      insured. (It’s a good idea to ask the about which health insurance provider to contact). Bear in
+      mind that once this confirmation is issued, you will no longer be allowed to sign up for German
+      public health insurance for the duration of your studies!
+
+
+      If your health insurance policy from your home country is not recognised in Germany, you will have
+      to sign up for coverage in Germany. A public health insurance policy costs about 140 euros a month
+      until you reach the age of 30. After that, the monthly premium jumps to 250 euros or more per month.
+      For more detailed information, visit the .
+
+
+      You already have health insurance that is recognised in Germany? Then a statutory German health
+      insurance fund must confirm this.'
+    S7: Everyone staying short-term or long-term in Germany must have **sufficient health insurance coverage**.
+      Unlike university students, study-applicants cannot be a member of a German statutory health insurance
+      provider (gesetzliche Krankenversicherung) and cannot benefit from their special student rates;
+      this is only possible after formal university enrolment. You should preferably obtain a so-called
+      Incoming-Health Insurance Package that covers you in case of illness from the moment you arrive
+      in Germany and offers the possibility to later on change, without interruption, into a long-term
+      student health insurance with a statutory or private health insurance provider. As an alternative
+      to such package you can submit to us – after we have informed you that your visa application has
+      been approved and that we are able to issue your study-applicant visa – proof of a travel health
+      insurance package valid for the Schengen states for 90 days from the date of your entry. In this
+      case you will, however, still need to obtain a long-term student health insurance in Germany later
+      on.
+    S8: 'There are a few exceptions: If you are doing a paid or have a part-time job while studying, then
+      you will have to obtain coverage with a German provider. Your home-country insurance is not considered
+      sufficient.
+
+
+      ### Which German health insurance is right for me and what do they cover?'
+  faithful: ''
+  correctness: ''
+- id: q069
+  question: How much should I budget per month for accommodation as a student in Türkiye?
+  reference_answer: The guide gives a range of 215 TL to 2,500 TL per month, though this is a dated source
+    estimate.
+  answer: 'According to Study in Türkiye, you should reserve between 215 TL and 2500 TL per month for
+    accommodation, depending on whether you choose a state, university or private dormitory or a rental
+    flat [S1]. Private dormitories usually offer better facilities than state dormitories but cost more
+    [S7]. Rental prices vary by city, location and the characteristics of the house [S7].
+
+
+    Key points:
+
+    - You pay dormitories monthly and do not pay in summer when you are not staying there. Rent for a
+    flat, however, is paid all 12 months [S1].
+
+    - Both dormitories and rental apartments require a deposit when you first move in, linked to the monthly
+    fee or rent [S1].
+
+    - If you hold a Türkiye Scholarship, accommodation is provided [S6]. Eligible graduate students can
+    receive cash accommodation aid of 750 TL per month [S2].
+
+
+    The sources do not say how current these figures are, so check them with your university''s accommodation
+    office or the responsible authority before you plan.'
+  sources:
+    S1: '**Accommodation**
+
+
+      Monthly budget you need to reserve for accommodation will vary between 215 TL and 2500 TL. State
+      dormitories, university dormitories, private dormitories and rental flats each have varying costs.
+      There is a monthly payment for dormitories and therefore you do not need to pay in the summer when
+      you are not staying in the dorm. However, you will have to pay the house rent on a monthly basis,
+      12 months of the year.
+
+
+      For dormitories and rental apartments, a certain amount of deposit must be paid in the first entry.
+      This amount may vary depending on monthly payment of the dorm or monthly rental of the apartment.
+
+
+      Further information about accommodation can be found on Accommodation page or relevant office of
+      your university.'
+    S2: '• Applying
+
+      to KYK Provincial Directorate for KYK dormitories
+
+
+      • Applying
+
+      to YTB for private, university and foundation dormitories
+
+
+      •After
+
+      graduation – a maximum of 2 months additional housing support can be provided.
+
+
+      •After
+
+      cancellation of scholarship – a maximum of 2 months additional housing support
+
+      can be provided.
+
+
+      Graduate
+
+      students can be included in the cash accommodation aid in July of their first
+
+      year in Turkey. The monthly cash accommodation aid is 750 TL.
+
+
+      •Students
+
+      staying in NGO dormitories (graduate students only) – Automatically at the end
+
+      of the first year
+
+
+      •Students
+
+      staying in KYK dormitories (only postgraduate students) – At the end of the
+
+      first year, if students make a request and waive their dormitory rights.'
+    S3: 'You should budget at least 1,100 euros per month for living expenses when studying at RWTH Aachen
+      University:
+
+
+      | Monthly Expenditure | Minimum Costs per Month |
+
+      |---|---|
+
+      | Accommodation and associated costs | between 400 and 600 euros |
+
+      | Food | between 200 and 300 euros |
+
+      | Health insurance | between 100 and 150 euros |
+
+      | Study Materials (including books, printing etc) | between 20 and 40 euros |
+
+      | Internet and Mobile Phone | between 20 and 50 euros |
+
+      | Additional costs (clothing, hygiene etc.) | between 50 and 200 euros per month |
+
+
+      A single person must prove a minimum monthly income of 992 euros to the Immigration Office in Aachen
+      in order to have their residence permit extended.
+
+
+      With the increase in the BAföG maximum rate to 992 euros per month, the amount for the proof of
+      financial support to be provided by international students was increased, see section 2, paragraph
+      3, sentence 5 of the Residence Act.'
+    S4: '**Daily Expenditures**
+
+
+      Student discount is offered at Cinema, theater, museum, public transport, some book houses and restaurants.
+      Let us remind you that Turkish Airlines offers attractive discounts and special offers to students.
+
+
+      You can see average prices of some basic needs below:
+
+
+      <u>Book and Stationery Fees (yearly)</u>: 700 TL
+
+
+      <u>Mobile Phone Bill (monthly): 60-100 TL</u>
+
+
+      <u>Transportation & Entertainment</u>
+
+
+      Bus/Metro ticket (One way): 1.75-3.50 TL
+
+
+      Taxi (5 km): 20-25 TL
+
+
+      Cinema Ticket: 15-25 TL
+
+
+      Theater Tickets (State Theaters): 9-15 TL
+
+
+      Opera/Ballet Tickets (State Opera and ballet): 20-25 TL
+
+
+      Local music group concert 25 TL
+
+
+      A popular music group concert 50-100 TL
+
+
+      Football match ticket 20-200 TL
+
+
+      <u>Food</u>
+
+
+      Bread: 1-3 TL
+
+
+      Water (0,5 lt): 1 TL
+
+
+      Milk (1 lt): 5 TL
+
+
+      Fruit juice (1 lt): 5 TL
+
+
+      10 Eggs: 10 TL
+
+
+      White cheese (1 kg): 40 TL
+
+
+      Pasta (1 package): 3-7 TL
+
+
+      Chicken (1 kg): 25-50 TL
+
+
+      Red meat (1 kg): 45-100 TL
+
+
+      Apples (1 kg): 10 TL
+
+
+      <u>Dining & Drinking Out</u>
+
+
+      A meal in cafeteria (State University): 3-10 TL
+
+
+      Breakfast in University Canteen: 3-8 TL
+
+
+      Tea in University Canteen: 1-3 TL
+
+
+      Coffee in University Canteen: 3-5 TL
+
+
+      Toast in University Canteen: 5 TL
+
+
+      Soup: 5 TL
+
+
+      Hamburger Menu: 20-25 TL'
+    S5: 'Types of apartments and accommodation
+
+      in Germany
+
+      Many students live in student residences.
+
+      These are especially popular among inter-
+
+      national students, and over 40% have a
+
+      room in a student residence. The rooms in
+
+      these residences are furnished and, with
+
+      average costs of €250 per month, they are
+
+      fairly cheap. What’s more, you won’t be
+
+      alone for long there, either, and will quickly
+
+      get to know other people. Another benefit is
+
+      that you can apply and sign the contract for
+
+      a room while you are still at home.
+
+      However, even if you apply early and inter-
+
+      national students get slightly preferential
+
+      treatment, you cannot be certain of getting
+
+      a room. The number of applicants exceeds
+
+      the number of available rooms several times
+
+      over. The numbers speak for themselves:
+
+      there are just under 240,000 publicly funded
+
+      places in student residences, but there are
+
+      2.5 million students! Submit your applica-
+
+      tion early, as you don’t necessarily need to
+
+      wait for your letter of acceptance.'
+    S6: 'SUBSCRIBE!
+
+
+      high-quality education in Türkiye!
+
+
+      A Comprehensive and Unique Scholarship Program
+
+
+      Türkiye Scholarships considers everything that international students will need during their academic
+      studies while discovering Türkiye and acquiring new skills.
+
+
+      \* Provides **university and department placements** unlike other higher education scholarship programs.
+
+
+      \* **Covers** tuition fees.
+
+
+      \* Allows you to learn the language of the country by studying **a 1-year Turkish language course.**
+      Thus, resources are diversified in your academic research and daily life becomes more pleasurable.
+
+
+      \* Provides **accommodation** for students arriving in a new country.
+
+
+      \* Covers your **once-off flight ticket.**
+
+
+      \* Allows you to take full advantage of widespread health services with **general health insurance.**
+
+
+      \* Also provides **monthly stipend.** 6.500 TL at Associate’s and Bachelor’s levels, 9.500 TL at
+      Master''s level and 13.000 TL at PhD level per month.'
+    S7: '**Private Dormitories**
+
+
+      It is possible to find private dormitories around most university campuses. The facilities offered
+      by the private dormitories are mostly higher than the state dormitories (for example, newer and
+      varied furniture), but their fees are higher.
+
+
+      **Renting a House**
+
+
+      Another accommodation option for international students is to rent a house. Especially in neighborhoods
+      close to universities, many students rent a house with a few friends. You will have a lot of rental
+      home options in Türkiye which is rapidly developing in terms of housing quality and number. Of course,
+      prices vary from city to city and according to the location and characteristics of the house. However,
+      regardless of your budget, you can be sure that you will find a suitable home in the city you go
+      to.
+
+
+      The houses in Türkiye are usually in the form of an apartment. These apartments have a large living
+      room as well as 2 to 4 additional bedrooms. Most of the houses have a balcony. Kitchen is located
+      as a separate part of the house. Heating of the houses is provided by a central system or a combi
+      boiler.'
+    S8: '**Insurance and Health Expenditures**
+
+
+      Health insurance for international students varies between 300-500 TL per year in private policies.
+      These private insurers allow you to receive free health services in contracted hospitals within
+      the limits specified in the policy. It is important that you also obtain an English copy of your
+      policy and read the relevant articles carefully.
+
+
+      General Health Insurance payment is 1059 TL per year as of 2020. With this insurance you can get
+      free health services in all state hospitals. In private hospitals you will need to pay varying amounts
+      of contribution.'
+  faithful: ''
+  correctness: ''
+- id: q088
+  question: Can I get a German residence permit just to do an intensive English course?
+  reference_answer: No. A residence permit can't be issued for an intensive course to learn a foreign
+    language such as English.
+  answer: No. According to the sources, a German residence permit cannot be issued for an intensive course
+    to learn a foreign language such as English [S1][S3]. This applies even if the degree programme you
+    want to study is offered only in that foreign language [S1][S3]. By contrast, preparatory language
+    courses count as study preparation only when admission to your course of study is tied to attending
+    one [S3]. Intensive German courses taken for this purpose must run at least 18 hours a week and must
+    not be publicly funded [S1]. If you want to come mainly to learn German, a separate short-term intensive
+    language course option exists, requiring daily instruction of at least 18 hours per week and secured
+    means of subsistence [S5]. Please confirm your situation with the German mission or the responsible
+    foreigners' authority, as this is not legal advice and rules can change.
+  sources:
+    S1: '**Please note the following:**
+
+
+      - As a general rule, it is not possible to do remedial studies in Germany in order to meet the general
+      educational preconditions for enrolling on the intended course of studies.
+
+      - The German classes taken must be intensive courses, with at least 18 hours a week, and they may
+      not be publicly funded. Evening, weekend and distance learning courses do not meet the requirements.
+
+      - A residence permit cannot be issued for an intensive course to learn a foreign language (e.g.
+      English). This applies even if the desired course of studies is offered only in this foreign language.'
+    S2: '# Residence permit - Study preparation
+
+
+      If you are preparing to study in Germany with an intensive German course, preparatory college or
+      pre-study internship, you will need a residence permit.
+
+
+      A residence permit for preparatory studies requires that you hold either a qualification for university
+      entry or a conditional offer of a place at university.
+
+
+      A residence permit for preparatory studies may be granted for a maximum of 2 years, for attending
+      a preparatory language course for a maximum of 18 months, and for attending a Studienkolleg for
+      a maximum of 1 year. It is not possible to extend the permit beyond these periods for the same purpose.'
+    S3: '# Residence permit for the purpose of full-time studies
+
+
+      A foreign student is granted a residence permit for full-time studies at a state-recognised university
+      or a comparable educational institution in Germany.
+
+
+      The purpose of stay for the studies also includes preparatory measures and the completion of a compulsory
+      internship. Preparatory measures for the studies are
+
+
+      - attending a preparatory language course, if admission to the course of study is tied to attending
+      a preparatory language course, and
+
+      - attending a preparatory college or comparable institution.
+
+
+      A residence permit cannot be issued for an intensive language course to learn a foreign language
+      (e.g. English). This also applies if the desired course of study is only offered in this foreign
+      language.
+
+
+      The residence permit is generally granted and extended for two years. It entitles the holder to
+      work for a total of 140 full work days in a calendar year. Self-employment is also permitted as
+      a secondary occupation (see section “More information”).'
+    S4: '# Studies, including preparatory college and language courses for intended studies
+
+
+      **General Information**
+
+
+      If you intend to participate in a German language course in Germany that is not meant to prepare
+      you for university studies, this is not the correct visa type for you. If you wish to do an intensive
+      German course to prepare you for your vocational training, please refer to the information on vocational
+      training visa. If you wish to do an intensive German course just because you wish to learn German,
+      please refer to the information on “language course” in the section on non-CSP applications.
+
+
+      Visa to study in Germany also have a number of sub-types, so as a first step in the Consular Service
+      Portal, you will be asked to complete a **questionnaire**. The answers from this questionnaire will
+      determine which sub-category of this visa type applies to you. You need to answer the question truthfully.
+      Answers that do not match your situation will lead to a request to delete your process and start
+      over again with correct answers. It is not possible to change the sub-type without starting the
+      process over.'
+    S5: '10
+
+      Studying and Working in Germany
+
+      One option is as part of a temporary student exchange. This requires an
+
+      agreed exchange with a German school or a student exchange organiza-
+
+      tion recognized in Germany and a secured means of subsistence during
+
+      your stay.
+
+      The other option is participating in an intensive language course if you are
+
+      planning a short-term stay to learn German. This requires daily instruc-
+
+      tion and the language course running for at least 18 hours per week. Your
+
+      means of subsistence must also be secured, for example by your parents
+
+      assuming all costs.
+
+      Regular school attendance for children from third countries is only pos-
+
+      sible as part of a family reunification and family immigration programme
+
+      (see also Chapter III), or if the residence is based on another, independent
+
+      right of residence. There are also exceptions made on a case-by-case basis,
+
+      such as to attend a boarding school. Please contact the proper Aliens Au-
+
+      thority for your desired place of residence with such requests.
+
+      1.2
+
+      Trainees
+
+      Î
+
+      Î
+
+      I am...
+
+      Î
+
+      Î
+
+      ... a trainee
+
+      ... and I want to complete a professional training programme
+
+      (Residence title under section 16 subs. 5 Residence Act)
+
+      A residence permit may'
+    S6: '(4) A foreigner who is not, or is no longer, entitled to take an integration course may be allowed
+      to do so if space is available in the course concerned. This provision applies accordingly to German
+      nationals who do not have a sufficient command of the German language and have special integration
+      needs, as well as to foreigners
+
+
+      1\. who have permission to remain pending the asylum decision,
+
+
+      2\. whose deportation has been suspended under section 60a (2) sentence 3, or
+
+
+      3\. who have a temporary residence permit pursuant to section 24 or 25 (5).
+
+
+      Section 44a
+
+
+      Obligation to attend an integration course
+
+
+      (1) Foreigners are required to take an integration course if
+
+
+      1\. they are entitled to attend under section 44 and
+
+
+      a) they are unable to communicate at least at a basic level in the German language or
+
+
+      b) they do not have a sufficient command of the German language at the time a residence title is
+      issued under section 23 (2), section 28 (1) sentence 1 no. 1, section 30 or section 36a (1) sentence
+      1 first alternative 1 or'
+    S7: '(3) As a general rule, while foreigners are residing in Germany to attend school under subsection
+      (2), they are to be granted a temporary residence permit for another purpose only if they are legally
+      entitled to it. After staying in Germany to take part in a pupil exchange scheme foreign pupils
+      may only be granted a temporary residence permit for another purpose if they are legally entitled
+      to it. Section 9 does not apply. The temporary residence permit under subsection (1) to attend a
+      language course only entitles the foreigner to pursue employment of up to 20 hours per week. The
+      temporary residence permit under subsection (1) to participate in a pupil exchange scheme and the
+      temporary residence permit under subsection (2) do not entitle holders to pursue an economic activity.
+
+
+      (4) Bi- or multi-lateral agreements of the *Länder* with public bodies in another country governing
+      attendance of domestic schools by foreign pupils remain unaffected. A temporary residence permit
+      to attend school can only be issued on the basis of such agreements if the supreme *Land* authority
+      responsible for residence law has endorsed the agreement.
+
+
+      Section 16g'
+    S8: 'If you decide to drop out of your studies or cannot complete them within 10 years,
+
+      you do not necessarily have to leave Germany immediately. With the amendment to
+
+      the law from 1 March 2024, you can obtain a residence permit for another purpose
+
+      (except for the purpose of temporary employment), if you fulfil all the necessary
+
+      requirements. For example, you can start an apprenticeship or take up qualified
+
+      employment and obtain a residence permit for this purpose. In order to obtain a
+
+      residence permit for the purpose of employment, you need to have completed
+
+      foreign training or have a foreign university degree. The qualifications must be
+
+      recognised in Germany. The website specified for recognition of foreign university
+
+      degrees will help you to find this out (s. Anerkennung von ausländischen
+
+      Hochschulabschlüssen
+
+      https://www.hamburg.de/politik-und-
+
+      verwaltung/behoerden/sozialbehoerde/themen/integration/anerkennung-
+
+      auslaendischer-abschluesse-32360).
+
+      If you discover that your foreign qualification is not yet recognised in Germany, you
+
+      will have to apply for recognition. You can find out how to recognise your
+
+      qualification in Germany on the specified webpage for Recognition in Germany
+
+      (Anerkennung
+
+      in
+
+      Deutschland
+
+      https://www.anerkennung-in-
+
+      deutschland.de/html/de/anerkennung-
+
+      bekommen.php?mtm_campaign=grundrauschen-de&mtm_kwd=Anerkennung-
+
+      Berufsaus%C3%BCbung&mtm_source=google&mtm_medium=paid-
+
+      search&mtm_group=deutsch&gad_source=1).
+
+      You might also be able to obtain a ''Chance Card'' in accordance with § 20a AufenthG
+
+      for the purposes'
+  faithful: ''
+  correctness: ''
+- id: q089
+  question: How early can I apply online to extend my study residence permit in Berlin, and what does
+    the confirmation I get do?
+  reference_answer: At the earliest 4 months before the current permit ends. The PDF confirmation certifies
+    that your current D visa or residence permit stays valid beyond its expiry date while the application
+    is processed.
+  answer: In Berlin, you apply for your study residence permit only online, and at the earliest 4 months
+    before your current residence title expires [S1][S3]. You must pay the service fee before you can
+    send off the application [S3]. At the end, you receive a PDF confirmation, which certifies that your
+    current residence title (national D visa or residence permit) stays valid in Germany beyond its previous
+    validity date [S1][S3]. This does not apply if you hold a short-term Schengen (C) visa [S1]. Save
+    this document and print a copy if possible [S1]. Also apply before your current permit expires, and
+    keep proof from your university that your studies are progressing regularly, since the extension depends
+    on it [S4]. Please confirm the details with the Berlin Immigration Office, as rules can change and
+    this is not legal advice.
+  sources:
+    S1: '- Only online and at the earliest 4 months before your current residence title expires
+
+      - You will receive a PDF document to confirm your application. This document will certify that your
+      current residence title (national D visa or residence permit) remains valid in the federal territory
+      beyond the previous validity date. (This does not apply if you hold a Schengen visa (C visa) for
+      a short-term stay).
+
+      - The following applies to nationals of the beneficiary countries under Section 41 of the Ordinance
+      Govering Residence (see section “More information”): Did you arrive in Germany fewer than 91 days
+      ago and are now applying for a residence permit for the first time? Then your residence in Germany
+      is considered lawful until a decision is made on your application. This means that you can begin
+      your studies or the preparatory measures for your studies. However, you are not yet permitted to
+      start work.
+
+      - Please therefore make sure to save this document and print a copy if possible.
+
+      - In the case of an application being filed by an authorised representative: power of attorney stating
+      the subject matter of the procedure
+
+      -
+
+      Passport copies (in color)'
+    S2: 'APPLYING FORA RESIDENCE PERMIT
+
+      All students with a non-EU and non-EFTA (Andorra, Iceland, Liechtenstein, Norway) citizenship have
+      to apply for a residence
+
+      permit as soon as possible or at least eight weeks before their visa expires or your 90-day period
+      (in case you entered Germany
+
+      without a visa*) at the Foreigners'' Office (Aus/änderbehdrde) in Berlin.
+
+      Applying directly at LABO — Foreigners'' Office (Aus/änderbehörde)
+
+      You may arrange an appointment with the Foreigners'' Office (Aus/änderbehörde) online at the following
+      address:
+
+      http.//tinyur/.cοm//αbο-termin. Please note that online appointments are usually booked out months
+      in advance! You may also
+
+      submit your application at the Foreigners'' Office (Aus/änderbehörde) without arranging an appointment.
+      Their office is located
+
+      here:
+
+      https.//www. berlin. de/staο''tρΙan/νerwa/tυng/aυsΙaenderbehοerιΙe-ber/ιn-standοrt-keρ/erstr/ and
+      their office hours are: Mon, Tue
+
+      o7:oo-14:oo and Thu 1o:oo-18:oo. Please arrive early and expect very long waiting times if you decide
+      to go there without an
+
+      appointment.
+
+      Applying through the FU Pass-Service
+
+      In case you need a permit you also have the possibility of applying for a residence permit avia
+      the international office of the
+
+      university. The following documents are generally required to submit an application at our office:
+
+      Ίi
+
+      application form (AntragaufErteilungeinesAufentha/tstite/s/Antragaufein en befristetenAufentha/tstite/)
+
+      On request we can send you this form via'
+    S3: '- The application is possible at the earliest 4 months before the end of your current residence
+      title.
+
+      - Please have all the necessary documents ready for this in PDF format if possible. However, you
+      can also still photograph and upload the documents during the application process using your smartphone
+      or tablet. The following file formats are accepted: PDF, JPG, JPEG, and PNG. The total size of your
+      files must not exceed 100 MB. A single file must not exceed 7 MB in size.
+
+      - Before you can send off the application, you need to pay the service fee.
+
+      - At the end you will receive a PDF document to confirm your application. This document will certify
+      that your current residence title (national D visa or residence permit) remains valid in the federal
+      territory beyond the previous validity date. (This does not apply if you hold a Schengen visa (C
+      visa) for a short-term stay).
+
+      - The following applies to nationals of the beneficiary countries under Section 41 of the Ordinance
+      Govering Residence (see section “More information”): Did you arrive in Germany fewer than 91 days
+      ago and are now applying for a residence permit for the first time? Then'
+    S4: 'When you first apply, you have to pay a fee of up to €110. The extension costs up to €100.
+
+
+      After four to six weeks you can personally pick up your residence permit from the foreigners’ registration
+      office. It is initially issued for at least one year and no more than two years, but it can be extended.
+      The extension depends on your studies progressing “regularly” (meaning you should adhere to the
+      standard period of study). You need documentation from your university to show this. It is imperative
+      that you apply for the extension before your current residence permit expires!
+
+
+      It is important to observe the deadlines when registering and applying for a residence permit.
+
+
+      If you need to apply for a residence permit, it is better to have more documents ready than you
+      might need – this will save you unnecessary delay.'
+    S5: 'All international students must register at the local Residents‘ Registration Office – usually
+      within one week.
+
+
+      Whether you need a residence permit depends on your country of origin.
+
+
+      Upon arrival
+
+
+      As soon as you have found accommodation, you have to register with the local Residents'' Registration
+      Office. The office gives you a written confirmation of Registration (Meldebestätigung). After that,
+      you can apply for your residence permit.
+
+
+      Every international student who moves to Germany has to register with the residents‘ registration
+      office – usually within one week. At the Residents‘ Registration Office you have to fill out a registration
+      form. Then you receive a written confirmation of registration. Be sure to keep this document because
+      you will need it to obtain a residence permit from the foreigners’ registration office.'
+    S6: 'nationals of the beneficiary countries under Section 41 of the Ordinance Govering Residence (see
+      section “More information”): Did you arrive in Germany fewer than 91 days ago and are now applying
+      for a residence permit for the first time? Then your residence in Germany is considered lawful until
+      a decision is made on your application. This means that you can begin your studies or the preparatory
+      measures for your studies. However, you are not yet permitted to start work.
+
+      - Please therefore make sure to save this document and print a copy if possible.
+
+      - **Note:** Do your spouse and child live with you in Berlin and need a residence permit? Then please
+      do not submit a separate application for them. Simply enter your family members in the spaces provided
+      in the online application. The Berlin Immigration Office will contact you regarding residence permits
+      for your family members.'
+    S7: 'An extension of the residence permit for more than 18 months for the purpose of further job search
+      is not possible. A new residence permit can only be issued for a different purpose of stay.
+
+
+      **Procedure:**
+
+
+      1. Carry out the online application.'
+    S8: '**Important Information About Your Residence Permit**
+
+
+      - **Here, you can find a step by step guide.**
+
+      - Apply as soon as you have registered your address, and at least 6 weeks before your visa or current
+      permit expires.
+
+      - After submitting your application, you can stay in Germany while waiting for your appointment,
+      even if your visa expires. This is called “Fiktionswirkung.” Proof: your visa/previous permit +
+      confirmation from the Foreigners’ Office.
+
+      - You can travel within the Schengen Area during the first 90 days.
+
+      - Do not leave Germany after the initial 90 days unless you already have a residence permit.'
+  faithful: ''
+  correctness: ''
+- id: q091
+  question: I'm applying for a German student visa in Bangladesh. How long does processing take, and how
+    early can I apply?
+  reference_answer: Processing takes at least about 4 weeks, and the visa can only be issued within 3
+    months of your arrival date.
+  answer: Processing takes at least about 4 weeks, and you can apply no more than 3 months before your
+    arrival in Germany. The German Embassy Dhaka states that the minimum time to process your visa is
+    approx. 4 weeks, and that the visa can only be provided within 3 months of your arrival date, so you
+    should not make requests if your arrival is more than 3 months away [S1]. Within that window, apply
+    in good time [S1]. Before you submit, you must register for an online appointment, which applies to
+    all study purposes [S2]. Only complete applications are accepted [S2]. You can apply at the Dhaka
+    Embassy only if your permanent residence is in its area of jurisdiction [S2]. Other German missions
+    give different processing times, from about two weeks to four to six weeks [S4][S5], but the Dhaka
+    source is the one that applies to you. This is not legal advice, so please confirm current timings
+    with the Embassy.
+  sources:
+    S1: 'Schengen visa and a National visa cannot be processed.
+
+      Fees
+
+      Visa fees are payable in BDT. The fees are fixed in Euro (please refer to the separate information
+      sheet –
+
+      therefore the equivalent in Bangladeshi currency may vary according to the exchange rate. The
+
+      complete fee has to be paid upon application and will not be refunded in case the visa application
+      is
+
+      rejected.
+
+      Processing Time
+
+      The minimum time to process your visa is approx. 4 weeks.
+
+      Please note that the visa can only be provided within 3 months of your arrival date in Germany.
+      Please
+
+      refrain from requests if your arrival is more than 3 months in the future.
+
+      Please apply for your visa in due time.
+
+      Checklist
+
+      Before submitting your application, please prepare the documents in the following order:
+
+      •
+
+      Valid passport (issued within the last 10 years; passports with observations on the front data
+
+      page cannot be accepted) with at least two empty pages'
+    S2: 'All Bangladeshi nationals who intend to go to the Federal Republic of Germany require a visa
+      prior to
+
+      their departure.
+
+      An application may only be filed at the German Embassy Dhaka under the provision that the applicant
+
+      has a permanent residence in the area of jurisdiction of this Embassy.
+
+      Application
+
+      Please note that visa applicants for all study purposes (including PhD and Scholarship students)
+      have to
+
+      register for an online appointment prior to submitting their application. You can register here.
+
+      Please be informed that only Scholarships funded by the German Government or by EU funds can be
+
+      accepted as qualified students.
+
+      Admission to the Visa Section of the German Embassy will only be granted at the time of the scheduled
+
+      appointment. Being late for more than 15 minutes will consequently result in scheduling a new
+
+      appointment.
+
+      The visa application must be supported by all the necessary documents as only applications with
+
+      complete documentation can be accepted.
+
+      Simultaneous applications for a Schengen visa and a National visa cannot be processed.
+
+      Fees
+
+      Visa fees are payable in BDT. The fees are fixed in Euro (please refer to the separate information
+      sheet –
+
+      therefore the equivalent in Bangladeshi currency may vary according to'
+    S3: 'Germany. The visa can only be issued when this approval has been received. |
+
+      | 18. | **Processing time is as a rule at least 4 weeks** but can take longer in individual cases.
+      |
+
+      | 19. | Flight reservations are not required to apply for a visa – please only book when you have
+      received your visa. |
+
+      | 20. | The Embassy reserves the right to request further documents. |
+
+      | 21. | Missing documentation delays the procedure and can result in your application being rejected.
+      **Please do not contact the Embassy to check the status of your application during the normal processing
+      period.** Such inquiries are extremely time-consuming for the visa section and can thus not be answered.
+      |
+
+      | 22. | **General Information:** Foreign students who have been accepted by a German university
+      (where applicable with a preparatory language course) or a preparatory college (Studienkolleg) can
+      apply for a visa to study in Germany. You are advised to secure your admittance or acceptance from
+      the university **as early as possible**. During your studies, you can take up student jobs to help
+      cover your expenses. Upon completing your studies, you will have the opportunity to look for'
+    S4: '## **Processing time:**
+
+
+      Due to the regular need for approval from the authorities in Germany, you should generally allow
+      four to six weeks for your visa application to be processed (calculated from the time you submit
+      the complete application documents as well as fees and biometric data and have come in for your
+      appointment to the diplomatic mission abroad).
+
+
+      Please do not request a status update – these will not be answered but ignored.'
+    S5: 'As you need **your passport** for applying for a blocked account you should complete this step
+      prior to your visa interview at our office. To ensure quick processing of your visa application,
+      you should submit the proof of your blocked account during your visa interview.
+
+
+      The **visa processing fee** is 75,- € payable in NT$ at the time of your visa interview. After receiving
+      an application, we cannot refund any visa processing fees irrespective of the decision taken on
+      your visa application.
+
+
+      The **processing time** for a complete student visa application is usually about two weeks; in individual
+      cases the processing may take longer. We cannot influence the processing time at the local alien
+      authority (“Ausländerbehörde”) in Germany and cannot speed-up the process in any way. Thus, please
+      refrain from status inquiries, they do not help your case in any way. **We will inform you promptly
+      when a decision on your visa application has been made.**'
+    S6: 'is as a rule ca. one month once application is complete but can take longer in
+
+      individual cases.
+
+      −
+
+      Flight reservations are not required to apply for a visa – please only book when you have received
+
+      your visa.
+
+      −
+
+      The mission abroad reserves the right to request further documents.
+
+      −
+
+      Missing documentation delays the procedure and can result in your application being rejected.
+
+      −
+
+      Please do not contact the mission abroad to check the status of your application during the
+
+      normal processing period. Such inquiries are extremely time-consuming for the visa section and
+
+      can thus not be answered.
+
+      General information
+
+      Foreign students who have been accepted by a German university (where applicable with a preparatory
+
+      language course) or a preparatory college (Studienkolleg) can apply for a visa to study in Germany.
+      You
+
+      are advised to secure your admittance or acceptance from the university as early as possible.
+
+      → During your studies, you can take up student jobs to help cover your expenses.
+
+      → Upon completing your studies, you will have the opportunity to look for a job.'
+    S7: Please note that we need to involve the relevant authorities in Germany in the processing of these
+      visa applications and can only issue a visa after they have informed us about their approval of
+      your case. We issue study-applicant visas with an initial validity of 90 days only. Later in Germany,
+      the local alien authority (“Ausländerbehörde”) may extend the visa in the form of a temporary residence
+      permit for the purpose of applying for a course of study for a combined maximum duration of nine
+      months. **When your visa application is lodged at our office it must be feasible and likely that
+      you will begin your university studies in Germany within nine months of your arrival.** After successful
+      university admission you can change your study-applicant visa into temporary residence permit for
+      students. If your study application is not successful you must leave Germany before the expiry of
+      your visa/ temporary residence permit.
+    S8: '## Processing time - how long will it take for me to get my visa?
+
+
+      ### Schengen visas
+
+
+      As a rule, missions require up to 15 calendar days to reach a decision on a correct application
+      for a Schengen visa. During peak travel seasons there may be a waiting period for making an application
+      to a German mission. You may apply for a Schengen visa at the earliest six months before and generally
+      no later than 15 days before your planned trip; however, you can make the appointment before that.'
+  faithful: ''
+  correctness: ''
+- id: q092
+  question: My department in Türkiye requires a compulsory internship. Do I need a work permit for it?
+  reference_answer: You apply for a work permit exemption instead, which covers internships required by
+    your university programme.
+  answer: You do not need a regular work permit, but according to the Ministry of Labour you do need to
+    apply for a work permit exemption for a compulsory internship [S1]. Under Article 48 of the Implementing
+    Regulation, this exemption can be issued to foreign students enrolled in a formal education program
+    in Türkiye who must do an internship with an employer during the compulsory internship [S1]. Study
+    in Türkiye simply says you do not need a work permit for compulsory or elective internships, and that
+    your university can guide you to internship opportunities [S2]. These sources differ slightly. Both
+    were retrieved on the same date, but the Ministry of Labour is the responsible authority, so plan
+    on applying for the exemption [S1]. This is not legal advice, and rules can change. Confirm the procedure
+    with your university's international office and the Ministry of Labour.
+  sources:
+    S1: '##### I am a foreigner, I am a student at a university in Türkiye, I have a compulsory internship
+      due to the department I am studying, do I need a work permit for this?
+
+
+      It is necessary to apply for work permit exemption for internships that are required as a part of
+      university education. In accordance with Article 48 of the Implementing Regulation, a work permit
+      exemption can be issued for "foreign students enrolled in a formal education program in Türkiye
+      who are obliged to do an internship with an employer within the scope of vocational training in
+      accordance with the relevant legislation, during the compulsory internship".'
+    S2: '**Internship Opportunities**
+
+
+      Higher education program you are enrolled in Türkiye may be a compulsory or elective internship
+      activity. This type of internship activities, which are mostly seen in undergraduate programs, are
+      usually conducted during summer term. In this case, you do not need to get a work permit, and with
+      the guidance of your university, you can find opportunities for internships in many private companies,
+      government organizations, international organizations or NGOs in Türkiye.
+
+
+      You can also have the opportunity to do internship for 2-12 months in a European country under Erasmus
+      + programme, which is open to participants from all over the world during your study in Türkiye
+      or immediately after graduation. Don''t forget to be in close contact with the International Office
+      of your University for this!
+
+
+      https://ec.europa.eu/programmes/erasmus-plus/opportunities/traineeships-students\_en
+
+
+      If you are a student enrolled in a university abroad and are planning to come to Türkiye for internship,
+      it is good to know that you are exempt from the work permit within certain conditions.'
+    S3: '## Work Permits
+
+
+      ## Students:
+
+
+      **Your residence permit does not automatically give you the right to work in Türkiye.** You need
+      an official work permit to work in Türkiye. The work permit is not something individuals can apply
+      for individually. The company that wants to hire you should apply for your work permit. In other
+      words, inTürkiye, you first need to find a job, and then the company should apply for a work permit
+      for you.
+
+
+      - Students at the undergraduate level can only get a work permit after they complete their first
+      year at the university.
+
+      - Students at the undergraduate level can only get a work permit for part-time jobs.
+
+      - Students at the undergraduate level can only get a work permit for jobs outside of the university/campus.
+
+
+      - Students at the graduate level can get a work permit starting from their first year at the university.
+
+      - Students at the graduate level can get a work permit for both full-time and part-time jobs.
+
+      - Students at the graduate level can only get a work permit for jobs outside of the university/campus.'
+    S4: 'Once you get a work permit in Türkiye, that permit is counted as a residence permit, and you
+      do not need to apply for a residence permit until the expiry date of your work permit.
+
+
+      If it is found out that you work in Türkiye without an official work permit, your residence permit
+      could be canceled by the Migration Office.'
+    S5: '#### Special work, internship, research or qualification visas
+
+
+      You **cannot** use the Consular Services Portal for **non-skilled worker visas**. For special work
+      visas such as **non-skilled employment (§15d BeschV), working on ships, freelancer, artist or au-pair,
+      for a voluntary service, internship, recognition of your foreign qualifications (§16d AufenthG),
+      self-employment or research** please book an appointment through iDATA and prepare your documents
+      according to the information on national visas for Turkish citizens (German/Turkish).'
+    S6: '**Working while studying**
+
+
+      In particular, international students enrolled in a master''s or PhD program in Türkiye can work
+      as researchers in scientific projects related to their work to finance their graduate studies. Some
+      private universities also accept graduate students with full scholarships and can provide assistantships
+      for students in exchange for this scholarship. Undergraduate students will often find opportunities
+      to work in a part-time job, according to their course schedules.
+
+
+      If you have a plan to work in your student life, what you need to know first is that your student
+      residence permit does not cover the work permit alone. Therefore, if you want to work during your
+      studies, you will first need to obtain a work permit. There are different types of work permits
+      such as short-term, perpetual, independent work and are given by General Directorate of International
+      Labour.'
+    S7: '\- To work in Türkiye, you must apply to the nearest Turkish mission to obtain work permit and
+      visa. Your passport, visa application form and a letter from your employer are the necessary documents
+      for your application. Other documents should be submitted to the Turkish Ministry of Labor and Social
+      Security (MLSS) by your employer within ten working days after your application.
+
+
+      \- Work Permit Applications are concluded positively or negatively by the Ministry of Labor and
+      Social Security. Work Permits have equivalence to residence permits. Thus, should a working permit
+      is approved by the Ministry, the foreigner is charged an Entry Visa Fee, Work Permit Certificate
+      Fee and Residence Fee by the Turkish consular offices. Since Work Permit Card substitute residence
+      permit in Türkiye, "Work Annotated Visa" issued by these offices can only be used for entrance and
+      for 90 days at maximum.
+
+
+      \- You may find the list of those documents in the MLSS’s website ( http://www.csgb.gov.tr ). Applications
+      are finalized by the MLSS within thirty days at the latest. Right after your arrival in Türkiye
+      (before starting to work), you should be registered at the local police department within one month
+      to obtain the necessary residence permit.'
+    S8: 'Information on Work Visa: To work in Türkiye, you must apply to the nearest Turkish mission to
+      obtain work permit and visa. Your passport, visa application form and a letter from your employer
+      are the necessary documents for your application. Other documents should be submitted to the Turkish
+      Ministry of Labour and Social Security (MLSS) by your employer within ten working days after your
+      application.
+
+
+      You may find the list of those documents in the MLSS’s website (http://www.csgb.gov.tr). Applications
+      are finalized by the MLSS within thirty days at the latest. Right after your arrival in Türkiye
+      (before starting to work), you should be registered at the local police department within one month
+      to obtain the necessary residence permit.
+
+
+      As of 1 January 2015, in accordance with the article 7.1b of “the Law on Foreigners and International
+      Protection” no. 6458, foreigners wishing to enter Türkiye should carry a travel document (passport)
+      with an expiration date at least 60 days beyond the “duration of stay” of their visa, e-Visa, visa
+      exemption, or residence permit.
+
+
+      The citizens of the countries which are stated at the below link are exempted form this Article;'
+  faithful: ''
+  correctness: ''
+- id: q094
+  question: Who applies for my work permit in Türkiye, me or my employer?
+  reference_answer: 'The employer. You can''t apply yourself: you find a job first, then the company applies
+    for your work permit.'
+  answer: 'Your employer applies, not you. As a student, a work permit is not something you can apply
+    for individually; the company that wants to hire you applies for your work permit, so you first need
+    to find a job [S6]. The MFA describes a process where you apply at the nearest Turkish mission with
+    your passport, visa application form and a letter from your employer, and your employer then submits
+    the other documents to the Ministry of Labour and Social Security within ten working days [S2][S3].
+    The Ministry finalizes applications within thirty days at the latest [S2].
+
+
+    Key conditions for students: undergraduates can get a permit only after their first year and only
+    for part-time jobs off campus; graduate students can from their first year, full- or part-time, off
+    campus [S6]. Your residence permit alone does not give you the right to work [S6].
+
+
+    This is not legal advice; please confirm with the Ministry of Labour or your university''s international
+    office.'
+  sources:
+    S1: '3. CREATING A WORKPLACE PROFILE
+
+      f the foreigner who will work under a work permit exemption works affiliated with an employer registered
+
+      in Türkiye (e.g., athletes, tour operators, etc.), a Workplace Profile needs to be created.
+
+      If the foreigner applies for a work permit exemption without being affiliated with an employer in
+      Türkiye
+
+      (e.g., cross-border service providers), the application is completed directly by the foreigner without
+      the
+
+      need to create a Workplace Profile.
+
+
+      3.1. Creating a Workplace Profile
+
+      A Workplace Profile can be created by the relevant employer that employs the foreign national in
+
+      Türkiye.'
+    S2: 'Information on Work Visa: To work in Türkiye, you must apply to the nearest Turkish mission to
+      obtain work permit and visa. Your passport, visa application form and a letter from your employer
+      are the necessary documents for your application. Other documents should be submitted to the Turkish
+      Ministry of Labour and Social Security (MLSS) by your employer within ten working days after your
+      application.
+
+
+      You may find the list of those documents in the MLSS’s website (http://www.csgb.gov.tr). Applications
+      are finalized by the MLSS within thirty days at the latest. Right after your arrival in Türkiye
+      (before starting to work), you should be registered at the local police department within one month
+      to obtain the necessary residence permit.
+
+
+      As of 1 January 2015, in accordance with the article 7.1b of “the Law on Foreigners and International
+      Protection” no. 6458, foreigners wishing to enter Türkiye should carry a travel document (passport)
+      with an expiration date at least 60 days beyond the “duration of stay” of their visa, e-Visa, visa
+      exemption, or residence permit.
+
+
+      The citizens of the countries which are stated at the below link are exempted form this Article;'
+    S3: '\- To work in Türkiye, you must apply to the nearest Turkish mission to obtain work permit and
+      visa. Your passport, visa application form and a letter from your employer are the necessary documents
+      for your application. Other documents should be submitted to the Turkish Ministry of Labor and Social
+      Security (MLSS) by your employer within ten working days after your application.
+
+
+      \- Work Permit Applications are concluded positively or negatively by the Ministry of Labor and
+      Social Security. Work Permits have equivalence to residence permits. Thus, should a working permit
+      is approved by the Ministry, the foreigner is charged an Entry Visa Fee, Work Permit Certificate
+      Fee and Residence Fee by the Turkish consular offices. Since Work Permit Card substitute residence
+      permit in Türkiye, "Work Annotated Visa" issued by these offices can only be used for entrance and
+      for 90 days at maximum.
+
+
+      \- You may find the list of those documents in the MLSS’s website ( http://www.csgb.gov.tr ). Applications
+      are finalized by the MLSS within thirty days at the latest. Right after your arrival in Türkiye
+      (before starting to work), you should be registered at the local police department within one month
+      to obtain the necessary residence permit.'
+    S4: '##### I am a foreigner, I am a student at a university in Türkiye, I have a compulsory internship
+      due to the department I am studying, do I need a work permit for this?
+
+
+      It is necessary to apply for work permit exemption for internships that are required as a part of
+      university education. In accordance with Article 48 of the Implementing Regulation, a work permit
+      exemption can be issued for "foreign students enrolled in a formal education program in Türkiye
+      who are obliged to do an internship with an employer within the scope of vocational training in
+      accordance with the relevant legislation, during the compulsory internship".'
+    S5: 'Once you get a work permit in Türkiye, that permit is counted as a residence permit, and you
+      do not need to apply for a residence permit until the expiry date of your work permit.
+
+
+      If it is found out that you work in Türkiye without an official work permit, your residence permit
+      could be canceled by the Migration Office.'
+    S6: '## Work Permits
+
+
+      ## Students:
+
+
+      **Your residence permit does not automatically give you the right to work in Türkiye.** You need
+      an official work permit to work in Türkiye. The work permit is not something individuals can apply
+      for individually. The company that wants to hire you should apply for your work permit. In other
+      words, inTürkiye, you first need to find a job, and then the company should apply for a work permit
+      for you.
+
+
+      - Students at the undergraduate level can only get a work permit after they complete their first
+      year at the university.
+
+      - Students at the undergraduate level can only get a work permit for part-time jobs.
+
+      - Students at the undergraduate level can only get a work permit for jobs outside of the university/campus.
+
+
+      - Students at the graduate level can get a work permit starting from their first year at the university.
+
+      - Students at the graduate level can get a work permit for both full-time and part-time jobs.
+
+      - Students at the graduate level can only get a work permit for jobs outside of the university/campus.'
+    S7: '**4. Exceptions to employment and financial eligibility criteria**
+
+
+      4.1 For applications for a domestic work permit submitted on behalf of foreigners who, as of the
+      date of the work permit application, have legally resided in Türkiye for at least one year within
+      the preceding three years under a work permit, residence permit, or international protection status,
+      it is a fundamental principle that the employment and financial eligibility criteria shall not be
+      applied. This exemption is limited to a maximum of three foreigners falling within this category.
+      *(Effective as of August 3, 2026.)*
+
+
+      4.2. It is essential that the number of foreigners working with a work permit in workplaces under
+      the first paragraph does not exceed the number of Turkish citizens employed in the same workplace.
+
+
+      4.3. Provided that the relevant legislation provisions for foreigners under international protection
+      are reserved, if more than three foreigners meeting the conditions in the first paragraph are to
+      work in the same workplace, the evaluation of work permit applications for the fourth and subsequent
+      foreign employees must meet the employment and financial eligibility criteria for each foreigner
+      employed in the workplace.'
+    S8: '**4. Aviation industry**
+
+
+      4.1. Work permit applications for foreigners, who work as senior executives or in specialist positions
+      for the foreign flag carrier airlines’ Türkiye branches, will not be subject to employment and financial
+      eligibility criteria.
+
+
+      **5. High-tech industry**
+
+
+      5.1. For qualified investments that are committed to making a significant contribution to the national
+      economy or creating a high number of jobs, or in cases where there is a need for qualified workforce
+      due to the nature of the job and the unavailability of Turkish citizens with the same qualifications,
+      work permit applications may be exempt from the general evaluation criteria, subject to approval
+      by the Directorate General of International Labour Force.
+
+
+      5.2. For foreigners working as R&D, innovation, and design personnel in companies with R&D or design
+      center certificates under Law No. 5746 on the Support of Research, Development, and Design Activities,
+      and for foreigners working in technology development zones under Law No. 4691 on Technology Development
+      Zones, the approval of the Ministry of Industry and Technology is required. Employment and financial
+      eligibility criteria will not applied in the evaluation of work permit applications in this context.'
+  faithful: ''
+  correctness: ''
+- id: q095
+  question: I'm a US citizen admitted to a German university. Do I need a visa before I travel?
+  reference_answer: No. US citizens can enter visa-free with a valid passport, but must apply for a residence
+    permit for study within the first three months.
+  answer: 'No, as a US citizen you generally do not need to apply for a visa before travelling to Germany
+    [S1][S2][S6]. You can enter visa-free and apply for the required residence permit for study purposes
+    after arrival [S1][S6]. If you stay longer than three months, you apply for this permit at the local
+    foreigners authority (Ausländeramt) of your place of residence [S2][S6]. Note: you may only take up
+    employment once you have a residence permit that explicitly authorises it; alternatively, you can
+    choose to apply for a visa before travelling, which permits employment from the first day of visa
+    validity [S8]. The rules can change, so please confirm with the German embassy/consulate or your local
+    foreigners authority before making decisions [S5]. This is not legal advice.'
+  sources:
+    S1: 'Nationals of Australia, Canada, Great Britain, Israel, Japan, New Zealand, South Korea and the
+      United States may apply for the necessary permit after arrival in Germany. The same applies for
+      nationals of Andorra, Brazil, El Salvador, Honduras, Monaco and San Marino who do not intend to
+      take up employment.
+
+
+      EU citizens as well as citizens of Iceland, Liechtenstein, Norway and Switzerland citizens have
+      the right to live and work in Germany. After arrival, they just need to register with the appropriate
+      office of the town hall (mostly called “Einwohnermeldeamt” or “Bürgeramt”) of their residence in
+      Germany.
+
+
+      If you plan to study in Germany, you have to submit an application for a student visa to the respective
+      German mission abroad before travelling. Citizens of the EU are exempted from this duty, as well
+      as - under certain conditions according to the EU-mobility program - foreigners who already hold
+      a temporary residence permit as a student issued by another EU-country, due to the EU-mobility program,
+      please see the Implementation Status of the REST-Directive of the Federal Office for Migration and
+      Refugees.'
+    S2: '# Visas
+
+
+      International students often need a visa to enter Germany. Sometimes they also need a residence
+      permit. Whether you need these documents depends on which country you are from and how long you
+      intend to stay.
+
+
+      ## Entering Germany without a visa
+
+
+      Citizens of EU member states, Iceland, Liechtenstein, Norway and Switzerland only need a valid ID
+      card or comparable document to enter the country. As soon as you have found accommodation, you need
+      to make an appointment with the , or residents'' registration office, in your university town. You
+      will receive a registration certificate there.
+
+
+      If you come from Australia, Canada, Great Britain, Israel, Japan, New Zealand, South Korea or the
+      United States, or from Andorra, Brazil, El Salvador, Honduras, Monaco or San Marino, you can enter
+      Germany without a visa. If you stay in Germany for more than three months, you need to apply for
+      a . This can be done at the local foreigners authority (Ausländeramt / ).
+
+
+      You can find the one that is responsible for your place of residence here.'
+    S3: If you need a visa before admission by the university, e.g. in order to take the Studienkolleg
+      entry test or the German language exam (DSH) in Berlin, you may ask the German Diplomatic Mission
+      in your country of residence for an applicant's visa (Studienbewerbervisum). This type of visa is
+      valid for three months and can be converted into an entry visa for study purposes. A visa for a
+      language course and a tourist visa will not be converted into an entry visa.
+    S4: '# FAQ
+
+
+      ### What is the procedure for applying for a student visa?
+
+
+      If you plan to study in Germany, you have to submit an application for a student visa to the respective
+      German mission abroad before travelling. Citizens of the EU are exempted from this duty, as well
+      as - under certain conditions according to the EU-mobility program - foreigners who already hold
+      a temporary residence permit as a student issued by another EU-country, due to the EU-mobility program,
+      please see the Implementation Status of the REST-Directive of the Federal Office for Migration and
+      Refugees.
+
+
+      Documents have to be presented proving inter alia that the applicant has been accepted for studies
+      by the university. The German mission abroad will then forward the visa application for an opinion
+      to the foreigners authority in the town housing the University.
+
+
+      The German mission abroad can only issue the visa for entry once the foreigners authority has given
+      its approval.
+
+
+      Details on the documents to be presented with your visa application are often available on the website
+      of the competent German mission abroad or directly from the mission itself.
+
+
+      the application form for a visa can be downloaded here.'
+    S5: 'Whether you need a visa for Germany depends on where you come from and how long you plan to stay
+      here.
+
+
+      For more and binding information about visa requirements, contact the German embassy or German consulate
+      in your home country.
+
+
+      Check the requirements
+
+
+      Do you need a visa to live, study or do an internship in Germany? We explain to whom the visa requirement
+      applies and what exceptions there are.
+
+
+      You will generally need a visa, which you must apply for before coming to Germany. You can apply
+      for the visa at the German diplomatic mission in your home country. There are exceptions for specific
+      countries, depending on the duration and purpose of your stay.
+
+
+      If you have not yet received notification of admission to a university or foundation course, you
+      should apply for a **prospective student visa**.
+
+
+      This visa is usually valid for **three months** and gives you the opportunity to meet the requirements
+      for admission to a German higher education institution. If you need more time, it can be extended
+      by up to six months. If you are admitted to a higher education institution or foundation course
+      during this period, you can apply for a'
+    S6: 'Visas
+
+      Whether or not you require a visa depends
+
+      on your country of origin.
+
+      If you are a citizen of an EU or EEA country, you
+
+      do not require student visas for Germany –
+
+      you can just travel on a valid identification
+
+      document. Under certain conditions the same
+
+      applies to students who already hold a resi-
+
+      dence permit to study in another EU country.
+
+      Citizens of several other countries such as
+
+      Australia, the UK and the USA can travel to
+
+      Germany without applying for a visa in
+
+      advance. However if you come from one of
+
+      these countries, you will need a valid resi-
+
+      dence permit for study purposes. You can
+
+      apply for a permit after arriving in Germany
+
+      by visiting the foreigners’ registration office
+
+      of your intended place of residence. You can
+
+      check if these rules apply to your home coun-
+
+      try on the website of the Federal Foreign
+
+      Office: www.auswaertiges-amt.de/en/
+
+      visa-service/231148.
+
+      HEALTH INSURANCE AND PART-TIME WORK DURING
+
+      YOUR STUDIES
+
+      Be aware that there are rules in Germany on how many hours you can work with-
+
+      out having to take out your own health insurance. If you work too many hours,
+
+      you must take out insurance in Germany, regardless of'
+    S7: 'If you have received your notification of admission to university or a foundation course, you
+      should apply for **visa for study purposes**. Student visas are usually valid for **one year**.
+      You will have to apply for an at the in your town of residence once you are in Germany.
+
+
+      International students from the European Union, the European Economic Area or Switzerland do not
+      require a visa. The Federal Foreign Office provides information on current visa regulations.
+
+
+      Do you need a visa to study in Germany? Pay attention to the difference whether you need one for
+      application and preparation or for the study itself.'
+    S8: 'Please note that you may only take up employment once you have been issued a residence permit
+      explicitly authorising the employment. You may also choose to apply for a visa prior to travel,
+      effectively permitting employment from the first day of visa validity.
+
+
+      All other nationalities require a visa prior to travelling to Germany.'
+  faithful: ''
+  correctness: ''

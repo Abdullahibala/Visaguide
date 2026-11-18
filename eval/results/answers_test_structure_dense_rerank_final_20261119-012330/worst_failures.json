@@ -1,0 +1,166 @@
+[
+  {
+    "id": "q066",
+    "severity": 5,
+    "tags": [
+      "answered_unanswerable"
+    ],
+    "type": "conditional",
+    "coverage": "full",
+    "verdict": null,
+    "question": "Do Turkish student visa applicants from every country pay the same visa application fee?",
+    "reference": "The corpus says fees may be set with reciprocity taken into account, but does not provide a universal amount for every nationality.",
+    "answer": "No. According to the sources, Turkish visa fees are not uniform; they vary by nationality and other factors, and you should confirm the current fee with your Turkish consulate. Fee exemptions are set by the Ministry on the basis of reciprocity [S1]. For example, the Miami consulate lists a single-entry fee of $60, but $185 for refugee travel document holders and US citizens, and a multiple-entry fee of $180, or $265 for those groups [S3]. The New York consulate lists $160 single-entry and $190 multiple-entry for US citizens, and asks non-US citizens to email for their fee [S5]. Note that these two consulates give different amounts for US citizens. Both sources were retrieved on the same date, so check directly with your consulate. Fees are non-refundable if your application is rejected [S2]. Also, if you enter visa-free, a single-entry visa fee is charged when you apply for a residence permit [S1]. This is not legal advice.",
+    "unsupported_claims": [],
+    "judge": ""
+  },
+  {
+    "id": "q076",
+    "severity": 5,
+    "tags": [
+      "answered_unanswerable",
+      "unsupported_claim"
+    ],
+    "type": "factoid",
+    "coverage": "full",
+    "verdict": null,
+    "question": "How many years can a German graduate's post-study residence permit be extended beyond its initial 18-month job-search period?",
+    "reference": "The sources state an 18-month job-search period but do not describe an extension for continued job search beyond that period.",
+    "answer": "It can't be extended at all for job search. The post-study job-search permit runs for up to 18 months, and you cannot extend it beyond 18 months to keep looking for work [S2][S3]. After that, a new residence permit can only be issued for a different purpose of stay [S2]. For example, if you find an appropriate job within the 18 months, you can get a residence permit for employment [S5]. If you later earn a new degree, you may again apply for an 18-month job-search permit [S7]. Rules can change, so please confirm your situation with your local Foreigners Registration Office. This is not legal advice.",
+    "unsupported_claims": [
+      "The job-search permit can't be extended at all."
+    ],
+    "judge": ""
+  },
+  {
+    "id": "q039",
+    "severity": 3,
+    "tags": [
+      "unsupported_claim"
+    ],
+    "type": "list",
+    "coverage": "full",
+    "verdict": "correct",
+    "question": "Does Türkiye Scholarships only provide tuition money, or can it also help with day-to-day student needs?",
+    "reference": "The program also supports needs such as accommodation and health insurance during the education period.",
+    "answer": "Türkiye Scholarships covers much more than tuition: it also supports your day-to-day needs. Besides covering tuition fees, it provides accommodation, general health insurance, a once-off flight ticket, a 1-year Turkish language course and a monthly stipend [S2]. The stipend is 6.500 TL per month at Associate's and Bachelor's level, 9.500 TL at Master's level and 13.000 TL at PhD level [S2]. The official FAQ likewise lists monthly pocket money, tuition, a one-time round-trip flight ticket, health insurance, accommodation and one-year Turkish education [S3]. It also places you in a university program, unlike most other scholarships [S3]. Graduate students may receive monthly cash accommodation aid of 750 TL [S7]. Note that partial and short-term scholarships also exist, which may not include everything [S3]. Amounts can change, so confirm the current figures with Türkiye Scholarships before you plan your budget; this is not legal advice.",
+    "unsupported_claims": [
+      "Partial and short-term scholarships may not include everything."
+    ],
+    "judge": "The assistant says the scholarship covers more than tuition and names accommodation and health insurance, the two key facts in the reference. The extra details (stipend, flight ticket, language course) do not contradict the reference."
+  },
+  {
+    "id": "q061",
+    "severity": 3,
+    "tags": [
+      "retrieval_miss",
+      "unsupported_claim"
+    ],
+    "type": "conditional",
+    "coverage": "full",
+    "verdict": "partial",
+    "question": "Does the German residence permit for studying automatically last for my entire degree, even if it is longer than two years?",
+    "reference": "The Study in Germany page says the permit is initially issued for at least one year and no more than two years, and it can be extended based on regular study progress.",
+    "answer": "No. Your study residence permit is not automatically issued for your whole degree; you generally have to extend it during your studies. The sources give different standard durations. Munich says it is usually granted for three years and can be extended, or only for the course length if your course is shorter [S6]. Hamburg's 2024 guide says it is issued for a maximum of two years and must be regularly extended [S2]. In Hamburg, it is issued for at least two years if you are in an EU or multilateral mobility programme or a university agreement applies to you [S2]. Both sources are official city information retrieved on the same date, so the length may depend on your local authority. Overall, your stay for study purposes is capped at 10 years, or 15 for a doctorate [S5]. If you exceed certain semester limits, your university must confirm you will finish within that period [S5]. Please confirm with your local Foreigners' Office; this is not legal advice.",
+    "unsupported_claims": [
+      "The length of the permit may depend on the local authority."
+    ],
+    "judge": "The assistant correctly says the permit is not automatically issued for the whole degree and must be extended. It cites Hamburg's maximum of two years, which matches the reference. It does not give the one-year minimum, and it adds Munich's three-year figure, which conflicts with the reference's two-year maximum. The reference's maximum is included, but the answer is vague on the range and does not tie extension to regular study progress. It lacks some key facts and its extra information is partly inconsistent, so it is partial."
+  },
+  {
+    "id": "q065",
+    "severity": 3,
+    "tags": [
+      "unsupported_claim"
+    ],
+    "type": "factoid",
+    "coverage": "full",
+    "verdict": "correct",
+    "question": "How many hours per week may I work in Germany before I have to pay the same insurance contributions as German students?",
+    "reference": "The DAAD side-jobs page says students who work more than 20 hours per week must pay certain insurance contributions.",
+    "answer": "The threshold is 20 hours per week. All students in Germany may work up to 20 hours a week during the lecture period and still count as students for social security [S3]. Above that, you count as an employee and must pay earnings-related health, pension and unemployment insurance contributions [S3][S2]. Even below 20 hours, students usually pay low contributions, but only if they earn more than 556 EUR per month [S4]. Short jobs are exempt: you pay no social security contributions if you work less than three months at a stretch or less than 70 days a year [S4][S7]. If you are from outside the EU/EEA, you are also limited to 140 full days or 280 half days a year without approval [S8]. Working that much can also put your student residence permit at risk if it harms your studies [S3]. This is not legal advice, so confirm details with your health insurer or the immigration office.",
+    "unsupported_claims": [
+      "Even below 20 hours, students usually pay low contributions, but only if they earn more than 556 EUR per month."
+    ],
+    "judge": "The assistant states the 20 hours per week threshold and says that above it students count as employees and must pay insurance contributions, matching the reference. The extra details (556 EUR, short-job exemptions, non-EU limits) do not contradict the reference."
+  },
+  {
+    "id": "q086",
+    "severity": 3,
+    "tags": [
+      "unsupported_claim"
+    ],
+    "type": "list",
+    "coverage": "full",
+    "verdict": "correct",
+    "question": "I'm a degree student at Ankara University. Which documents does the international students office list for the residence permit?",
+    "reference": "Residence application form; original and copy of passport; the stamped passport page of the last entry; valid health insurance; probable graduation certificate; proof of address; card fee receipt; 4 biometric photos.",
+    "answer": "The Ankara University residence permit page (isoidb.ankara.edu.tr, which appears to be the international students office) lists eight documents [S7][S8]:\n1. Residence application form [S7]\n2. Original and photocopy of your passport [S7]\n3. The stamped passport page of your last entry into Turkey [S7]\n4. Valid health insurance [S7]\n5. Probable graduation certificate [S7]\n6. A document showing your address information [S7]\n7. Residence permit card fee receipt [S7]\n8. 4 biometric photos [S8]\n\nA separate Ankara University (Erasmus) page gives more detail. It says the photos must have been taken within the last 6 months against a white background [S3]. It also says the insurance period must cover the whole permit duration [S3].\n\nThis is not legal advice. Please confirm the current list with the university and the migration authority before your appointment.",
+    "unsupported_claims": [
+      "isoidb.ankara.edu.tr appears to be the international students office."
+    ],
+    "judge": "The assistant lists all eight documents from the reference, paraphrased accurately, and contradicts none. The extra details about photos and insurance do not lower the grade."
+  },
+  {
+    "id": "q092",
+    "severity": 3,
+    "tags": [
+      "unsupported_claim"
+    ],
+    "type": "conditional",
+    "coverage": "full",
+    "verdict": "correct",
+    "question": "My department in Türkiye requires a compulsory internship. Do I need a work permit for it?",
+    "reference": "You apply for a work permit exemption instead, which covers internships required by your university programme.",
+    "answer": "You do not need a regular work permit, but according to the Ministry of Labour you do need to apply for a work permit exemption for a compulsory internship [S1]. Under Article 48 of the Implementing Regulation, this exemption can be issued to foreign students enrolled in a formal education program in Türkiye who must do an internship with an employer during the compulsory internship [S1]. Study in Türkiye simply says you do not need a work permit for compulsory or elective internships, and that your university can guide you to internship opportunities [S2]. These sources differ slightly. Both were retrieved on the same date, but the Ministry of Labour is the responsible authority, so plan on applying for the exemption [S1]. This is not legal advice, and rules can change. Confirm the procedure with your university's international office and the Ministry of Labour.",
+    "unsupported_claims": [
+      "The Ministry of Labour is the responsible authority for the work permit exemption."
+    ],
+    "judge": "The assistant says no regular work permit is needed, that a work permit exemption must be applied for for a compulsory internship, and that it covers foreign students in formal education who must intern as part of their programme. It also notes that a source differs but resolves this in favour of applying for the exemption, which matches the reference."
+  },
+  {
+    "id": "q025",
+    "severity": 1,
+    "tags": [
+      "retrieval_miss"
+    ],
+    "type": "factoid",
+    "coverage": "full",
+    "verdict": "partial",
+    "question": "If I graduate from a Turkish higher education program and want to remain to look for work, what permit might I apply for?",
+    "reference": "A short-term residence permit may be available if the application is made within six months of graduation; it can be issued once for up to one year.",
+    "answer": "You can apply for a short-term residence permit under the \"those who graduated from a Turkish university\" category, which gives about one year to look for work in Türkiye [S1][S7]. Key conditions: - Apply within six months after graduation [S1][S7]; METU adds that this must be before your student residence permit expires [S4]. - If your student card's expiry date is after your graduation date, you may stay until that date [S4]; otherwise you must leave within 10 days after your student card expires [S7]. - The permit can be extended for one more year if you apply before it expires or within 90 days after expiry [S1]. - Each new graduation (undergraduate, master's, PhD) gives a separate right to apply [S4]. Note that to actually work, you need a separate work permit [S6]. These sources are university guidance, not legal advice; confirm details with the Migration Office (e.g. by calling 157) [S7].",
+    "unsupported_claims": [],
+    "judge": "The answer correctly names the short-term residence permit, the six-month application window, and about one year's duration. However, it says the permit can be extended for one more year, which conflicts with the reference's 'issued once for up to one year'. Because it contradicts the reference on that point, the grade is partial rather than correct."
+  },
+  {
+    "id": "q036",
+    "severity": 1,
+    "tags": [
+      "retrieval_miss"
+    ],
+    "type": "conditional",
+    "coverage": "full",
+    "verdict": "partial",
+    "question": "I am coming to Türkiye on an exchange lasting one semester. Do I need a residence permit?",
+    "reference": "Exchange students enrolled in an academic program in Türkiye for three months or longer must obtain a short-term residence permit.",
+    "answer": "Most likely yes. You need a residence permit if you will stay in Türkiye longer than 90 days, and one source says this applies to all Erasmus students when they arrive [S7]. If your semester, including any time before or after classes, lasts more than 90 days, plan to apply. The sources do not say how long a semester is, so check your exact dates.\n\nKey points:\n- For Erasmus students, the permit covers the length of the exchange and is issued without a fee [S6].\n- If you need to stay longer, apply for an extension through the e-Residence system before your permit ends [S6].\n- Applications are decided within 90 days at the latest, and while your application is pending you may stay legally [S6].\n- Use only the documents officially listed by your host university, and book an appointment with its office [S7].\n\nThis is not legal advice. Please confirm with your host university and the Migration Office.",
+    "unsupported_claims": [],
+    "judge": "The assistant says a residence permit is most likely needed and ties it to stays over 90 days, which is roughly equivalent to the reference's three months. It notes that Erasmus students need one. It does not name the permit type (short-term residence permit), and it hedges with 'most likely' instead of clearly saying that a semester exchange requires one. Nothing it says contradicts the reference, so the answer is partial."
+  },
+  {
+    "id": "q095",
+    "severity": 1,
+    "tags": [
+      "retrieval_miss"
+    ],
+    "type": "conditional",
+    "coverage": "full",
+    "verdict": "partial",
+    "question": "I'm a US citizen admitted to a German university. Do I need a visa before I travel?",
+    "reference": "No. US citizens can enter visa-free with a valid passport, but must apply for a residence permit for study within the first three months.",
+    "answer": "No, as a US citizen you generally do not need to apply for a visa before travelling to Germany [S1][S2][S6]. You can enter visa-free and apply for the required residence permit for study purposes after arrival [S1][S6]. If you stay longer than three months, you apply for this permit at the local foreigners authority (Ausländeramt) of your place of residence [S2][S6]. Note: you may only take up employment once you have a residence permit that explicitly authorises it; alternatively, you can choose to apply for a visa before travelling, which permits employment from the first day of visa validity [S8]. The rules can change, so please confirm with the German embassy/consulate or your local foreigners authority before making decisions [S5]. This is not legal advice.",
+    "unsupported_claims": [],
+    "judge": "The answer correctly says no visa is needed and that the study residence permit is applied for after arrival. It does not mention the valid passport. Its timing is also vaguer than the reference: it says only that a stay longer than three months requires the permit from the local foreigners authority, rather than that the application must be made within the first three months. Nothing in it contradicts the reference, and the extra details about employment and the optional visa are correct additions."
+  }
+]
