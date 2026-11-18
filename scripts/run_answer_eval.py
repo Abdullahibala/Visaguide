@@ -85,6 +85,8 @@ def main() -> None:
     ap.add_argument("--split", choices=["test", "dev", "all"], default="test")
     ap.add_argument("--chunking", default=None)
     ap.add_argument("--mode", default=None)
+    ap.add_argument("--top-k", type=int, default=0, help="chunks given to the LLM "
+                    "(default: retrieval.top_k from config)")
     ap.add_argument("--limit", type=int, default=0, help="only the first N questions")
     ap.add_argument("--resume", type=Path, help="existing results folder to continue")
     ap.add_argument("--skip-judge", action="store_true")
@@ -95,6 +97,7 @@ def main() -> None:
     cfg = load_config()
     chunking = args.chunking or cfg.retrieval.default_chunking
     mode = args.mode or cfg.retrieval.default_mode
+    top_k = args.top_k or cfg.retrieval.top_k
     with TESTSET.open(encoding="utf-8") as f:
         questions = [q for q in map(json.loads, f)
                      if args.split == "all" or q["split"] == args.split]
@@ -111,7 +114,7 @@ def main() -> None:
     (out / "run_config.json").write_text(json.dumps({
         "split": args.split, "chunking": chunking, "mode": mode, "limit": args.limit,
         "generation": cfg.generation.model_dump(), "judge": cfg.judge.model_dump(),
-        "top_k": cfg.retrieval.top_k, "git_commit": git_commit(),
+        "top_k": top_k, "git_commit": git_commit(),
         "testset_sha256": hashlib.sha256(TESTSET.read_bytes()).hexdigest()[:12],
     }, indent=2), encoding="utf-8", newline="\n")
 
@@ -120,7 +123,7 @@ def main() -> None:
     done = {r["id"] for r in read_jsonl(ans_path)}
     todo = [q for q in questions if q["id"] not in done]
     if todo:
-        pipe = RAGPipeline.from_config(cfg, chunking=chunking, mode=mode)
+        pipe = RAGPipeline.from_config(cfg, chunking=chunking, mode=mode, top_k=top_k)
         for n, q in enumerate(todo, 1):
             res = pipe.answer(q["question"])
             append_jsonl(ans_path, {"id": q["id"], **res.to_dict()})
