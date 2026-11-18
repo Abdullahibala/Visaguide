@@ -183,8 +183,8 @@
       We strongly urge the public to trust the information shared transparently by official institutions
       and not to give credence to baseless claims that seek to harm our country''s education system and
       international relations.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q008
   question: Can I start attending classes at a German university before completing its enrolment process?
   reference_answer: No. Enrolment is required before studies commence.
@@ -369,8 +369,8 @@
       is also valid in Germany. Private domestic and foreign health insurance policies from other countries
       may also be recognised in Germany. You should inquire about the details with your health insurance
       provider before leaving home.'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q018
   question: How long might it take for Sabancı applicants to receive a decision and residence permit card?
   reference_answer: The university says evaluation and card preparation may take up to 90 days; it also
@@ -530,8 +530,8 @@
       graduation. Therefore, we recommend that you apply for a short-term residence permit 5 days before
       your graduation date, which you can find out from student resources. You can check the status of
       your permit by calling 157.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q021
   question: What is the Turkish foreign national identity number used for at METU besides identifying
     me?
@@ -801,8 +801,8 @@
       of Northern Cyprus and want to use their diploma outside Turkey.
 
       - For foreign students who will begin postgraduate education in Turkey, excluding health fields.'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q025
   question: If I graduate from a Turkish higher education program and want to remain to look for work,
     what permit might I apply for?
@@ -933,8 +933,8 @@
       or undergraduate students starts after the first year of their study and the weekly working hours
       will not exceed maximum twenty-four hours. The principles and procedures governing the right of
       work for pre-graduate/associate or undergraduate students will be determined separately.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q034
   question: If I want to freelance while studying in Germany as an international student, is the usual
     student work allowance enough by itself?
@@ -1213,8 +1213,8 @@
       International students (as well as Studienkolleg participants) from non-EU
 
       countries are allowed to work but must follow several rules. As an'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q035
   question: Can students from outside the EU simply exceed the German student work-day limit if they find
     more shifts?
@@ -1479,8 +1479,8 @@
       (e.g. teaching, translating, interpreting, etc.) may apply for a permit for this from
 
       the Foreigners Registration Department. Self- employment may be allowed during'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q037
   question: If my Turkish visa allows a longer visit, can I stay more than 90 days in any 180-day period?
   reference_answer: No. The permitted stay cannot exceed 90 days within each 180-day period.
@@ -1626,8 +1626,8 @@
       trip.
 
       • Turkish Consulate in New York cannot expedite a visa application.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q040
   question: I have a Türkiye scholarship but no Turkish proficiency certificate. What language support
     may be offered?
@@ -1797,8 +1797,8 @@
       (if requested by the selected program, such as GRE, GMAT) Language exam results (if requested by
       the selected program) A written example of the research topic and the work you have done (for PhD
       applicants only)'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q043
   question: Do I need travel medical insurance for the Turkish student visa application through Miami?
   reference_answer: Yes. The checklist requires international health insurance with at least $35,000 coverage
@@ -2051,8 +2051,8 @@
       Security Administration after receiving the residence permit and inform the authority, which they
       have received the residence permit from, after finalizing this insurance. Otherwise, their residence
       permits will be cancelled. (Valid health insurance is not required for the relatives of these people,
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q055
   question: When I extend my student residence permit in Hamburg, can I show my funds with a normal bank
     account instead of a blocked account?
@@ -2278,8 +2278,8 @@
 
 
       Proof of funds includes:'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q067
   question: My German D visa runs out soon. When do I need to apply for the residence permit?
   reference_answer: Yes. Munich's guidance says to apply before the national D visa or current residence
@@ -2454,8 +2454,8 @@
 
 
       Further information on living and working in Germany is available here.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q068
   question: If I have private health insurance in Germany, can I later switch to statutory insurance during
     my studies?
@@ -2615,8 +2615,8 @@
 
 
       ### Which German health insurance is right for me and what do they cover?'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q069
   question: How much should I budget per month for accommodation as a student in Türkiye?
   reference_answer: The guide gives a range of 215 TL to 2,500 TL per month, though this is a dated source
@@ -2941,8 +2941,8 @@
       General Health Insurance payment is 1059 TL per year as of 2020. With this insurance you can get
       free health services in all state hospitals. In private hospitals you will need to pay varying amounts
       of contribution.'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q088
   question: Can I get a German residence permit just to do an intensive English course?
   reference_answer: No. A residence permit can't be issued for an intensive course to learn a foreign
@@ -3184,8 +3184,8 @@
       You might also be able to obtain a ''Chance Card'' in accordance with § 20a AufenthG
 
       for the purposes'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q089
   question: How early can I apply online to extend my study residence permit in Berlin, and what does
     the confirmation I get do?
@@ -3354,8 +3354,8 @@
       - You can travel within the Schengen Area during the first 90 days.
 
       - Do not leave Germany after the initial 90 days unless you already have a residence permit.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'correct'
 - id: q091
   question: I'm applying for a German student visa in Bangladesh. How long does processing take, and how
     early can I apply?
@@ -3547,8 +3547,8 @@
       for a Schengen visa. During peak travel seasons there may be a waiting period for making an application
       to a German mission. You may apply for a Schengen visa at the earliest six months before and generally
       no later than 15 days before your planned trip; however, you can make the appointment before that.'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q092
   question: My department in Türkiye requires a compulsory internship. Do I need a work permit for it?
   reference_answer: You apply for a work permit exemption instead, which covers internships required by
@@ -3686,8 +3686,8 @@
 
 
       The citizens of the countries which are stated at the below link are exempted form this Article;'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q094
   question: Who applies for my work permit in Türkiye, me or my employer?
   reference_answer: 'The employer. You can''t apply yourself: you find a job first, then the company applies
@@ -3850,8 +3850,8 @@
       and for foreigners working in technology development zones under Law No. 4691 on Technology Development
       Zones, the approval of the Ministry of Industry and Technology is required. Employment and financial
       eligibility criteria will not applied in the evaluation of work permit applications in this context.'
-  faithful: ''
-  correctness: ''
+  faithful: 'yes'
+  correctness: 'correct'
 - id: q095
   question: I'm a US citizen admitted to a German university. Do I need a visa before I travel?
   reference_answer: No. US citizens can enter visa-free with a valid passport, but must apply for a residence
@@ -4038,5 +4038,5 @@
 
 
       All other nationalities require a visa prior to travelling to Germany.'
-  faithful: ''
-  correctness: ''
+  faithful: 'no'
+  correctness: 'partial'
