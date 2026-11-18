@@ -47,7 +47,10 @@ generation:
 
 judge:                      # LLM-as-judge for answer metrics
   provider: anthropic
-  model: claude-opus-5-5
+  # A different model from the generator, to limit self-preference bias (a judge
+  # tends to rate its own model's outputs higher). Agreement with human labels
+  # is still measured, not assumed.
+  model: claude-sonnet-5-5
   effort: medium
   max_tokens: 16000
   fallbacks: true

@@ -1,0 +1,23 @@
+{
+  "n_questions": 3,
+  "n_answerable": 2,
+  "n_unanswerable": 1,
+  "correctness": 1.0,
+  "share_correct": 1.0,
+  "faithfulness": 1.0,
+  "citation_accuracy": 1.0,
+  "quote_verified": 1.0,
+  "gold_cite_hit": 1.0,
+  "refusal_recall_unanswerable": 1.0,
+  "false_refusal_rate_answerable": 0.0,
+  "latency_total_p50_ms": 6248.5,
+  "latency_total_p95_ms": 8531.71,
+  "latency_generation_p50_ms": 4794.4,
+  "latency_generation_p95_ms": 7245.19,
+  "latency_retrieval_p50_ms": 1384.7,
+  "cost_per_query_usd_mean": 0.018842666666666667,
+  "cost_per_query_usd_p95": 0.022224,
+  "judge_cost_total_usd": 0.032458,
+  "generation_cost_total_usd": 0.056528,
+  "errors": 0
+}
