@@ -70,7 +70,7 @@ def main() -> None:
             lines.append(f"| {'/'.join(b)} − {'/'.join(a)} | {name} | {d:+.3f} | "
                          f"[{lo:+.3f}, {hi:+.3f}] | {sig} |")
     out = "\n".join(lines) + "\n"
-    (run / "paired_comparisons.md").write_text(out, encoding="utf-8")
+    (run / "paired_comparisons.md").write_text(out, encoding="utf-8", newline="\n")
     print(out)
 
 

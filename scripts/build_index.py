@@ -56,7 +56,8 @@ def main() -> None:
             "words_median": statistics.median(words), "words_max": max(words),
             "built_at": datetime.now(UTC).isoformat(timespec="seconds"),
         }
-        (out / "meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+        (out / "meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8",
+                                       newline="\n")
         print(f"[{strategy}] {len(chunks)} chunks, words mean {meta['words_mean']} / "
               f"median {meta['words_median']} / max {meta['words_max']}, "
               f"{time.perf_counter() - t0:.0f}s")

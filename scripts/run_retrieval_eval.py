@@ -126,7 +126,7 @@ def main() -> None:
     out = ROOT / "eval" / "results" / f"retrieval_{datetime.now():%Y%m%d-%H%M%S}"
     out.mkdir(parents=True)
     table = render_table(rows, args.split)
-    (out / "table.md").write_text(table, encoding="utf-8")
+    (out / "table.md").write_text(table, encoding="utf-8", newline="\n")
     meta = {
         "split": args.split, "n_questions": len(questions), "git_commit": git_commit(),
         "testset_sha256": hashlib.sha256(TESTSET.read_bytes()).hexdigest()[:12],
@@ -134,7 +134,7 @@ def main() -> None:
         "created": datetime.now().isoformat(timespec="seconds"),
     }
     (out / "metrics.json").write_text(json.dumps({"meta": meta, "rows": rows}, indent=2),
-                                      encoding="utf-8")
+                                      encoding="utf-8", newline="\n")
     with (out / "per_question.jsonl").open("w", encoding="utf-8", newline="\n") as f:
         for r in per_question:
             f.write(json.dumps(r) + "\n")
