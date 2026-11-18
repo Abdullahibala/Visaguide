@@ -52,7 +52,9 @@ def main() -> None:
                     "sha256": res.sha256}
 
         title, text = extract(raw_path, url)
-        title = title or src.get("title", "")
+        # Prefer the hand-checked title from sources.yaml. Extracted titles are often
+        # wrong, especially in PDF metadata ("Microsoft Word - 2024-06-01 ...docx").
+        title = src.get("title") or title
 
         row = {
             "doc_id": doc_id, "country": country, "source_type": src["source_type"],
@@ -77,7 +79,7 @@ def main() -> None:
             short.append((d["url"], d["n_chars"]))
 
     cfg.paths.processed.parent.mkdir(parents=True, exist_ok=True)
-    with cfg.paths.processed.open("w", encoding="utf-8") as f:
+    with cfg.paths.processed.open("w", encoding="utf-8", newline="\n") as f:
         for d in sorted(docs, key=lambda d: d["doc_id"]):
             f.write(json.dumps(d, ensure_ascii=False) + "\n")
     write_manifest(rows, cfg.paths.manifest)

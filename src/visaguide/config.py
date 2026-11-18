@@ -19,6 +19,7 @@ class Paths(BaseModel):
     raw_dir: Path
     processed: Path
     manifest: Path
+    index_dir: Path
 
     def resolve(self) -> "Paths":
         return Paths(**{k: ROOT / v for k, v in self.model_dump().items()})
@@ -31,9 +32,35 @@ class IngestCfg(BaseModel):
     min_chars: int = 400
 
 
+class FixedChunkCfg(BaseModel):
+    size_words: int = 200
+    overlap_words: int = 40
+
+
+class StructureChunkCfg(BaseModel):
+    max_words: int = 200
+    min_words: int = 40
+
+
+class ChunkingCfg(BaseModel):
+    fixed: FixedChunkCfg = FixedChunkCfg()
+    structure: StructureChunkCfg = StructureChunkCfg()
+
+
+class RetrievalCfg(BaseModel):
+    embedding_model: str
+    query_prefix: str = ""
+    reranker_model: str
+    candidates: int = 50
+    rrf_k: int = 60
+    rerank_top_n: int = 30
+
+
 class Config(BaseModel):
     paths: Paths
     ingest: IngestCfg
+    chunking: ChunkingCfg
+    retrieval: RetrievalCfg
 
 
 class Secrets(BaseSettings):
