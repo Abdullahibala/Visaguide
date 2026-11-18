@@ -58,7 +58,13 @@ def recall_at_k(retrieved: list[Span], gold: list[dict], k: int) -> float:
     satisfy one of them -> 0.5. Return 0.0 if gold is empty (that shouldn't happen
     for answerable questions, but don't divide by zero).
     """
-    raise NotImplementedError
+    groups = all_groups(gold)
+    if not groups:
+        return 0.0
+    found: set[str] = set()
+    for chunk in retrieved[:max(0, k)]:
+        found.update(groups_found(chunk, gold))
+    return len(found) / len(groups)
 
 
 def reciprocal_rank(retrieved: list[Span], gold: list[dict]) -> float:
@@ -67,4 +73,7 @@ def reciprocal_rank(retrieved: list[Span], gold: list[dict]) -> float:
     Ranks start at 1. Return 0.0 if no retrieved chunk is relevant. The mean of
     this over all questions is MRR.
     """
-    raise NotImplementedError
+    for rank, chunk in enumerate(retrieved, start=1):
+        if groups_found(chunk, gold):
+            return 1.0 / rank
+    return 0.0
