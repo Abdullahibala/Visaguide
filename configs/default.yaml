@@ -1,0 +1,13 @@
+# All tunable settings live here; secrets come from .env (see config.py).
+paths:
+  sources: data/sources.yaml
+  raw_dir: data/raw
+  processed: data/processed/docs.jsonl
+  manifest: data/manifest.csv
+
+ingest:
+  # Generic client name, no personal contact details.
+  user_agent: "VisaGuideResearchBot/0.1 (non-commercial student research project)"
+  timeout_s: 30
+  delay_per_domain_s: 2.0   # politeness: at most one request every 2 s per host
+  min_chars: 400            # docs shorter than this are flagged (likely JS shells / error pages)

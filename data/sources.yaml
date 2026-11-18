@@ -1,0 +1,152 @@
+# Source list. Every URL was opened and checked for English content and for
+# robots.txt permission on 2026-11-18.
+# source_type: government | agency (DAAD) | mission (embassies/consulates) | university
+
+# ===================== GERMANY =====================
+- {url: "https://www.auswaertiges-amt.de/en/visa-service/215870-215870", country: germany, source_type: government, topic: student_visa, title: "Visas for Germany - Federal Foreign Office"}
+- {url: "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/606848-606848", country: germany, source_type: government, topic: student_visa, title: "Visa for Germany (FAQ) - Federal Foreign Office"}
+- {url: "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/08-studentenvisum-606690", country: germany, source_type: government, topic: student_visa, title: "What is the procedure for applying for a student visa? - Federal Foreign Office"}
+- {url: "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/08-finanzierung/606696", country: germany, source_type: government, topic: blocked_account, title: "How can I prove that my financing is secure? - Federal Foreign Office"}
+- {url: "https://www.auswaertiges-amt.de/en/sperrkonto-388600", country: germany, source_type: government, topic: blocked_account, title: "Opening and closing a blocked account - Federal Foreign Office"}
+- {url: "https://tuerkei.diplo.de/tr-de/service/05-visaeinreise/2170670-2170670", country: germany, source_type: mission, topic: student_visa, title: "National visas for non-Turkish citizens - German Missions in Türkiye"}
+- {url: "https://india.diplo.de/resource/blob/2667080/85ccf154e38cd7c5c36721503a49774c/infostudents-data.pdf", country: germany, source_type: mission, topic: student_visa, title: "Checklist for a German national visa - Students (India)"}
+- {url: "https://india.diplo.de/in-en/service/2756350-2756350", country: germany, source_type: mission, topic: student_visa, title: "Studies incl. preparatory and language courses (India)"}
+- {url: "https://india.diplo.de/in-en/service/2546328-2546328", country: germany, source_type: mission, topic: student_visa, title: "National Visa FAQs (India)"}
+- {url: "https://nigeria.diplo.de/ng-en/2750690-2750690", country: germany, source_type: mission, topic: student_visa, title: "University studies - German Missions in Nigeria"}
+- {url: "https://pakistan.diplo.de/pk-en/service/2-study-visa-seite-1676104", country: germany, source_type: mission, topic: student_visa, title: "Visa: Students - German Missions in Pakistan"}
+- {url: "https://pakistan.diplo.de/resource/blob/2290888/dbca85b1c7f634f1a1290ec15a71ac76/checklist---student---language-course-visas-data.pdf", country: germany, source_type: mission, topic: student_visa, title: "Checklist student and language course visas (Karachi)", note: "older blocked-account figure"}
+- {url: "https://dhaka.diplo.de/resource/blob/2685888/1826aadb06dfc6b0224e91583b6836cb/p-01-checklist-students-data.pdf", country: germany, source_type: mission, topic: student_visa, title: "Information regarding Study Visa (Bangladesh)"}
+- {url: "https://nairobi.diplo.de/ke-en/service/visa-entry/2629250-2629250", country: germany, source_type: mission, topic: student_visa, title: "Visa for higher education studies (Kenya)"}
+- {url: "https://daressalam.diplo.de/tz-en/service/2642812-2642812", country: germany, source_type: mission, topic: student_visa, title: "Visa for students, language course, seeking studies (Tanzania)"}
+- {url: "https://daressalam.diplo.de/resource/blob/2545558/e351d502908a7d6094576fcc1e25cdb5/general-studies-pdf-data.pdf", country: germany, source_type: mission, topic: student_visa, title: "Information sheet national visa students §16b/§17 (Dar es Salaam)"}
+- {url: "https://maskat.diplo.de/om-en/service/05-visaeinreise/2609582-2609582", country: germany, source_type: mission, topic: student_visa, title: "National visa for students §16b (Oman)"}
+- {url: "https://taipei.diplo.de/tw-en/service/visa/2458712-2458712", country: germany, source_type: mission, topic: student_applicant_visa, title: "Checklist national visa - study application (Taipei)"}
+- {url: "https://canada.diplo.de/resource/blob/2449140/4ef0a16f45432bf8d5dad4809ec4e710/checklist-study-applicant-visa-data.pdf", country: germany, source_type: mission, topic: student_applicant_visa, title: "Checklist Study Applicant Visa §17 (Canada)", note: "as of May 2023"}
+- {url: "https://uk.diplo.de/uk-en/02/visa/university-studies-2449178?isLocal=false&isPreview=false", country: germany, source_type: mission, topic: student_visa, title: "University studies - German Missions in the UK"}
+- {url: "https://niederlande.diplo.de/resource/blob/2522370/ea8fd55ede4ce5f889a93b31c6bdec17/eng-checkliste-studium----16b-aufenthg--data.pdf", country: germany, source_type: mission, topic: student_visa, title: "Information sheet student visa §16b (Netherlands)"}
+- {url: "https://colombo.diplo.de/lk-en/service/2404544-2404544", country: germany, source_type: mission, topic: blocked_account, title: "Opening / unblocking a blocked account (Sri Lanka)"}
+- {url: "https://www.daad.de/en/studying-in-germany/living-in-germany/visa/", country: germany, source_type: agency, topic: student_visa, title: "Visas - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/living-in-germany/finances/", country: germany, source_type: agency, topic: blocked_account, title: "Costs of education and living - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/living-in-germany/health-insurance/", country: germany, source_type: agency, topic: health_insurance, title: "Healthcare and Health Insurance - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/living-in-germany/registering/", country: germany, source_type: agency, topic: registration, title: "Residence Permit & Address Registration - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/requirements/enrolling/", country: germany, source_type: agency, topic: enrolment, title: "Enrolling - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/requirements/application-process/", country: germany, source_type: agency, topic: enrolment, title: "Application process - DAAD"}
+- {url: "https://www.daad.de/en/studying-in-germany/work-career/side-jobs/", country: germany, source_type: agency, topic: work_rules, title: "Side jobs - DAAD"}
+- {url: "https://static.daad.de/media/daad_de/pdfs_nicht_barrierefrei/in-deutschland-studieren-forschen-lehren/daad_sid_en_web.pdf", country: germany, source_type: agency, topic: student_visa, title: "Studying in Germany - Practical Guide (DAAD)", note: "large guide; some figures may be dated"}
+- {url: "https://www.study-in-germany.com/en/plan-your-studies/requirements/visa/", country: germany, source_type: agency, topic: student_visa, title: "Visa | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/plan-your-studies/requirements/proof-of-financing/", country: germany, source_type: agency, topic: blocked_account, title: "Proof of financing | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/plan-your-studies/requirements/health-insurance/", country: germany, source_type: agency, topic: health_insurance, title: "Health insurance | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/plan-your-studies/preparation/enrolment/", country: germany, source_type: agency, topic: enrolment, title: "Matriculation | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/germany/arrival/residence-permit/", country: germany, source_type: agency, topic: registration, title: "Municipal registration and residence permit | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/germany/arrival/bank-account/", country: germany, source_type: agency, topic: blocked_account, title: "Bank account | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/germany/everyday-life/work/", country: germany, source_type: agency, topic: work_rules, title: "Part-time job | Study in Germany"}
+- {url: "https://www.study-in-germany.com/en/germany/career/after-university/", country: germany, source_type: agency, topic: post_study, title: "Paths after university | Study in Germany"}
+- {url: "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/Hochschulabsolvent/hochschulabsolvent-node.html", country: germany, source_type: government, topic: post_study, title: "BAMF - Skilled workers with an academic education"}
+- {url: "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/MobilitaetEU/MobilitaetStudent/mobilitaet-student-node.html", country: germany, source_type: government, topic: residence_permit, title: "BAMF - Mobility as a student"}
+- {url: "https://www.bamf.de/SharedDocs/Anlagen/EN/Integration/bildung-und-beruf-in-deutschland.pdf?__blob=publicationFile&v=12", country: germany, source_type: government, topic: residence_permit, title: "Studying and Working in Germany (BAMF brochure)"}
+- {url: "https://www.gesetze-im-internet.de/englisch_aufenthg/englisch_aufenthg.html", country: germany, source_type: government, topic: residence_permit, title: "Residence Act (AufenthG) - English translation", note: "very large; translation may lag current law"}
+- {url: "https://www.gesetze-im-internet.de/englisch_beschv/englisch_beschv.html", country: germany, source_type: government, topic: work_rules, title: "Employment Ordinance (BeschV) - English translation", note: "large"}
+- {url: "https://service.berlin.de/dienstleistung/305244/en/", country: germany, source_type: government, topic: residence_permit, title: "Residence permit for full-time studies - Service Berlin"}
+- {url: "https://service.berlin.de/dienstleistung/326239/en/", country: germany, source_type: government, topic: residence_permit, title: "Residence permit for student exchange or school - Service Berlin"}
+- {url: "https://service.berlin.de/dienstleistung/324661/en/", country: germany, source_type: government, topic: post_study, title: "Residence permit to seek a job after a stay in Germany - Service Berlin"}
+- {url: "https://service.berlin.de/dienstleistung/120686/standort/317869/en/", country: germany, source_type: government, topic: registration, title: "Register a residence (Anmeldung) - Service Berlin"}
+- {url: "https://www.berlin.de/einwanderung/en/residence/study/", country: germany, source_type: government, topic: residence_permit, title: "Studies - Berlin Immigration Office"}
+- {url: "https://www.berlin.de/einwanderung/en/entry/visa-procedure/longer-stays/artikel.1047861.en.php", country: germany, source_type: government, topic: student_visa, title: "Visa for the purpose of studying - Berlin.de"}
+- {url: "https://stadt.muenchen.de/service/en-GB/info/servicestelle-fur-zuwanderung-und-einburgerung/10424886/", country: germany, source_type: government, topic: residence_permit, title: "Residence permit - Study - Munich"}
+- {url: "https://stadt.muenchen.de/service/en-GB/info/servicestelle-fur-zuwanderung-und-einburgerung/10424902/", country: germany, source_type: government, topic: student_applicant_visa, title: "Residence permit - Study preparation - Munich"}
+- {url: "https://stadt.muenchen.de/service/en-GB/info/servicestelle-fur-zuwanderung-und-einburgerung/10422418/", country: germany, source_type: government, topic: residence_permit, title: "Foreign students - change of subject or university - Munich"}
+- {url: "https://stadt.muenchen.de/service/en-GB/info/residence-registration/10424740/n0/", country: germany, source_type: government, topic: registration, title: "Residence registration - City of Munich"}
+- {url: "https://www.hamburg.de/resource/blob/17538/f737302a571146d62b86b06b4a6c1e1e/amt-m-m31-informationen-fuer-auslaendische-studenten-2024-englisch-pdf-data.pdf", country: germany, source_type: government, topic: residence_permit, title: "Information for foreign students 2024 (Hamburg)"}
+- {url: "https://www.tum.de/en/studies/international-students", country: germany, source_type: university, topic: residence_permit, title: "TUM: International Students"}
+- {url: "https://www.global.tum.de/en/global/exchangestudents/general-information-for-international-students/informationen-fuer-internationale-austauschstudierende/arrival-and-stay/", country: germany, source_type: university, topic: residence_permit, title: "Arrival and stay - TUM Global"}
+- {url: "https://www.tum.de/en/studies/application/application-info-portal/application-international", country: germany, source_type: university, topic: enrolment, title: "International Applicants - TUM"}
+- {url: "https://www.tum.de/en/studies/application/application-info-portal/glossary-of-documents", country: germany, source_type: university, topic: enrolment, title: "Glossary of Documents - TUM"}
+- {url: "https://www.tum.de/en/studies/application/application-info-portal/special-conditions-for-certain-countries", country: germany, source_type: university, topic: enrolment, title: "Special Conditions for Certain Countries - TUM"}
+- {url: "https://www.tum.de/fileadmin/w00bfo/www/Studium/Internationale_Studierende/260907_Enrollment_First_Steps_Wintersemester_2627_Final.pdf", country: germany, source_type: university, topic: enrolment, title: "How to enroll at TUM - First Steps WiSe 2026/27", note: "slide deck"}
+- {url: "https://www.lmu.de/en/workspace-for-students/international-student-guide/residence-permit/", country: germany, source_type: university, topic: residence_permit, title: "Residence permit - LMU Munich"}
+- {url: "https://www.lmu.de/en/workspace-for-students/international-student-guide/visa/", country: germany, source_type: university, topic: student_visa, title: "Visa - LMU Munich"}
+- {url: "https://www.lmu.de/en/workspace-for-students/international-student-guide/health-and-safety/", country: germany, source_type: university, topic: health_insurance, title: "Health and safety - LMU Munich"}
+- {url: "https://www.lmu.de/en/study/degree-students/registration/", country: germany, source_type: university, topic: enrolment, title: "Registration (international applicants) - LMU Munich"}
+- {url: "https://www.uni-heidelberg.de/en/study/application-enrolment/study-requirements/regulations-for-international-students-visa", country: germany, source_type: university, topic: student_visa, title: "Regulations for International Students (visa) - Heidelberg University"}
+- {url: "https://backend.uni-heidelberg.de/en/documents/visa-en/download", country: germany, source_type: university, topic: residence_permit, title: "Visa or Residence Permit (Heidelberg University)"}
+- {url: "https://www.uni-heidelberg.de/en/study/international-studies/studying-in-heidelberg/destination-heidelberg/preparing-your-stay", country: germany, source_type: university, topic: student_visa, title: "Preparing your stay - Heidelberg University"}
+- {url: "https://www.rwth-aachen.de/cms/root/studium/im-studium/internationales/~inno/faq/?lidx=1", country: germany, source_type: university, topic: residence_permit, title: "International Student Center FAQ - RWTH Aachen"}
+- {url: "https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/Internationale-Studieninteressierte/Organisation-des-Studienaufenthaltes/~bpra/Visum-Aufenthaltsrecht/lidx/1/", country: germany, source_type: university, topic: residence_permit, title: "Entry Visa and Residence Permit - RWTH Aachen"}
+- {url: "https://www.rwth-aachen.de/cms/root/studium/Vor-dem-Studium/Internationale-Studieninteressierte/Organisation-des-Studienaufenthaltes/Internationale-Studierende/~bqmo/Kosten/lidx/1/", country: germany, source_type: university, topic: blocked_account, title: "Costs - RWTH Aachen"}
+- {url: "https://www.fu-berlin.de/en/studium/international/studium_fu/einreise_aufenthalt/visum/index.html", country: germany, source_type: university, topic: student_visa, title: "Study Visa - FU Berlin"}
+- {url: "https://www.fu-berlin.de/en/studium/international/degree_seeking/einreise/_inhaltselemente/entry_residence/residence_permit.html", country: germany, source_type: university, topic: residence_permit, title: "Step 5: Residence Permit - FU Berlin"}
+- {url: "https://www.fu-berlin.de/en/sites/abt-1/referate/pe/welcome-service/_medien/downloads/Residence-Permit.pdf", country: germany, source_type: university, topic: residence_permit, title: "Applying for a Residence Permit (FU Berlin)"}
+- {url: "https://www.intl.kit.edu/istudies/12699.php", country: germany, source_type: university, topic: residence_permit, title: "Residence permit - KIT"}
+- {url: "https://www.intl.kit.edu/istudies/18358.php", country: germany, source_type: university, topic: student_visa, title: "Entry Visa and Residence Title - KIT"}
+
+# ===================== TÜRKIYE =====================
+- {url: "https://en.goc.gov.tr/residence-permit-types", country: turkiye, source_type: government, topic: residence_permit, title: "Residence Permit Types - Presidency of Migration Management"}
+- {url: "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners", country: turkiye, source_type: government, topic: residence_permit, title: "FAQ about Foreigners - Presidency of Migration Management"}
+- {url: "https://en.goc.gov.tr/about-residence-permit-applications", country: turkiye, source_type: government, topic: residence_permit, title: "About Residence Permit Applications - PMM"}
+- {url: "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount", country: turkiye, source_type: government, topic: residence_permit, title: "Residence Permit Card and Permit Fees - PMM"}
+- {url: "https://en.goc.gov.tr/work-permit", country: turkiye, source_type: government, topic: work_rules, title: "Work Permit (FAQ) - PMM"}
+- {url: "https://en.goc.gov.tr/visa-", country: turkiye, source_type: government, topic: entry_visa, title: "Visa (FAQ) - PMM"}
+- {url: "https://en.goc.gov.tr/fee-amount", country: turkiye, source_type: government, topic: entry_visa, title: "Visa Application and Visa Fees - PMM"}
+- {url: "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa", country: turkiye, source_type: government, topic: entry_visa, title: "Visa Information For Foreigners - MFA"}
+- {url: "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa", country: turkiye, source_type: government, topic: entry_visa, title: "General Information About Turkish Visas - MFA"}
+- {url: "https://newyork-cg.mfa.gov.tr/Content/assets/consulate/images/localCache/1/4a0547e8-8f15-481c-944f-dfaa9c0e29e5.pdf", country: turkiye, source_type: mission, topic: entry_visa, title: "Education Visa Application Process - Turkish CG New York"}
+- {url: "https://miami-cg.mfa.gov.tr/Content/assets/consulate/images/localCache/1/af983194-77ec-4048-b270-5c214232e85c.pdf", country: turkiye, source_type: mission, topic: entry_visa, title: "Student Visa Application Procedure - Turkish CG Miami"}
+- {url: "https://kigali-emb.mfa.gov.tr/Content/assets/consulate/images/localCache/12/93b8e19c-449b-4dc6-bbe7-b3b582bab66b.pdf", country: turkiye, source_type: mission, topic: entry_visa, title: "Student Visa Requirements - Embassy of Türkiye in Kigali"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=Egqvn0o1tiU%3D&cId=PE4Nr0mMoY4%3D", country: turkiye, source_type: government, topic: residence_permit, title: "Visa and Residence - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/AllFaq", country: turkiye, source_type: government, topic: residence_permit, title: "FAQ - Study in Türkiye", note: "very large"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=aOSryNclUYg%3D&cId=PE4Nr0mMoY4%3D", country: turkiye, source_type: government, topic: health_insurance, title: "Healthcare Services - Study in Türkiye", note: "some prices dated (2020)"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=x6wG31kTWTI%3D&cId=PE4Nr0mMoY4%3D", country: turkiye, source_type: government, topic: health_insurance, title: "Health Services - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=rlsyTUzKZzY=&&cId=PE4Nr0mMoY4=", country: turkiye, source_type: government, topic: work_rules, title: "Work Opportunities - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=zYA/A7eMEsM=&&cId=PE4Nr0mMoY4=", country: turkiye, source_type: government, topic: registration, title: "Accommodation - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=haH8OKhk97k%3D&cId=PE4Nr0mMoY4%3D", country: turkiye, source_type: government, topic: living_costs, title: "Life Expenses - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=KlqzJ6l8YDQ%3D&cId=PE4Nr0mMoY4%3D", country: turkiye, source_type: government, topic: scholarship, title: "Scholarships - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=7kfKef+q+vg=&&cId=PE4Nr0mMoY4=", country: turkiye, source_type: government, topic: enrolment, title: "Recognition and Equivalence - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/ShowDetail?rID=Ec/rgHEN8Zg=&&cId=PE4Nr0mMoY4=", country: turkiye, source_type: government, topic: enrolment, title: "Turkish Higher Education System - Study in Türkiye"}
+- {url: "https://www.studyinturkiye.gov.tr/StudyinTurkey/StudyinTurkeyTRYOS", country: turkiye, source_type: government, topic: enrolment, title: "TR-YÖS - Study in Türkiye"}
+- {url: "https://uluslararasi.yok.gov.tr/en/news-detail/75", country: turkiye, source_type: government, topic: enrolment, title: "TR-YÖS in 88 Centers Across 60 Countries - CoHE"}
+- {url: "https://www.yok.gov.tr/en/news/press-release-from-council-of-higher-education-GCJtr", country: turkiye, source_type: government, topic: enrolment, title: "Press Release - CoHE (international student quotas)"}
+- {url: "https://uluslararasi.yok.gov.tr/en/page/524", country: turkiye, source_type: government, topic: scholarship, title: "CoHE Scholarships"}
+- {url: "https://www.turkiyeburslari.gov.tr/FAQ/Category/4", country: turkiye, source_type: government, topic: scholarship, title: "Türkiye Scholarships FAQ - Residence and Immigration"}
+- {url: "https://www.turkiyeburslari.gov.tr/FAQ/Category/3", country: turkiye, source_type: government, topic: health_insurance, title: "Türkiye Scholarships FAQ - General Health Insurance"}
+- {url: "https://www.turkiyeburslari.gov.tr/FAQ/Category/2", country: turkiye, source_type: government, topic: scholarship, title: "Türkiye Scholarships FAQ - Accommodation"}
+- {url: "https://turkiyeburslari.gov.tr/en/announcement/regarding-student-residence-permit-of-turkiye-scholarship-holders-who-are-not-currently-in-turkey", country: turkiye, source_type: government, topic: scholarship, title: "Student Residence Permit of Scholarship Holders not in Türkiye"}
+- {url: "https://www.turkiyeburslari.gov.tr/whyturkiyescholarships", country: turkiye, source_type: government, topic: scholarship, title: "Why Türkiye Scholarships?"}
+- {url: "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit-exemption/", country: turkiye, source_type: government, topic: work_rules, title: "Work permit exemption - Ministry of Labour"}
+- {url: "https://www.csgb.gov.tr/uigm/en/calisma-izni/calisma-izni-degerlendirme-kriterleri/", country: turkiye, source_type: government, topic: work_rules, title: "Work Permit Evaluation Criteria - Ministry of Labour"}
+- {url: "https://csgb.gov.tr/uigm/en/general-information/yabancilara-duzenlenen-belgeler/", country: turkiye, source_type: government, topic: work_rules, title: "Documents Issued to Foreigners - Ministry of Labour"}
+- {url: "https://emuafiyet.csgb.gov.tr/assets/manuals/application-guide-EN.pdf", country: turkiye, source_type: government, topic: work_rules, title: "Work Permit Exemption Application Guide (e-Muafiyet)", note: "screenshot-heavy"}
+- {url: "https://iso.metu.edu.tr/en/residence-permit", country: turkiye, source_type: university, topic: residence_permit, title: "Residence Permit - METU"}
+- {url: "https://iso.metu.edu.tr/en/health-care-services-and-insurance", country: turkiye, source_type: university, topic: health_insurance, title: "Health Care Services and Insurance - METU"}
+- {url: "https://iso.metu.edu.tr/en/foreign-national-identity-number", country: turkiye, source_type: university, topic: registration, title: "Foreign National Identity Number - METU"}
+- {url: "https://iso.metu.edu.tr/en/work-permits", country: turkiye, source_type: university, topic: work_rules, title: "Work Permits - METU"}
+- {url: "https://iso.metu.edu.tr/en/required-documents", country: turkiye, source_type: university, topic: enrolment, title: "Required Documents - METU"}
+- {url: "https://w3.bilkent.edu.tr/international/wp-content/uploads/2026/07/Registration-Guide-2026-2027.pdf", country: turkiye, source_type: university, topic: enrolment, title: "Bilkent 2026-2027 Registration Guide (international students)"}
+- {url: "https://w3.bilkent.edu.tr/international/how-to-prepare/", country: turkiye, source_type: university, topic: entry_visa, title: "How to Prepare? - Bilkent"}
+
+- {url: "https://iro.sabanciuniv.edu/en/degree-students-guide/residence-permit", country: turkiye, source_type: university, topic: residence_permit, title: "Residence Permit First Application - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/degree-students-guide/residence-extension", country: turkiye, source_type: university, topic: residence_permit, title: "Residence Permit Extension - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/degree-students/frequently-asked-questions/visa-and-residence-permit", country: turkiye, source_type: university, topic: residence_permit, title: "Visa and Residence Permit FAQ - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/exchange-students-guide/residence-permit", country: turkiye, source_type: university, topic: residence_permit, title: "Residence Permit for Exchange Students - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/sites/iro.sabanciuniv.edu/files/2024-06/FIRST%20APPLICATION%20GUIDE_0.pdf", country: turkiye, source_type: university, topic: residence_permit, title: "Online Residence Permit First Application guide (Sabancı)", note: "screenshots; little text"}
+- {url: "https://iro.sabanciuniv.edu/en/degree-students-guide/health-insurance", country: turkiye, source_type: university, topic: health_insurance, title: "Health Insurance - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/address-registration", country: turkiye, source_type: university, topic: registration, title: "Address Registration - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/degree-students-guide/residence-after-graduation", country: turkiye, source_type: university, topic: post_study, title: "Residence Permit after Graduation - Sabancı University"}
+- {url: "https://iro.sabanciuniv.edu/en/degree-students-guide/faq", country: turkiye, source_type: university, topic: residence_permit, title: "FAQ - Sabancı University IRO"}
+- {url: "https://www.sis.itu.edu.tr/EN/student/intenational-students/residence-permit.php", country: turkiye, source_type: university, topic: residence_permit, title: "Student Residence Permit Application Process - ITU"}
+- {url: "https://www.sis.itu.edu.tr/EN/student/intenational-students/registration.php", country: turkiye, source_type: university, topic: enrolment, title: "Registration Process - ITU"}
+- {url: "https://www.sis.itu.edu.tr/TR/ogrenci/uluslararasi-ogrenci/Guide_for_Student_Residence_Permit_Process.pdf", country: turkiye, source_type: university, topic: residence_permit, title: "Guide for Student Residence Permit Process - ITU", note: "mostly images"}
+- {url: "https://erasmus.itu.edu.tr/incoming-student-staff/ka131-program-countries/student-mobility-for-studies/visa-and-residence-permit-process", country: turkiye, source_type: university, topic: residence_permit, title: "Visa and Residence Permit Process - ITU Erasmus"}
+- {url: "https://internationalstudent.hacettepe.edu.tr/en/menu/general_information-73", country: turkiye, source_type: university, topic: residence_permit, title: "General Information (Residence Permit) - Hacettepe"}
+- {url: "https://internationalstudent.hacettepe.edu.tr/en/valid_health_insurance-41", country: turkiye, source_type: university, topic: health_insurance, title: "Valid Health Insurance - Hacettepe"}
+- {url: "https://internationalstudent.hacettepe.edu.tr/en/document_for_address_declaration-39", country: turkiye, source_type: university, topic: registration, title: "Document for Address Declaration - Hacettepe"}
+- {url: "https://internationalstudent.hacettepe.edu.tr/en/menu/international_student_office-13", country: turkiye, source_type: university, topic: residence_permit, title: "International Student Office - Hacettepe"}
+- {url: "https://isoidb.ankara.edu.tr/en/documents-of-residence-permit/", country: turkiye, source_type: university, topic: residence_permit, title: "Documents of Residence Permit - Ankara University"}
+- {url: "https://www.erasmus.ankara.edu.tr/en/visa-residence-permit/", country: turkiye, source_type: university, topic: residence_permit, title: "Visa / Residence Permit - Ankara University Erasmus"}
+- {url: "https://www.erasmus.ankara.edu.tr/en/2024/02/15/student-residence-permit-requested-documents/", country: turkiye, source_type: university, topic: residence_permit, title: "Student Residence Permit Requested Documents - Ankara University"}
+
+# ---- Excluded after the first ingest run (2026-11-18) ----
+# ico.ku.edu.tr (11 pages): HTTP 403 to our declared crawler. We respect the block
+#   instead of spoofing a browser user-agent.
+# csgb.gov.tr/uigm/en/duyurular/30032026/: JS-rendered, no extractable text.
+# csgb.gov.tr/Media/vcsf22vp/...-eng.pdf: scanned PDF with no text layer (would need OCR).
+# ogrenciler.bogazici.edu.tr/en/pages/university-registration/8075: HTTP 500 on 3 attempts.

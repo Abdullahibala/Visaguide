@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+
+# Raw snapshots stay local (large, and we re-fetch them with the script).
+# data/processed/ IS committed: gold passages in the test set are character
+# ranges into this text, so it must not silently change.
+data/raw/
+data/index/
+logs/
