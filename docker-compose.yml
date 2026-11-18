@@ -1,0 +1,11 @@
+# Local run:  docker compose up --build   ->   http://localhost:8080
+services:
+  api:
+    build: .
+    image: visaguide:local
+    ports:
+      - "8080:8080"
+    env_file: .env            # ANTHROPIC_API_KEY, IP_HASH_SALT (never baked into the image)
+    volumes:
+      - ./logs:/app/logs      # keep the query log on the host
+    restart: unless-stopped

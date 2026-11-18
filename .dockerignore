@@ -1,0 +1,20 @@
+# Never send secrets into the build context.
+.env
+.env.*
+!.env.example
+
+.git
+.venv
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Not needed in the image: raw downloads, local indexes (rebuilt in the image),
+# evaluation outputs, tests and logs.
+data/raw/
+data/index/
+eval/
+tests/
+logs/
+docs/

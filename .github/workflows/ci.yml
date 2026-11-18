@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.5"
+          python-version: "3.11"
+
+      - name: Install dependencies (CPU-only torch)
+        run: |
+          uv venv
+          uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+          uv pip install -e ".[dev]"
+
+      - name: Lint
+        run: .venv/bin/ruff check src scripts tests
+
+      # Fast tests only: fake encoder and fake LLM, so no API key, no model
+      # downloads and no spend. The real-model tests are marked `slow`.
+      - name: Test
+        run: .venv/bin/pytest -q
+
+  docker-build:
+    # Proves the image builds (index + models baked in). Main branch only: it
+    # downloads models and takes a few minutes.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t visaguide:ci .
