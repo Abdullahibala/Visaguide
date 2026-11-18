@@ -41,6 +41,23 @@ Mix the `type`s: **factoid** (one fact: an amount, a number of days), **procedur
    the `dev` split. If a test question is truly broken (wrong gold), fix it and note
    it in `notes`.
 
+## Provenance and revision history
+
+- **Draft (80 questions):** written by the author.
+- **Audit + revision (2026-11-18), LLM-assisted:** an automated audit found 7 questions
+  labelled unanswerable that the corpus does answer, 10 near-duplicate pairs (7 crossing
+  the dev/test split, which leaks dev into test), gold passages that didn't support
+  their reference answers, and questions naming their source. Fixes: 15 questions
+  removed (listed at the top of `testset_draft.yaml`), 2 relabelled as answerable,
+  16 added from previously uncovered documents, alternatives added after checking
+  `scripts/find_alternatives.py` suggestions. Every quote was taken verbatim from the
+  corpus and checked by `anchor_testset.py`. All of this happened **before any
+  evaluation run on the test split**.
+- **Result:** 81 questions (64 answerable, 17 unanswerable), 41 distinct gold documents.
+
+This is reported as a limitation in the main README: part of the test set was
+revised with LLM help, so it isn't a purely human-written benchmark.
+
 ## Workflow
 
 1. Find passages: `.venv\Scripts\python scripts\search.py "..."` or open

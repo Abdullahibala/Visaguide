@@ -15,7 +15,7 @@ from collections import Counter
 import yaml
 
 from visaguide.config import ROOT, load_config
-from visaguide.evaluation.anchor import find_quote, normalise
+from visaguide.evaluation.anchor import find_all_quotes, find_quote, normalise
 
 DRAFT = ROOT / "eval" / "testset_draft.yaml"
 OUT = ROOT / "eval" / "testset.jsonl"
@@ -71,20 +71,22 @@ def main() -> int:
             if len(normalise(quote)) < 20:
                 errors.append(f"{where} gold #{j + 1}: quote too short to be unambiguous")
                 continue
-            found = find_quote(doc["text"], quote)
-            if found is None:
+            spans = find_all_quotes(doc["text"], quote)
+            if not spans:
                 elsewhere = [d["doc_id"] for d in docs if find_quote(d["text"], quote)]
                 hint = f" - but found in {elsewhere}" if elsewhere else ""
                 errors.append(f"{where} gold #{j + 1}: quote not found in {doc['doc_id']}{hint}"
                               f"\n      quote: {quote[:120]!r}")
                 continue
-            start, end, n = found
-            if n > 1:
-                warnings.append(f"{where} gold #{j + 1}: quote occurs {n}x in {doc['doc_id']};"
-                                " using the first - lengthen it if that's the wrong one")
-            gold.append({"doc_id": doc["doc_id"], "start": start, "end": end,
-                         "group": str(g.get("group", f"g{j + 1}")),
-                         "quote": doc["text"][start:end]})
+            if len(spans) > 1:
+                # The same sentence repeated on a page: every copy is an equally valid
+                # answer, so each occurrence becomes an alternative in the same group.
+                warnings.append(f"{where} gold #{j + 1}: quote occurs {len(spans)}x in "
+                                f"{doc['doc_id']}; all occurrences added as alternatives")
+            for start, end in spans:
+                gold.append({"doc_id": doc["doc_id"], "start": start, "end": end,
+                             "group": str(g.get("group", f"g{j + 1}")),
+                             "quote": doc["text"][start:end]})
 
         out.append({
             "id": qid, "question": it.get("question", "").strip(),

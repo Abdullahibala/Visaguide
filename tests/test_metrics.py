@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 import pytest
 
-from visaguide.evaluation.anchor import find_quote, normalise
+from visaguide.evaluation.anchor import find_all_quotes, find_quote, normalise
 from visaguide.evaluation.retrieval_metrics import (
     groups_found,
     matches,
@@ -42,6 +42,12 @@ def test_find_quote_turkish_dotted_capital_i():
     doc = "Başvuru İkamet izni için yapılır."
     start, end, _ = find_quote(doc, "ikamet izni")
     assert doc[start:end] == "İkamet izni"
+
+
+def test_find_all_quotes_returns_every_occurrence():
+    doc = "Apply early. Some text. APPLY   early."
+    assert [doc[s:e] for s, e in find_all_quotes(doc, "apply early")] == [
+        "Apply early", "APPLY   early"]
 
 
 def test_find_quote_missing_returns_none():

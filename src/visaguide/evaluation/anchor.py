@@ -48,13 +48,22 @@ def normalise(text: str) -> str:
     return normalise_with_map(text)[0]
 
 
-def find_quote(doc_text: str, quote: str) -> tuple[int, int, int] | None:
-    """Return (start, end, n_occurrences) of the first match, or None if absent."""
+def find_all_quotes(doc_text: str, quote: str) -> list[tuple[int, int]]:
+    """(start, end) of every occurrence of the quote, in document order."""
     q = normalise(quote)
     if not q:
-        return None
+        return []
     norm, idx = normalise_with_map(doc_text)
-    pos = norm.find(q)
-    if pos < 0:
+    spans, pos = [], norm.find(q)
+    while pos >= 0:
+        spans.append((idx[pos], idx[pos + len(q) - 1] + 1))
+        pos = norm.find(q, pos + 1)
+    return spans
+
+
+def find_quote(doc_text: str, quote: str) -> tuple[int, int, int] | None:
+    """Return (start, end, n_occurrences) of the first match, or None if absent."""
+    spans = find_all_quotes(doc_text, quote)
+    if not spans:
         return None
-    return idx[pos], idx[pos + len(q) - 1] + 1, norm.count(q)
+    return spans[0][0], spans[0][1], len(spans)
