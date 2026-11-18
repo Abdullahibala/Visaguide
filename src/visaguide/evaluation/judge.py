@@ -17,6 +17,17 @@ gives a graded score instead of a yes/no.
 
 The judge is itself a model and can be wrong, so we measure its agreement with
 human labels (scripts/judge_agreement.py) before trusting its numbers.
+
+Rubric history (faithfulness):
+  v1  ignored disclaimers only.
+  v2  also ignored "statements about what the sources contain" (after dev v1).
+      Too broad: it hid a real error (an answer called a government source
+      "university guidance").
+  v3  ignores only the standard disclaimers and absence statements; descriptions
+      of sources and extrapolations are claims; source attributes count as evidence.
+      Written after human labels showed the v2 judge caught 0 of 2 unfaithful
+      answers. Validated by the perturbation test (scripts/judge_perturbation.py),
+      not by re-fitting to the same 20 labels.
 """
 
 from dataclasses import dataclass
@@ -29,15 +40,21 @@ by the provided sources. Use ONLY the sources; your own knowledge of the topic i
 irrelevant, even if a claim is true in reality.
 
 Steps:
-1. Split the answer into atomic factual claims (one fact each) about the topic. Do NOT \
-count as claims: citation markers, greetings, generic advice such as "confirm with the \
-authority" or "this is not legal advice" or "rules can change", and statements about \
-what the sources do or do not contain (e.g. "the sources don't say X"). If the answer \
-only says the information is not available, return no claims.
+1. Split the answer into atomic factual claims (one fact each). Do NOT count as claims: \
+citation markers, greetings, the standard disclaimers ("this is not legal advice", \
+"rules can change", "confirm with the responsible authority"), and statements that some \
+information is absent from the sources ("the sources don't say X"). DO count as claims: \
+descriptions of the sources themselves (e.g. "these are university guides", "this guide \
+is from 2024", "both were retrieved on the same date") and generalisations or \
+extrapolations (e.g. "other cities may differ", "this applies to all students"). If the \
+answer only says the information is not available, return no claims.
 2. For each claim, list the source ids the answer cites for it (from markers like [S2]).
 3. supported_by_cited: true only if the cited source(s) state the claim (paraphrase is \
-fine; an added number, condition, or deadline that is not stated is NOT supported).
-4. supported_by_any: true if any of the provided sources states the claim."""
+fine; an added number, condition, or deadline that is not stated is NOT supported). A \
+source's attributes (title, section, url, retrieved date) count as evidence: e.g. a \
+claim that a page is about extensions is supported if its title says so.
+4. supported_by_any: true if any of the provided sources states the claim. A plausible \
+inference or generalisation that no source states is NOT supported."""
 
 FAITHFULNESS_SCHEMA = {
     "type": "object",

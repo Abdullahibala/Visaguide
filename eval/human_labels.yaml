@@ -185,6 +185,7 @@
       international relations.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
 - id: q008
   question: Can I start attending classes at a German university before completing its enrolment process?
   reference_answer: No. Enrolment is required before studies commence.
@@ -532,6 +533,7 @@
       your permit by calling 157.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“The same timeline applies to extensions and exchange students” — I did not find explicit support for this in S3/S4.'
 - id: q021
   question: What is the Turkish foreign national identity number used for at METU besides identifying
     me?
@@ -935,6 +937,7 @@
       work for pre-graduate/associate or undergraduate students will be determined separately.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“These sources are university guidance, not legal advice” — I considered this ungrounded because the cited sources include a government source.'
 - id: q034
   question: If I want to freelance while studying in Germany as an international student, is the usual
     student work allowance enough by itself?
@@ -1215,6 +1218,7 @@
       countries are allowed to work but must follow several rules. As an'
   faithful: 'no'
   correctness: 'correct'
+  note: '“The Hamburg details come from one city-specific guide, so other cities may differ” — I treated the extrapolation as unsupported.'
 - id: q035
   question: Can students from outside the EU simply exceed the German student work-day limit if they find
     more shifts?
@@ -1628,6 +1632,7 @@
       • Turkish Consulate in New York cannot expedite a visa application.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“The rules can change” — I flagged this because no supplied source passage states it.'
 - id: q040
   question: I have a Türkiye scholarship but no Turkish proficiency certificate. What language support
     may be offered?
@@ -2280,6 +2285,7 @@
       Proof of funds includes:'
   faithful: 'no'
   correctness: 'correct'
+  note: '“This guide is from 2024” — I could not find the year in the supplied source excerpts.'
 - id: q067
   question: My German D visa runs out soon. When do I need to apply for the residence permit?
   reference_answer: Yes. Munich's guidance says to apply before the national D visa or current residence
@@ -2456,6 +2462,7 @@
       Further information on living and working in Germany is available here.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“All sources were retrieved on the same date” — I could not find that metadata claim in the supplied source excerpts.'
 - id: q068
   question: If I have private health insurance in Germany, can I later switch to statutory insurance during
     my studies?
@@ -3186,6 +3193,7 @@
       for the purposes'
   faithful: 'no'
   correctness: 'correct'
+  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
 - id: q089
   question: How early can I apply online to extend my study residence permit in Berlin, and what does
     the confirmation I get do?
@@ -3356,6 +3364,7 @@
       - Do not leave Germany after the initial 90 days unless you already have a residence permit.'
   faithful: 'no'
   correctness: 'correct'
+  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
 - id: q091
   question: I'm applying for a German student visa in Bangladesh. How long does processing take, and how
     early can I apply?
@@ -3688,6 +3697,7 @@
       The citizens of the countries which are stated at the below link are exempted form this Article;'
   faithful: 'yes'
   correctness: 'correct'
+  note: '“Both were retrieved on the same date” — I treated this as source metadata commentary rather than an answer claim; it is not stated in the supplied source excerpts.'
 - id: q094
   question: Who applies for my work permit in Türkiye, me or my employer?
   reference_answer: 'The employer. You can''t apply yourself: you find a job first, then the company applies
@@ -4040,3 +4050,4 @@
       All other nationalities require a visa prior to travelling to Germany.'
   faithful: 'no'
   correctness: 'partial'
+  note: '“The rules can change” — I flagged this because no supplied source passage states it.'
