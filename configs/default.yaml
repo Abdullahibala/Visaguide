@@ -56,6 +56,18 @@ judge:                      # LLM-as-judge for answer metrics
   max_tokens: 16000
   fallbacks: true
 
+api:
+  max_question_chars: 500
+  # Per client IP. Limits apply per running instance (in memory), so deploy with a
+  # single instance (Cloud Run --max-instances 1) for them to be exact.
+  rate_limit_per_minute: 5
+  rate_limit_per_day: 40
+  # Global spending cap: once today's generation cost reaches this, /ask returns 503
+  # until midnight UTC. This protects the API key even if per-IP limits are evaded.
+  daily_budget_usd: 2.00
+  log_path: logs/queries.jsonl
+  trust_forwarded_for: true   # behind Cloud Run / a proxy, the client IP is in X-Forwarded-For
+
 # USD per million tokens, from the provider's price list (checked 2026-11-18).
 # cache_write = 1.25x input (5-minute cache). Cost per query = usage x these prices.
 pricing_usd_per_mtok:

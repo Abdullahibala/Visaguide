@@ -18,6 +18,8 @@ dependencies = [
     "faiss-cpu>=1.8",
     "rank-bm25>=0.2.2",
     "anthropic>=2.10",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
 ]
 
 # CPU-only PyTorch: the default wheel bundles CUDA (~2.5 GB), which we don't need

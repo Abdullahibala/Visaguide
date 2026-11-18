@@ -79,6 +79,15 @@ class Price(BaseModel):
     cache_write: float = 0.0
 
 
+class ApiCfg(BaseModel):
+    max_question_chars: int = 500
+    rate_limit_per_minute: int = 5
+    rate_limit_per_day: int = 40
+    daily_budget_usd: float = 2.0
+    log_path: Path = Path("logs/queries.jsonl")
+    trust_forwarded_for: bool = True
+
+
 class Config(BaseModel):
     paths: Paths
     ingest: IngestCfg
@@ -86,12 +95,16 @@ class Config(BaseModel):
     retrieval: RetrievalCfg
     generation: LLMCfg
     judge: LLMCfg
+    api: ApiCfg = ApiCfg()
     pricing_usd_per_mtok: dict[str, Price] = {}
 
 
 class Secrets(BaseSettings):
     model_config = SettingsConfigDict(env_file=ROOT / ".env", extra="ignore")
     anthropic_api_key: str = ""
+    # Salt for hashing client IPs in logs. Without a secret salt, the hash of an IPv4
+    # address can be reversed by brute force (there are only 2^32 addresses).
+    ip_hash_salt: str = "dev-only-salt-change-me"
 
 
 @lru_cache
