@@ -1,0 +1,72 @@
+# VisaGuide test set - written by hand. Guidelines: eval/README.md
+# After editing, run:  .venv\Scripts\python scripts\anchor_testset.py
+#
+# Fields
+#   id          unique, never reuse or renumber (the dev/test split is derived from it)
+#   question    phrased the way a student would ask, NOT copied from the source
+#   answerable  true / false
+#   country     germany | turkiye | both
+#   type        factoid | procedural | list | conditional | comparison
+#   answer      reference answer, 1-3 sentences (for unanswerable: what's missing)
+#   gold        answerable only: passages that answer it
+#     doc       doc_id (see data/manifest.csv) or the page URL
+#     quote     copied passage; spacing, case, ** and # don't matter
+#     group     same group = alternatives (same fact, different source);
+#               different groups = different facts the answer needs
+#   notes       optional
+#
+# The five examples below are real and anchor correctly. Keep, edit or replace them.
+
+- id: q001
+  question: How many days per year am I allowed to work as an international student in Germany without asking the employment agency?
+  answerable: true
+  country: germany
+  type: factoid
+  answer: 140 full days or 280 half days per year, without approval from the Federal Employment Agency.
+  gold:
+    - doc: ge_643a3383e5          # DAAD - Side jobs
+      quote: "International students from other countries are allowed to work 140 full days or 280 half days per year."
+      group: a
+    - doc: ge_4c2aa9f5cc          # Hamburg information for foreign students (PDF)
+      quote: "may work 140 days or 280 half-days per year without needing the approval of the Employment Agency"
+      group: a                    # same fact, other source -> same group
+
+- id: q002
+  question: Can international students in Türkiye work part-time, and does it depend on whether they are bachelor's or master's students?
+  answerable: true
+  country: turkiye
+  type: conditional
+  answer: Associate and undergraduate students can work part-time only after completing their first year of study; graduate students are not subject to that first-year restriction. A work permit is still required.
+  gold:
+    - doc: tu_acca164c5a          # Ministry of Labour - Work Permit Evaluation Criteria
+      quote: "Foreign students who are enrolled in associate and undergraduate degree programs at a higher education institution in Türkiye can work part-time after completing their first year of study."
+      group: a
+    - doc: tu_acca164c5a
+      quote: "Work permit applications for graduate students enrolled in formal education programs will not be subject to the limitations mentioned in the first paragraph."
+      group: b                    # a second, different fact the full answer needs
+
+- id: q003
+  question: I'm applying from India for a German student visa. Do I need an APS certificate?
+  answerable: true
+  country: germany
+  type: conditional
+  answer: Yes. The APS certificate is mandatory for Indian applicants unless an exception applies (e.g. a non-German degree obtained in Germany, PhD/postdoc studies, or certain scholarships).
+  gold:
+    - doc: ge_05fd10fcff          # German Missions in India - student visa checklist (PDF)
+      quote: "An APS Certificate is always mandatory, unless one of the following conditions apply"
+      group: a
+
+- id: q004
+  question: How long does the migration office in Izmir currently take to process a first student residence permit?
+  answerable: false
+  country: turkiye
+  type: factoid
+  answer: Not in the sources. They describe the residence permit process but give no office-specific processing times for Izmir.
+  notes: near-miss - the topic is covered, the specific detail is not
+
+- id: q005
+  question: Can I bring my cat with me when I move to Germany on a student visa?
+  answerable: false
+  country: germany
+  type: factoid
+  answer: Not in the sources. None of the collected pages cover bringing pets.
