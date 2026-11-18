@@ -36,7 +36,8 @@ retrieval:
   # What the answer pipeline uses. Chosen on the dev split (docs/retrieval_findings.md).
   default_chunking: structure
   default_mode: dense_rerank
-  top_k: 5                  # chunks given to the LLM
+  top_k: 8                  # chunks given to the LLM. 5 -> 8 chosen on dev (v2 vs v3):
+                            # comparison/multi-part questions lost one half at k=5.
 
 generation:
   provider: anthropic       # swap provider/model here; see generation/llm.py
