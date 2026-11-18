@@ -1,0 +1,222 @@
+{
+  "judge": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "max_tokens": 16000,
+    "fallbacks": true
+  },
+  "summary": {
+    "number": {
+      "n": 13,
+      "detected": 13,
+      "recall": 1.0
+    },
+    "addition": {
+      "n": 20,
+      "detected": 20,
+      "recall": 1.0
+    }
+  },
+  "rows": [
+    {
+      "id": "q042",
+      "kind": "number",
+      "marker": "90",
+      "detected": true
+    },
+    {
+      "id": "q042",
+      "kind": "addition",
+      "marker": "Students who miss this deadline can apply again after paying a late fee of 50 euros [S1].",
+      "detected": true
+    },
+    {
+      "id": "q021",
+      "kind": "addition",
+      "marker": "This rule applies in the same way to students of every nationality [S1].",
+      "detected": true
+    },
+    {
+      "id": "q054",
+      "kind": "number",
+      "marker": "135",
+      "detected": true
+    },
+    {
+      "id": "q054",
+      "kind": "addition",
+      "marker": "The responsible office usually decides within two weeks of receiving the application [S1].",
+      "detected": true
+    },
+    {
+      "id": "q089",
+      "kind": "number",
+      "marker": "6",
+      "detected": true
+    },
+    {
+      "id": "q089",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q007",
+      "kind": "number",
+      "marker": "9",
+      "detected": true
+    },
+    {
+      "id": "q007",
+      "kind": "addition",
+      "marker": "This rule applies in the same way to students of every nationality [S1].",
+      "detected": true
+    },
+    {
+      "id": "q008",
+      "kind": "addition",
+      "marker": "The responsible office usually decides within two weeks of receiving the application [S1].",
+      "detected": true
+    },
+    {
+      "id": "q068",
+      "kind": "addition",
+      "marker": "This rule applies in the same way to students of every nationality [S1].",
+      "detected": true
+    },
+    {
+      "id": "q015",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q048",
+      "kind": "number",
+      "marker": "135",
+      "detected": true
+    },
+    {
+      "id": "q048",
+      "kind": "addition",
+      "marker": "This requirement was introduced in 2019 and has not changed since [S1].",
+      "detected": true
+    },
+    {
+      "id": "q079",
+      "kind": "addition",
+      "marker": "Students who miss this deadline can apply again after paying a late fee of 50 euros [S1].",
+      "detected": true
+    },
+    {
+      "id": "q091",
+      "kind": "number",
+      "marker": "5",
+      "detected": true
+    },
+    {
+      "id": "q091",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q066",
+      "kind": "number",
+      "marker": "90",
+      "detected": true
+    },
+    {
+      "id": "q066",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q034",
+      "kind": "number",
+      "marker": "210",
+      "detected": true
+    },
+    {
+      "id": "q034",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q004",
+      "kind": "number",
+      "marker": "45",
+      "detected": true
+    },
+    {
+      "id": "q004",
+      "kind": "addition",
+      "marker": "This rule applies in the same way to students of every nationality [S1].",
+      "detected": true
+    },
+    {
+      "id": "q012",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q058",
+      "kind": "number",
+      "marker": "3",
+      "detected": true
+    },
+    {
+      "id": "q058",
+      "kind": "addition",
+      "marker": "The responsible office usually decides within two weeks of receiving the application [S1].",
+      "detected": true
+    },
+    {
+      "id": "q088",
+      "kind": "number",
+      "marker": "27",
+      "detected": true
+    },
+    {
+      "id": "q088",
+      "kind": "addition",
+      "marker": "This rule applies in the same way to students of every nationality [S1].",
+      "detected": true
+    },
+    {
+      "id": "q067",
+      "kind": "number",
+      "marker": "9",
+      "detected": true
+    },
+    {
+      "id": "q067",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q016",
+      "kind": "number",
+      "marker": "2",
+      "detected": true
+    },
+    {
+      "id": "q016",
+      "kind": "addition",
+      "marker": "Part-time students are exempt from this requirement [S1].",
+      "detected": true
+    },
+    {
+      "id": "q060",
+      "kind": "addition",
+      "marker": "The responsible office usually decides within two weeks of receiving the application [S1].",
+      "detected": true
+    }
+  ],
+  "cost_usd": 0.479396
+}

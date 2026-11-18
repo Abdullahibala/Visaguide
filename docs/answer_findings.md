@@ -24,6 +24,18 @@ known label problems are listed below, not silently fixed.
 | Retrieval latency p50 (CPU, incl. reranker) | | | | 1.4 s |
 | Cost per query, mean / p95 | $0.021 | $0.021 | $0.026 | **$0.028 / $0.034** |
 
+**Judge rubric v3 (after validation, see below)** re-judged the same 50 test answers
+(no regeneration): `answers_test_..._final-judgev3_20261119-020537`.
+
+| Metric (test) | Judge rubric v2 | **Judge rubric v3 (validated)** |
+|---|---|---|
+| Correctness | 0.951 | **0.951** (share fully correct 0.927) |
+| Faithfulness | 0.984 | **0.949** |
+| Citation accuracy | 0.957 | **0.899** |
+
+The v3 numbers are the ones to report. v3 also counts mild inferences and descriptions
+of the sources as claims, so it is stricter.
+
 Dev v1 had 23 answerable and 8 unanswerable questions; v2 and v3 have 24 and 7
 (q049 relabelled). Cost is generation only, computed from API token usage x the
 config prices. Judge cost on the test run was $0.79 in total. The test set scores
@@ -69,6 +81,49 @@ bias the evaluation upward.
    need references listing every version (planned for the test set's next revision).
 3. The judge makes mistakes (q065). Its agreement with human labels is measured in
    `judge_agreement.md` before any judge-based number is trusted.
+
+## Validating the LLM judge
+
+The judge (`claude-sonnet-5-5`, a different model from the generator to limit
+self-preference) was checked in three ways before its numbers were trusted.
+
+**1. Agreement with 20 blind human labels (test answers)**
+
+| | Raw agreement | Cohen's κ | Notes |
+|---|---|---|---|
+| Correctness, rubric v2 | 0.95 | 0.64 | 19/20 agree |
+| Correctness, rubric v3 | 0.95 | 0.65 | disagreement: q025 (source conflict) |
+| Faithfulness, rubric v2, original labels | 0.45 | −0.10 | |
+| Faithfulness, rubric v2, shared definition | 0.85 | −0.07 | **judge caught 0/2 unfaithful answers** |
+| Faithfulness, rubric v3, shared definition | 0.80 | **0.41** | **caught 2/2**; 4 false alarms |
+
+**2. Why faithfulness disagreed at first.** The labeller's notes on all 11
+disagreements showed three groups: (a) 5 were the disclaimer our own prompt requires
+("rules can change"), which the judge ignores by design; (b) 4 were claims supported
+by a source's title or date, which the first label sheet didn't show (a label-sheet
+bug, fixed); (c) 2 were real unsupported inferences (e.g. calling a government source
+"university guidance"). The v2 rubric missed both of those because its exclusion
+("ignore statements about what the sources contain") was too broad. The
+`faithful_shared_def` labels apply one written definition to groups (a) and (b), using
+only the labeller's own notes; the original labels are kept unchanged.
+
+**3. Perturbation test** (`scripts/judge_perturbation.py`). Agreement on 20 random
+answers can't measure error detection when 18 of 20 are faithful (prevalence paradox:
+κ is near 0 even at 85% agreement). So errors were inserted on purpose into 20 test
+answers. The v3 judge caught **13/13 changed numbers** (e.g. 140 → 210 days) and
+**20/20 added unsupported sentences**.
+
+**v3's 4 false alarms**: 3 are mild inferences the written definition classifies as
+unsupported ("the exact deadline depends on your local office"; "the Dhaka source is
+the one that applies to you"; a description of what the sources cover). One is a real
+judge error (q092: "the Ministry of Labour is the responsible authority", although the
+cited page is the Ministry of Labour's FAQ).
+
+**Conclusion:** the v3 judge reliably catches changed facts and invented sentences,
+and is stricter than a human on mild inferences. Its faithfulness score (0.949) is
+therefore conservative. The rubric was revised after seeing these 20 labels, so a
+clean confirmation needs a fresh labelled sample (planned:
+`make_label_sheet.py --exclude eval/human_labels.yaml`).
 
 ## Limitations
 

@@ -105,7 +105,7 @@ def main() -> None:
         questions = questions[:args.limit]
 
     if args.resume:
-        out = args.resume
+        out = args.resume.resolve()  # absolute, so relative_to(ROOT) works when printing
     else:
         tag = f"_{args.tag}" if args.tag else ""
         out = ROOT / "eval" / "results" / (

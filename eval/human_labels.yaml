@@ -8,6 +8,9 @@
 #              incorrect = contradicts a key fact, wrong number/rule, or doesn't answer
 #              (leave as n/a for unanswerable questions)
 
+# faithful_shared_def: derived from the labeller's own notes under the shared definition
+# (judge rubric v3). The original `faithful` labels are unchanged.
+
 - id: q002
   question: Can international students in Türkiye work part-time, and does it depend on whether they are
     bachelor's or master's students?
@@ -184,8 +187,10 @@
       and not to give credence to baseless claims that seek to harm our country''s education system and
       international relations.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
+  correctness: correct
+  note: “Rules can change” — I flagged this because no supplied source passage states it.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was the mandated disclaimer (not a claim under the shared definition)
 - id: q008
   question: Can I start attending classes at a German university before completing its enrolment process?
   reference_answer: No. Enrolment is required before studies commence.
@@ -371,7 +376,8 @@
       may also be recognised in Germany. You should inquire about the details with your health insurance
       provider before leaving home.'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q018
   question: How long might it take for Sabancı applicants to receive a decision and residence permit card?
   reference_answer: The university says evaluation and card preparation may take up to 90 days; it also
@@ -532,8 +538,11 @@
       your graduation date, which you can find out from student resources. You can check the status of
       your permit by calling 157.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“The same timeline applies to extensions and exchange students” — I did not find explicit support for this in S3/S4.'
+  correctness: correct
+  note: “The same timeline applies to extensions and exchange students” — I did not find explicit support
+    for this in S3/S4.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was supported by source title/date, which the first sheet did not show
 - id: q021
   question: What is the Turkish foreign national identity number used for at METU besides identifying
     me?
@@ -804,7 +813,8 @@
 
       - For foreign students who will begin postgraduate education in Turkey, excluding health fields.'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q025
   question: If I graduate from a Turkish higher education program and want to remain to look for work,
     what permit might I apply for?
@@ -936,8 +946,10 @@
       will not exceed maximum twenty-four hours. The principles and procedures governing the right of
       work for pre-graduate/associate or undergraduate students will be determined separately.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“These sources are university guidance, not legal advice” — I considered this ungrounded because the cited sources include a government source.'
+  correctness: correct
+  note: “These sources are university guidance, not legal advice” — I considered this ungrounded because
+    the cited sources include a government source.
+  faithful_shared_def: 'no'
 - id: q034
   question: If I want to freelance while studying in Germany as an international student, is the usual
     student work allowance enough by itself?
@@ -1217,8 +1229,10 @@
 
       countries are allowed to work but must follow several rules. As an'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“The Hamburg details come from one city-specific guide, so other cities may differ” — I treated the extrapolation as unsupported.'
+  correctness: correct
+  note: “The Hamburg details come from one city-specific guide, so other cities may differ” — I treated
+    the extrapolation as unsupported.
+  faithful_shared_def: 'no'
 - id: q035
   question: Can students from outside the EU simply exceed the German student work-day limit if they find
     more shifts?
@@ -1484,7 +1498,8 @@
 
       the Foreigners Registration Department. Self- employment may be allowed during'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q037
   question: If my Turkish visa allows a longer visit, can I stay more than 90 days in any 180-day period?
   reference_answer: No. The permitted stay cannot exceed 90 days within each 180-day period.
@@ -1631,8 +1646,10 @@
 
       • Turkish Consulate in New York cannot expedite a visa application.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“The rules can change” — I flagged this because no supplied source passage states it.'
+  correctness: correct
+  note: “The rules can change” — I flagged this because no supplied source passage states it.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was the mandated disclaimer (not a claim under the shared definition)
 - id: q040
   question: I have a Türkiye scholarship but no Turkish proficiency certificate. What language support
     may be offered?
@@ -1803,7 +1820,8 @@
       the selected program) A written example of the research topic and the work you have done (for PhD
       applicants only)'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q043
   question: Do I need travel medical insurance for the Turkish student visa application through Miami?
   reference_answer: Yes. The checklist requires international health insurance with at least $35,000 coverage
@@ -2057,7 +2075,8 @@
       have received the residence permit from, after finalizing this insurance. Otherwise, their residence
       permits will be cancelled. (Valid health insurance is not required for the relatives of these people,
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q055
   question: When I extend my student residence permit in Hamburg, can I show my funds with a normal bank
     account instead of a blocked account?
@@ -2284,8 +2303,10 @@
 
       Proof of funds includes:'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“This guide is from 2024” — I could not find the year in the supplied source excerpts.'
+  correctness: correct
+  note: “This guide is from 2024” — I could not find the year in the supplied source excerpts.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was supported by source title/date, which the first sheet did not show
 - id: q067
   question: My German D visa runs out soon. When do I need to apply for the residence permit?
   reference_answer: Yes. Munich's guidance says to apply before the national D visa or current residence
@@ -2461,8 +2482,11 @@
 
       Further information on living and working in Germany is available here.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“All sources were retrieved on the same date” — I could not find that metadata claim in the supplied source excerpts.'
+  correctness: correct
+  note: “All sources were retrieved on the same date” — I could not find that metadata claim in the supplied
+    source excerpts.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was supported by source title/date, which the first sheet did not show
 - id: q068
   question: If I have private health insurance in Germany, can I later switch to statutory insurance during
     my studies?
@@ -2623,7 +2647,8 @@
 
       ### Which German health insurance is right for me and what do they cover?'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q069
   question: How much should I budget per month for accommodation as a student in Türkiye?
   reference_answer: The guide gives a range of 215 TL to 2,500 TL per month, though this is a dated source
@@ -2949,7 +2974,8 @@
       free health services in all state hospitals. In private hospitals you will need to pay varying amounts
       of contribution.'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q088
   question: Can I get a German residence permit just to do an intensive English course?
   reference_answer: No. A residence permit can't be issued for an intensive course to learn a foreign
@@ -3192,8 +3218,10 @@
 
       for the purposes'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
+  correctness: correct
+  note: “Rules can change” — I flagged this because no supplied source passage states it.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was the mandated disclaimer (not a claim under the shared definition)
 - id: q089
   question: How early can I apply online to extend my study residence permit in Berlin, and what does
     the confirmation I get do?
@@ -3363,8 +3391,10 @@
 
       - Do not leave Germany after the initial 90 days unless you already have a residence permit.'
   faithful: 'no'
-  correctness: 'correct'
-  note: '“Rules can change” — I flagged this because no supplied source passage states it.'
+  correctness: correct
+  note: “Rules can change” — I flagged this because no supplied source passage states it.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was the mandated disclaimer (not a claim under the shared definition)
 - id: q091
   question: I'm applying for a German student visa in Bangladesh. How long does processing take, and how
     early can I apply?
@@ -3557,7 +3587,8 @@
       to a German mission. You may apply for a Schengen visa at the earliest six months before and generally
       no later than 15 days before your planned trip; however, you can make the appointment before that.'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q092
   question: My department in Türkiye requires a compulsory internship. Do I need a work permit for it?
   reference_answer: You apply for a work permit exemption instead, which covers internships required by
@@ -3696,8 +3727,10 @@
 
       The citizens of the countries which are stated at the below link are exempted form this Article;'
   faithful: 'yes'
-  correctness: 'correct'
-  note: '“Both were retrieved on the same date” — I treated this as source metadata commentary rather than an answer claim; it is not stated in the supplied source excerpts.'
+  correctness: correct
+  note: “Both were retrieved on the same date” — I treated this as source metadata commentary rather than
+    an answer claim; it is not stated in the supplied source excerpts.
+  faithful_shared_def: 'yes'
 - id: q094
   question: Who applies for my work permit in Türkiye, me or my employer?
   reference_answer: 'The employer. You can''t apply yourself: you find a job first, then the company applies
@@ -3861,7 +3894,8 @@
       Zones, the approval of the Ministry of Industry and Technology is required. Employment and financial
       eligibility criteria will not applied in the evaluation of work permit applications in this context.'
   faithful: 'yes'
-  correctness: 'correct'
+  correctness: correct
+  faithful_shared_def: 'yes'
 - id: q095
   question: I'm a US citizen admitted to a German university. Do I need a visa before I travel?
   reference_answer: No. US citizens can enter visa-free with a valid passport, but must apply for a residence
@@ -4049,5 +4083,7 @@
 
       All other nationalities require a visa prior to travelling to Germany.'
   faithful: 'no'
-  correctness: 'partial'
-  note: '“The rules can change” — I flagged this because no supplied source passage states it.'
+  correctness: partial
+  note: “The rules can change” — I flagged this because no supplied source passage states it.
+  faithful_shared_def: 'yes'
+  shared_def_reason: only issue was the mandated disclaimer (not a claim under the shared definition)
