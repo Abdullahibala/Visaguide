@@ -18,22 +18,28 @@ Background (be ready to explain this in an interview):
 """
 
 
-def reciprocal_rank_fusion(rankings: list[list[int]], k: int = 60) -> list[tuple[int, float]]:
+def reciprocal_rank_fusion(rankings: list[list[int]], k: int = 60,
+                           weights: list[float] | None = None) -> list[tuple[int, float]]:
     """Fuse several rankings of item ids into one.
 
     Args:
         rankings: each inner list holds item ids, best first (e.g. chunk indices
                   from the dense retriever and from BM25).
         k: the RRF constant.
+        weights: optional weight per ranking (default: all 1.0, i.e. plain RRF).
+                 Added after the first evaluation showed that equal weighting lets
+                 the much weaker BM25 ranking drag down good dense results.
 
     Returns:
         (item_id, rrf_score) pairs sorted by score, highest first. Every item that
         appears in at least one ranking is included. Break ties by item_id
         (ascending), so the output is deterministic.
     """
+    if weights is None:
+        weights = [1.0] * len(rankings)
     scores: dict[int, float] = {}
-    for ranking in rankings:
+    for ranking, weight in zip(rankings, weights, strict=True):
         for rank, item_id in enumerate(ranking, start=1):
-            scores[item_id] = scores.get(item_id, 0.0) + 1 / (k + rank)
+            scores[item_id] = scores.get(item_id, 0.0) + weight / (k + rank)
 
     return sorted(scores.items(), key=lambda item: (-item[1], item[0]))

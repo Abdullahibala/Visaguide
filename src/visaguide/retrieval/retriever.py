@@ -4,6 +4,9 @@
     bm25           BM25 over the same chunk texts
     hybrid         RRF fusion of dense top-N and BM25 top-N
     hybrid_rerank  hybrid, then a cross-encoder re-scores the top rerank_top_n
+    dense_rerank   dense top rerank_top_n re-scored by the cross-encoder (no BM25).
+                   Added after the first evaluation: BM25 was much weaker than dense,
+                   so this tests whether the reranker alone gives the gain.
 
 The index for one chunking strategy is stored in data/index/<strategy>/:
     chunks.jsonl   chunk records (offsets, text, metadata)
@@ -21,7 +24,7 @@ from visaguide.retrieval.bm25 import BM25Retriever
 from visaguide.retrieval.dense import DenseRetriever, Encoder, SentenceTransformerEncoder
 from visaguide.retrieval.hybrid import reciprocal_rank_fusion
 
-MODES = ("dense", "bm25", "hybrid", "hybrid_rerank")
+MODES = ("dense", "bm25", "hybrid", "hybrid_rerank", "dense_rerank")
 
 
 @dataclass
@@ -81,11 +84,17 @@ class Retriever:
             ranked = timed("dense", lambda: self.dense.search(query, k))
         elif mode == "bm25":
             ranked = timed("bm25", lambda: self.bm25.search(query, k))
+        elif mode == "dense_rerank":
+            d = timed("dense", lambda: self.dense.search(query, cfg.rerank_top_n))
+            reranker = self._get_reranker()
+            ranked = timed("rerank", lambda: reranker.rerank(
+                query, [i for i, _ in d], self._texts, k))
         else:
             d = timed("dense", lambda: self.dense.search(query, n))
             b = timed("bm25", lambda: self.bm25.search(query, n))
             fused = timed("fusion", lambda: reciprocal_rank_fusion(
-                [[i for i, _ in d], [i for i, _ in b]], k=cfg.rrf_k))
+                [[i for i, _ in d], [i for i, _ in b]], k=cfg.rrf_k,
+                weights=cfg.rrf_weights))
             if mode == "hybrid":
                 ranked = fused[:k]
             else:

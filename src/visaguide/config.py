@@ -53,7 +53,11 @@ class RetrievalCfg(BaseModel):
     reranker_model: str
     candidates: int = 50
     rrf_k: int = 60
+    rrf_weights: list[float] = [1.0, 1.0]  # [dense, bm25]
     rerank_top_n: int = 30
+    default_chunking: str = "structure"
+    default_mode: str = "dense_rerank"
+    top_k: int = 5
 
 
 class Config(BaseModel):

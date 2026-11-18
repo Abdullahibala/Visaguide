@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "split": "dev",
+    "n_questions": 23,
+    "git_commit": "061f11b",
+    "testset_sha256": "0b4e1623b534",
+    "retrieval_cfg": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "candidates": 50,
+      "rrf_k": 60,
+      "rrf_weights": [
+        1.0,
+        0.5
+      ],
+      "rerank_top_n": 30
+    },
+    "chunking_cfg": {
+      "fixed": {
+        "size_words": 200,
+        "overlap_words": 40
+      },
+      "structure": {
+        "max_words": 200,
+        "min_words": 40
+      }
+    },
+    "created": "2026-11-18T23:15:13"
+  },
+  "rows": [
+    {
+      "chunking": "fixed",
+      "mode": "hybrid",
+      "n": 23,
+      "recall@1": 0.391304347826087,
+      "recall@3": 0.5652173913043478,
+      "recall@5": 0.5652173913043478,
+      "recall@10": 0.6956521739130435,
+      "mrr": 0.5043995859213249,
+      "recall@5_ci": [
+        0.3695652173913043,
+        0.7608695652173914
+      ],
+      "mrr_ci": [
+        0.32971014492753625,
+        0.6721208592132504
+      ],
+      "latency_p50_ms": 21.966000000247732,
+      "latency_p95_ms": 26.22789000015473
+    },
+    {
+      "chunking": "fixed",
+      "mode": "hybrid_rerank",
+      "n": 23,
+      "recall@1": 0.3695652173913043,
+      "recall@3": 0.5217391304347826,
+      "recall@5": 0.6304347826086957,
+      "recall@10": 0.6739130434782609,
+      "mrr": 0.5076604554865424,
+      "recall@5_ci": [
+        0.45652173913043476,
+        0.8043478260869565
+      ],
+      "mrr_ci": [
+        0.3373447204968944,
+        0.6837732919254657
+      ],
+      "latency_p50_ms": 1006.1063000030117,
+      "latency_p95_ms": 1434.224999998696
+    },
+    {
+      "chunking": "structure",
+      "mode": "hybrid",
+      "n": 23,
+      "recall@1": 0.2391304347826087,
+      "recall@3": 0.41304347826086957,
+      "recall@5": 0.5217391304347826,
+      "recall@10": 0.6521739130434783,
+      "mrr": 0.3979296066252588,
+      "recall@5_ci": [
+        0.32608695652173914,
+        0.717391304347826
+      ],
+      "mrr_ci": [
+        0.24429089026915116,
+        0.5620108695652174
+      ],
+      "latency_p50_ms": 22.50099999946542,
+      "latency_p95_ms": 25.903380000090692
+    },
+    {
+      "chunking": "structure",
+      "mode": "hybrid_rerank",
+      "n": 23,
+      "recall@1": 0.3695652173913043,
+      "recall@3": 0.6086956521739131,
+      "recall@5": 0.6521739130434783,
+      "recall@10": 0.6521739130434783,
+      "mrr": 0.5181159420289855,
+      "recall@5_ci": [
+        0.45652173913043476,
+        0.8260869565217391
+      ],
+      "mrr_ci": [
+        0.3442028985507246,
+        0.6884057971014493
+      ],
+      "latency_p50_ms": 983.2619999942835,
+      "latency_p95_ms": 1243.6725000021395
+    }
+  ]
+}

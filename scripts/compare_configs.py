@@ -28,6 +28,8 @@ DEFAULT_PAIRS = [
     (("fixed", "dense"), ("fixed", "hybrid_rerank")),
     (("structure", "dense"), ("structure", "hybrid_rerank")),
     (("fixed", "bm25"), ("fixed", "dense")),
+    (("structure", "dense"), ("structure", "dense_rerank")),
+    (("structure", "hybrid_rerank"), ("structure", "dense_rerank")),
     (("fixed", "dense"), ("structure", "dense")),
     (("fixed", "hybrid_rerank"), ("structure", "hybrid_rerank")),
 ]

@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "split": "dev",
+    "n_questions": 23,
+    "git_commit": "061f11b",
+    "testset_sha256": "0b4e1623b534",
+    "retrieval_cfg": {
+      "embedding_model": "BAAI/bge-small-en-v1.5",
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "candidates": 50,
+      "rrf_k": 60,
+      "rrf_weights": [
+        1.0,
+        1.0
+      ],
+      "rerank_top_n": 30
+    },
+    "chunking_cfg": {
+      "fixed": {
+        "size_words": 200,
+        "overlap_words": 40
+      },
+      "structure": {
+        "max_words": 200,
+        "min_words": 40
+      }
+    },
+    "created": "2026-11-18T23:17:16"
+  },
+  "rows": [
+    {
+      "chunking": "fixed",
+      "mode": "dense",
+      "n": 23,
+      "recall@1": 0.2391304347826087,
+      "recall@3": 0.391304347826087,
+      "recall@5": 0.5652173913043478,
+      "recall@10": 0.717391304347826,
+      "mrr": 0.39896480331262935,
+      "recall@5_ci": [
+        0.3695652173913043,
+        0.7608695652173914
+      ],
+      "mrr_ci": [
+        0.2515346790890269,
+        0.5548382505175982
+      ],
+      "latency_p50_ms": 16.872799998964183,
+      "latency_p95_ms": 21.34927999577485
+    },
+    {
+      "chunking": "fixed",
+      "mode": "dense_rerank",
+      "n": 23,
+      "recall@1": 0.3695652173913043,
+      "recall@3": 0.5217391304347826,
+      "recall@5": 0.6304347826086957,
+      "recall@10": 0.6739130434782609,
+      "mrr": 0.5068840579710144,
+      "recall@5_ci": [
+        0.45652173913043476,
+        0.8043478260869565
+      ],
+      "mrr_ci": [
+        0.33620471014492753,
+        0.6830163043478258
+      ],
+      "latency_p50_ms": 999.3653999990784,
+      "latency_p95_ms": 1397.7784499948027
+    },
+    {
+      "chunking": "structure",
+      "mode": "dense",
+      "n": 23,
+      "recall@1": 0.21739130434782608,
+      "recall@3": 0.391304347826087,
+      "recall@5": 0.4782608695652174,
+      "recall@10": 0.6956521739130435,
+      "mrr": 0.3886473429951691,
+      "recall@5_ci": [
+        0.2826086956521739,
+        0.6739130434782609
+      ],
+      "mrr_ci": [
+        0.22825483091787444,
+        0.5579710144927535
+      ],
+      "latency_p50_ms": 17.06519999424927,
+      "latency_p95_ms": 21.296459993754976
+    },
+    {
+      "chunking": "structure",
+      "mode": "dense_rerank",
+      "n": 23,
+      "recall@1": 0.3695652173913043,
+      "recall@3": 0.6086956521739131,
+      "recall@5": 0.6521739130434783,
+      "recall@10": 0.6521739130434783,
+      "mrr": 0.5181159420289855,
+      "recall@5_ci": [
+        0.45652173913043476,
+        0.8260869565217391
+      ],
+      "mrr_ci": [
+        0.3442028985507246,
+        0.6884057971014493
+      ],
+      "latency_p50_ms": 982.3655000072904,
+      "latency_p95_ms": 1251.8761900035315
+    }
+  ]
+}

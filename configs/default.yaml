@@ -31,4 +31,9 @@ retrieval:
   reranker_model: cross-encoder/ms-marco-MiniLM-L-6-v2
   candidates: 50            # top-N from each retriever before fusion
   rrf_k: 60                 # RRF constant from Cormack et al. (2009)
+  rrf_weights: [1.0, 1.0]   # [dense, bm25]; tuned on the dev split only
   rerank_top_n: 30          # how many fused candidates the cross-encoder re-scores
+  # What the answer pipeline uses. Chosen on the dev split (docs/retrieval_findings.md).
+  default_chunking: structure
+  default_mode: dense_rerank
+  top_k: 5                  # chunks given to the LLM

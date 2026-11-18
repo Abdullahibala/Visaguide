@@ -73,10 +73,15 @@ def main() -> None:
     ap.add_argument("--split", choices=["test", "dev", "all"], default="test")
     ap.add_argument("--modes", nargs="+", choices=MODES, default=list(MODES))
     ap.add_argument("--chunkings", nargs="+", choices=STRATEGIES, default=list(STRATEGIES))
+    ap.add_argument("--rrf-weights", nargs=2, type=float, metavar=("DENSE", "BM25"),
+                    help="override retrieval.rrf_weights for this run")
+    ap.add_argument("--tag", default="", help="label added to the results folder name")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
     cfg = load_config()
+    if args.rrf_weights:
+        cfg.retrieval.rrf_weights = list(args.rrf_weights)
     with cfg.paths.processed.open(encoding="utf-8") as f:
         docs_by_id = {d["doc_id"]: d for d in map(json.loads, f)}
     questions = load_questions(args.split, docs_by_id)
@@ -123,7 +128,8 @@ def main() -> None:
             print(f"{chunking:9s} {mode:13s} R@5={row['recall@5']:.3f}  MRR={row['mrr']:.3f}  "
                   f"p50={row['latency_p50_ms']:.0f}ms")
 
-    out = ROOT / "eval" / "results" / f"retrieval_{datetime.now():%Y%m%d-%H%M%S}"
+    tag = f"{args.split}_{args.tag}_" if args.tag else f"{args.split}_"
+    out = ROOT / "eval" / "results" / f"retrieval_{tag}{datetime.now():%Y%m%d-%H%M%S}"
     out.mkdir(parents=True)
     table = render_table(rows, args.split)
     (out / "table.md").write_text(table, encoding="utf-8", newline="\n")

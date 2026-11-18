@@ -44,6 +44,19 @@ def test_rrf_smaller_k_rewards_top_rank_more():
     assert small_k[10] > small_k[20]
 
 
+def test_rrf_weights_downweight_a_ranking():
+    # With equal weights 1 and 2 would tie (1/61 + 1/62 each). Down-weighting the
+    # second ranking to 0.1 lets the first ranking's order decide.
+    fused = reciprocal_rank_fusion([[1, 2], [2, 1]], k=60, weights=[1.0, 0.1])
+    assert [i for i, _ in fused] == [1, 2]
+    assert fused[0][1] == pytest.approx(1 / 61 + 0.1 / 62)
+
+
+def test_rrf_default_weights_equal_plain_rrf():
+    r = [[1, 2, 3], [3, 1, 4]]
+    assert reciprocal_rank_fusion(r) == reciprocal_rank_fusion(r, weights=[1.0, 1.0])
+
+
 def test_rrf_empty_input():
     assert reciprocal_rank_fusion([[], []]) == []
 
